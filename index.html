@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,6 +19,7 @@
     <link rel="stylesheet" href="./public/css/styles.css">
     <link rel="stylesheet" href="./public/css/responsive.css">
 </head>
+
 <body>
     <!-- header area start -->
     <header>
@@ -130,7 +132,7 @@
                 </div>
             </div>
         </div>
-        <div class="bottom-header bg-white shadow-[0px_1px_0px_#E1E3E6]">
+        <div class="bottom-header bg-white shadow-[0px_1px_0px_#E1E3E6] relative z-30">
             <div class="container">
                 <div class="py-3.5 flex justify-between items-center">
                     <div class="flex gap-8 items-center">
@@ -154,7 +156,7 @@
                                 </ul>
                             </div>
                         </div>
-                        
+
                         <ul class="flex gap-8 items-center">
                             <li>
                                 <a href="">Home</a>
@@ -181,11 +183,92 @@
         </div>
     </header>
     <!-- header area end -->
-    
+
+
+    <!-- banner section start -->
+    <section class="banner-section 2xl:mx-[90px] bg-grayscales-500 rounded-bl-[20px] rounded-br-[20px] font-display relative">
+        <div class="container">
+            <div class="swiper bannerSwiper pt-20 pb-28 relative z-50">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="flex items-center">
+                            <div class="w-1/2">
+                                <p class="text-[#272343] text-sm tracking-[0.12em] mb-2">Welcome to chairy</p>
+                                <h1 class="text-[68px] leading-[110%] text-[#272343] font-semibold mb-6">Best Furniture Collection for your interior.</h1>
+                                <div>
+                                    <a href="#" class="btn-primary">
+                                        <span>Shop Now</span>
+                                        <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M15.5 7.5L20 12M20 12L15.5 16.5M20 12H4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="w-1/2 flex justify-center items-center relative">
+                                <img src="./public/assets/images/all-img/chair.png" alt="">
+                                <div class="inline-block absolute top-0 right-0">
+                                    <img src="./public/assets/images/all-img/discount.png" alt="">
+                                    <p class="absolute top-[33px] text-[#F05C52] text-4xl font-bold right-9">15%</p>
+                                    <p class="absolute text-sm font-normal top-[68px] right-10">Discount</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex items-center">
+                            <div class="w-1/2">
+                                <p class="text-[#272343] text-sm tracking-[0.12em] mb-2">Welcome to chairy</p>
+                                <h1 class="text-[68px] leading-[110%] text-[#272343] font-semibold mb-6">Best Furniture Collection for your interior.</h1>
+                                <div>
+                                    <a href="#" class="btn-primary">
+                                        <span>Shop Now</span>
+                                        <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M15.5 7.5L20 12M20 12L15.5 16.5M20 12H4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="w-1/2 flex justify-center items-center">
+                                <img src="./public/assets/images/all-img/chair.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flex items-center">
+                            <div class="w-1/2">
+                                <p class="text-[#272343] text-sm tracking-[0.12em] mb-2">Welcome to chairy</p>
+                                <h1 class="text-[68px] leading-[110%] text-[#272343] font-semibold mb-6">Best Furniture Collection for your interior.</h1>
+                                <div>
+                                    <a href="#" class="btn-primary">
+                                        <span>Shop Now</span>
+                                        <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M15.5 7.5L20 12M20 12L15.5 16.5M20 12H4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="w-1/2 flex justify-center items-center">
+                                <img src="./public/assets/images/all-img/chair.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <img src="./public/assets/images/svg/banner-shapes.svg" alt="" class="absolute right-[189px] bottom-[299px] z-10">
+    </section>
+    <!-- banner section end -->
 
     <!-- script file here -->
     <script src="./public/assets/plugins/js/jquery.js"></script>
     <script src="./public/assets/plugins/js/swipper.js"></script>
     <script src="./public/js/app.js"></script>
 </body>
+
 </html>

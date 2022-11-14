@@ -18,6 +18,18 @@ a{
     display: inline-block;
     cursor: pointer;
 }
+.btn-primary{
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    font-size: 16px;
+    line-height: 110%;
+    font-weight: 600;
+    padding: 14px 24px;
+    background: #029FAE;
+    border-radius: 8px;
+}
 
 /* dropdown css */
 .dropdown:hover .dropdown-menu {
@@ -40,4 +52,32 @@ a{
    border-radius: 0 0 5px 5px;
    padding-top: 3px;
  }
- 
+
+ /* swipper js  */
+ .swiper-button-next::after{
+    content: url('../assets/images/svg/right.svg')
+ }
+ .swiper-button-prev::after {
+   content: url('../assets/images/svg/left.svg')
+ }
+ .swiper-button-next,
+ .swiper-button-prev{
+    background-color: white;
+    padding: 14px;
+    border-radius: 100%;
+ }
+ .swiper-button-next{
+    right: -122px;
+ }
+ .swiper-button-prev {
+   left: -122px;
+ }
+ .swiper-container-horizontal>.swiper-pagination-bullets{
+    bottom: 96px;
+ }
+ .bannerSwiper .swiper-slide{
+    opacity: 0;
+ }
+ .bannerSwiper .swiper-slide.swiper-slide-active{
+    opacity: 1;
+ }
