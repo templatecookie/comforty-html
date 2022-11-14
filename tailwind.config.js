@@ -22,6 +22,10 @@ module.exports = {
             },
         },
         colors: {
+
+            gray_black :'#272343',
+            dark_gray :'#636270',
+            bg : '#F0F2F3',
         },
   },
   plugins: [],

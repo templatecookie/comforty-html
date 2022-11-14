@@ -1,3 +1,14 @@
 :root{
-    
+
+    --gray_black: #272343;
+    --dark_gray: #636270;
+    --bg_breadcum: #F0F2F3;
+   
 }
+
+.breadcrumb{
+    background-color: var(--bg);
+    padding: 210px 50px;
+
+}
+/* bg-[#F0F2F3] px-[210px] py-[50px] rounded-b-lg rounde-[20px] */
