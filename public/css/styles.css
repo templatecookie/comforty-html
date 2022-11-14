@@ -1,3 +1,43 @@
 :root{
-    
+
 }
+
+/* common css */
+h1, h2, h3, h4, h5, h6, p{
+    margin-bottom: 0px;
+}
+ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+li{
+    padding: 0;
+}
+a{
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* dropdown css */
+.dropdown:hover .dropdown-menu {
+  display: block;
+  padding-top: 14px;
+}
+ .dropdown-content {
+   position: relative;
+ }
+
+ .dropdown-content ul {
+   position: absolute;
+   left: 0px;
+   top: 14px;
+   display: none;
+   list-style: none;
+   width: 200px;
+   background: white;
+   border-top: 0;
+   border-radius: 0 0 5px 5px;
+   padding-top: 3px;
+ }
+ 
