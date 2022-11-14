@@ -23,24 +23,75 @@
 
     <div class="breadcrumb">
         <div class="container">
-            <nav class="rounded-md w-full">
-                <ol class="list-reset flex">
-                  <li class="text-gray-500 texrt-[14px] leadding-[110px]">Home</li>
-                  <li><span class="text-gray-500 mx-2"> > </span></li>
-                  <li class="text-gray-500">Account</li>
-                  <li><span class="text-gray-500 mx-2"> > </span></li>
-                  <li class="text-gray-500">Sign In</li>
-                  <li><span class="text-gray-500 mx-2"> > </span></li>
-                  <li class="text-gray-500 hover:text-black text-black"> <a href="#">
-                    Forget Password
-                </a></li>
-                </ol>
-              </nav>
+            <div class="">
+                <ul class="">
+
+                  <li class="">Home
+                    <span class="">
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <path d="M1.125 1.25L4.875 5L1.125 8.75" stroke="#636270" stroke-linecap="round" stroke-linejoin="round"/>
+                       </svg>
+                       </span>
+                  </li>
+
+                  <li class="">Account
+                    <span class="">
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <path d="M1.125 1.25L4.875 5L1.125 8.75" stroke="#636270" stroke-linecap="round" stroke-linejoin="round"/>
+                       </svg>
+                       </span>
+                  </li>
+
+                  <li class=""><a href="#">Sign In</a></li>
+                </ul>
+                <h2 class="pt-[13.5px] text-2xl font-semibold text-gray-black">Sign In</h2>
+              </div>
         </div>
-    </div>
+    </div> 
 
     <!-- Breadcrumb End -->
 
+    <!-- sign in Form Start -->
+    <div class="container py-20">
+      
+       <div class="sign_in">
+        <h2 class="text-center text-gray-black text-[32px] font-semibold font-display">Sign In</h2>
+        <div class="form">
+            <form action="" class="">
+                <div>
+                    <input type="text" placeholder="Email" class="pl-5 py-[17px] w-full bg-[#F0F2F3] rounded-lg focus:outline-none  focus:ring focus:ring-[#F0F2F3] font-display transition duration-300 ease-in-out">
+                </div>
+    
+                <div class="mt-4">
+                    <input type="text" placeholder="Password" class="pl-5 py-[17px] w-full bg-[#F0F2F3] rounded-lg focus:outline-none  focus:ring focus:ring-[#F0F2F3] font-display transition duration-300 ease-in-out">
+                </div>
+    
+                <div class="flex justify-between items-center pt-4 pb-6">
+
+                    <div>
+                        <input type="checkbox" class="bg-gray-800">
+                    <span>Remember me</span>
+                    </div>
+
+                    <a href="#" class="text-[#007580] text-[14px] font-medium line-height-[110%]">Forget Password</a>
+    
+                </div>
+                <button class="form_btn text-center">
+                    Sign In
+                    <span>
+                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 7.5L20.5 12M20.5 12L16 16.5M20.5 12H4.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                </button>
+
+            </form>
+            <p class="font-display font-normal text-[14px] leading-[110%] text-gray-black pt-4 text-center">Don’t have account? <a href="#" class="text-accents font-display font-medium text-[14px] leading-[110%]"> Sign Up</a></p>
+        </div>
+       </div>
+        
+    </div>
+    <!-- sign in Form End -->
     
 
     <!-- script file here -->

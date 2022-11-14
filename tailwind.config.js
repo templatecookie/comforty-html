@@ -23,9 +23,12 @@ module.exports = {
         },
         colors: {
 
-            gray_black :'#272343',
-            dark_gray :'#636270',
-            bg : '#F0F2F3',
+            'gray-white' :'#FFFFFF',
+            'gray-black' :'#272343',
+            'dark-gray' :'#636270',
+            'bg-breadcum' : '#F0F2F3',
+            'accents' : '#029FAE',
+            'dark-accents' : '#007580',
         },
   },
   plugins: [],
