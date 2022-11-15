@@ -669,10 +669,6 @@ video {
   bottom: 299px;
 }
 
-.bottom-1 {
-  bottom: 0.25rem;
-}
-
 .isolate {
   isolation: isolate;
 }
@@ -778,12 +774,12 @@ video {
   margin-right: 0.75rem;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
 .mt-4 {
   margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .box-border {
@@ -1793,8 +1789,16 @@ video {
   border-bottom-width: 1px;
 }
 
+.border-b-4 {
+  border-bottom-width: 4px;
+}
+
 .border-l {
   border-left-width: 1px;
+}
+
+.border-b {
+  border-bottom-width: 1px;
 }
 
 .border-t {
@@ -1803,10 +1807,6 @@ video {
 
 .border-r {
   border-right-width: 1px;
-}
-
-.border-b {
-  border-bottom-width: 1px;
 }
 
 .border-solid {
@@ -2091,6 +2091,11 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .pt-1 {
@@ -2727,21 +2732,9 @@ video {
   content: var(--tw-content);
 }
 
-.hover\:border-b:hover {
-  border-bottom-width: 1px;
-}
-
 .hover\:border-\[\#007580\]:hover {
   --tw-border-opacity: 1;
   border-color: rgb(0 117 128 / var(--tw-border-opacity));
-}
-
-.hover\:border-b-\[\]:hover {
-  border-bottom-color: ;
-}
-
-.hover\:border-b-\[007580\]:hover {
-  border-bottom-color: 007580;
 }
 
 .hover\:border-b-\[\#007580\]:hover {
@@ -2873,6 +2866,11 @@ video {
 
   .xl\:flex-nowrap {
     flex-wrap: nowrap;
+  }
+
+  .xl\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
