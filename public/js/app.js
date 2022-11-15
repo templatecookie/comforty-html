@@ -86,6 +86,32 @@ var swiper = new Swiper(".recentSwiper", {
 });
 
 
+//testimonials Slider
+
+var swiper = new Swiper(".testimonials22", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    navigation: {
+        nextEl: ".testimonials-button-next",
+        prevEl: ".testimonials-button-prev",
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 2,
+            spaceBetween: 12,
+        },
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 18,
+        },
+        1024: {
+            slidesPerView: 4,
+            spaceBetween: 24,
+        },
+    },
+});
+
+
 //dropdown on  click //
 $(".custom-dropdown").on('click', function() {
     $(".dropdown-content ul").slideToggle();
