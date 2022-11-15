@@ -101,7 +101,9 @@ a{
  .featureSwiper-button-next,
  .featureSwiper-button-prev,
  .recentSwiper-button-next,
- .recentSwiper-button-prev {
+ .recentSwiper-button-prev,
+ .testimonials-button-next,
+ .testimonials-button-prev {
   color: #272343;
   background: #F0F2F3;
   border-radius: 26px;
@@ -117,7 +119,9 @@ a{
  .featureSwiper-button-next:hover,
  .featureSwiper-button-prev:hover,
  .recentSwiper-button-next:hover,
- .recentSwiper-button-prev:hover{
+ .recentSwiper-button-prev:hover,
+ .testimonials-button-next:hover,
+ .testimonials-button-prev:hover{
   background: #007580;
   border-radius: 26px;
   color: white;
