@@ -1,0 +1,27 @@
+@media(max-width:480px){
+    .breadcrumb{
+        background-color: var(--bg-breadcum);
+        
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding: 10px 10px;
+        
+     
+    }
+    .sign_in{
+        width: auto;
+    }
+
+
+    
+.error_wrapper{
+    /* padding-top: 202px; */
+    padding: 17px 0px;
+}
+
+.error_wrapper h1{color: var(--gray-black);font-weight: 700;font-size: 200px;line-height: 100%;font-family: 'DM Sans';text-align: center;text-transform: capitalize;}
+
+.error_wrapper p{color: var(--gray-black);font-weight: 700;font-size: 30px;line-height: 100%;font-family: 'DM Sans';text-align: center;text-transform: capitalize;padding-top: 12px;}
+
+.error_wrapper span{color: var(--dark-gray);font-weight: 700;font-size: 16px;line-height: 100%;font-family: 'DM Sans';text-align: center;text-transform: capitalize;display: block;padding-top: 20px;}
+}

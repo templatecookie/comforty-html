@@ -29,6 +29,7 @@ module.exports = {
             'bg-breadcum' : '#F0F2F3',
             'accents' : '#029FAE',
             'dark-accents' : '#007580',
+            'off-white' : '#F0F2F3',
         },
   },
   plugins: [],

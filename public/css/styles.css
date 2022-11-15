@@ -6,6 +6,9 @@
     --bg-breadcum: #F0F2F3;
     --accents: #029FAE;
     --dark-accents: #007580;
+    --off-white: #F0F2F3;
+   
+
    
 
 }
@@ -19,6 +22,7 @@
     
  
 }
+
 
 
 .breadcrumb ul{
@@ -73,7 +77,7 @@
     font-size: 32px;
     font-weight: 600;
     line-height: 110%;
-    text-align: center;
+    /* text-align: center; */
     text-transform: capitalize;
     padding-bottom: 24px;
 }
@@ -90,6 +94,22 @@
 .form {
     margin: 0 32px;
 }
+
+
+/* password icon start */
+
+#icon_hide{
+    display: none;
+}
+
+
+#create_icon_hide{
+    display: none;
+}
+
+/* password icon end */
+
+
 
 /* .form input{
     background-color: #F0F2F3;
@@ -150,6 +170,31 @@ input[type=checkbox]:hover {
     z-index: 2;
   }
 
+  /* pl-5 py-[17px] w-full bg-[#F0F2F3] rounded-lg focus:outline-none  focus:ring focus:ring-[#F0F2F3] font-display transition duration-300 ease-in-out pr-5 */
+
+  .form_input{
+
+padding:20px 17px;
+background-color: var(--off-white);
+border-radius: 8px;
+opacity: 0.7;
+padding-right: 20px;
+width: 100%;
+margin-bottom: 16px;
+  }
+
+  .form_password{
+
+padding:20px 17px;
+background-color: var(--off-white);
+border-radius: 8px;
+opacity: 0.7;
+padding-right: 50px;
+width: 100%;
+margin-bottom: 16px;
+
+  }
+
 .form_btn {
     background-color: var(--accents);
     padding: 14px 24px;
@@ -160,8 +205,9 @@ input[type=checkbox]:hover {
     display: flex;
     gap: 16px;
     align-items: center;
-    width: 100%;
+    /* width: 100%; */
     justify-content: center;
+    margin-top: 24px;
 }
 
 .form_btn svg{
@@ -169,3 +215,48 @@ input[type=checkbox]:hover {
 }
 
 /* sign_in End */
+
+
+/* 404 error page Start */
+
+.error_wrapper{
+    padding-top: 202px;
+
+}
+
+.error_wrapper h1{
+color: var(--gray-black);
+font-weight: 700;
+font-size: 288px;
+line-height: 100%;
+font-family: 'DM Sans';
+text-align: center;
+text-transform: capitalize;
+
+}
+
+.error_wrapper p{
+color: var(--gray-black);
+font-weight: 700;
+font-size: 40px;
+line-height: 100%;
+font-family: 'DM Sans';
+text-align: center;
+text-transform: capitalize;
+padding-top: 12px;
+}
+
+.error_wrapper span{
+color: var(--dark-gray);
+font-weight: 700;
+font-size: 18px;
+line-height: 100%;
+font-family: 'DM Sans';
+text-align: center;
+text-transform: capitalize;
+display: block;
+padding-top: 20px;
+
+}
+
+/* 404 error page End */
