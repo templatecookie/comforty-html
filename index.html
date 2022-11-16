@@ -15,6 +15,7 @@
 
     <!-- css link here  -->
     <link rel="stylesheet" href="./public/assets/plugins/css/swipper.css">
+    <link rel="stylesheet" href="./public/assets/plugins/css/select2.css">
     <link rel="stylesheet" href="./public/css/tailwind.css">
     <link rel="stylesheet" href="./public/css/styles.css">
     <link rel="stylesheet" href="./public/css/responsive.css">
@@ -36,20 +37,11 @@
                     </p>
                     <div>
                         <ul class="flex gap-6 items-center">
-                            <li class="inline-flex items-center justify-center dropdown relative">
-                                <button class="inline-flex gap-2 items-center text-white text-[13px] leading-[130%]">
-                                    <span>Eng</span>
-                                    <span>
-                                        <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M8 0.75L4.5 4.25L1 0.75" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </span>
-                                </button>
-                                <ul class="dropdown-menu absolute left-0 top-full min-w-[140px]  hidden text-gray-700 pt-1">
-                                    <li class=""><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">One</a></li>
-                                    <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Two</a></li>
-                                    <li class=""><a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Three is the magic number</a></li>
-                                </ul>
+                            <li class="inline-flex items-center justify-center relative">
+                                <select class="custom-select" name="state">
+                                    <option value="AL">Eng</option>
+                                    <option value="WY">Bangla</option>
+                                </select>
                             </li>
                             <li class="inline-flex items-center justify-center">
                                 <a href="#" class="inline-flex gap-2 items-center text-white text-[13px] leading-[130%]">Faqs</a>
@@ -1599,8 +1591,18 @@
     <!-- script file here -->
     <script src="./public/assets/plugins/js/jquery.js"></script>
     <script src="./public/assets/plugins/js/swipper.js"></script>
+    <script src="./public/assets/plugins/js/select2.js"></script>
     <script src="./public/assets/plugins/js/mixitUp.js"></script>
     <script src="./public/js/app.js"></script>
+    <script>
+        var containerEl = document.querySelector("#portfoliolist");
+
+        var mixer = mixitup(containerEl, {
+        animation: {
+        animateResizeContainer: false, // required to prevent column algorithm bug
+        },
+        });
+    </script>
 </body>
 
 </html>

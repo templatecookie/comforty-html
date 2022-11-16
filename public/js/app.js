@@ -112,12 +112,23 @@ $(".custom-dropdown").on('click', function() {
     $(".dropdown-content ul").slideToggle();
 });
 
+
+
+$(document).ready(function() {
+    $('.custom-select').select2({
+        minimumResultsForSearch: 5,
+    });
+});
+$(document).ready(function() {
+    $('.custom-select2').select2({
+        minimumResultsForSearch: 5,
+    });
+});
+$(document).ready(function() {
+    $('.custom-select3').select2({
+        minimumResultsForSearch: 5,
+    });
+});
+
 // filter js
 
-var containerEl = document.querySelector("#portfoliolist");
-
-var mixer = mixitup(containerEl, {
-    animation: {
-        animateResizeContainer: false, // required to prevent column algorithm bug
-    },
-});
