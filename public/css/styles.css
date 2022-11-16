@@ -138,8 +138,8 @@ a{
  }
  .product-card .product-thumb{
    overflow: hidden;
-   width: 312px;
-   height: 312px;
+   max-width: 312px;
+   max-height: 312px;
    margin-bottom: 14px;
    position: relative;
  }
@@ -238,6 +238,12 @@ a{
    position: relative;
    overflow: hidden;
    border-radius: 10px;
+ }
+ .product-card-02 .product-thumb{
+  width: 100%;
+ }
+ .product-card-02 .product-thumb a{
+  display: block;
  }
  .product-card-02 img{
    width: 100%;

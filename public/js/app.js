@@ -42,6 +42,7 @@ var swiper = new Swiper(".topCategoriesSwiper", {
 var swiper = new Swiper(".featureSwiper", {
     slidesPerView: 1,
     spaceBetween: 30,
+    loop: true,
     navigation: {
         nextEl: ".featureSwiper-button-next",
         prevEl: ".featureSwiper-button-prev",
@@ -65,6 +66,7 @@ var swiper = new Swiper(".featureSwiper", {
 var swiper = new Swiper(".recentSwiper", {
     slidesPerView: 1,
     spaceBetween: 30,
+    loop: true,
     navigation: {
         nextEl: ".recentSwiper-button-next",
         prevEl: ".recentSwiper-button-prev",
@@ -88,24 +90,17 @@ var swiper = new Swiper(".recentSwiper", {
 
 //testimonials Slider
 
-var swiper = new Swiper(".testimonials22", {
+var swiper = new Swiper(".testimonialSwiper", {
     slidesPerView: 1,
-    spaceBetween: 30,
+    spaceBetween: 0,
+    loop: true,
     navigation: {
         nextEl: ".testimonials-button-next",
         prevEl: ".testimonials-button-prev",
     },
     breakpoints: {
-        640: {
-            slidesPerView: 2,
-            spaceBetween: 12,
-        },
-        768: {
-            slidesPerView: 3,
-            spaceBetween: 18,
-        },
         1024: {
-            slidesPerView: 4,
+            slidesPerView: 2,
             spaceBetween: 24,
         },
     },
