@@ -34,7 +34,7 @@ a{
   display: block;
   padding-top: 14px;
 }
- .dropdown-content {
+ .dropdown-content, .profile-content {
    position: relative;
  }
 
@@ -50,22 +50,36 @@ a{
    border-radius: 0 0 5px 5px;
    padding-top: 3px;
    z-index: 9999;
+   padding: 10px;
  }
-  .dropdown-content ul li a{
+ .profile-content ul{
+  position: absolute;
+  right: 0px;
+  top: 14px;
+  display: none;
+  list-style: none;
+  width: 200px;
+  background: white;
+  border-top: 0;
+  border-radius: 0 0 5px 5px;
+  padding-top: 3px;
+  z-index: 9999;
+  padding: 10px;
+ }
+  .dropdown-content ul li a, .profile-content ul li a{
     padding: 8px 12px;
     width: 100%;
     cursor: pointer;
-    border-right: 3px solid transparent;
     -webkit-transition: all 0.3s ease-out 0s;
     -moz-transition: all 0.3s ease-out 0s;
     -ms-transition: all 0.3s ease-out 0s;
     -o-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s;
   }
-  .dropdown-content ul li a:hover{
-    background: #272343;
-    color: white;
-    border-left: 3px solid #029FAE;
+  .dropdown-content ul li a:hover, .profile-content ul li a:hover{
+    background: #F0F2F3;
+    color: #272343;
+    border-radius: 5px;
   }
  /* swipper js  */
  .swiper-button-next::after{
@@ -352,4 +366,28 @@ a{
   align-items: center;
   padding: 0px 40px 0px 18px;
   height: 50px;
+ }
+ header{
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+ }
+ .header-sticky {
+   position: fixed !important;
+   left: 0;
+   margin: auto;
+   top: 0;
+   width: 100%;
+   box-shadow: 0 0 60px 0 rgb(0 0 0 / 7%);
+   z-index: 999999;
+   -webkit-transition: all 0.3s ease-out 0s;
+   -moz-transition: all 0.3s ease-out 0s;
+   -ms-transition: all 0.3s ease-out 0s;
+   -o-transition: all 0.3s ease-out 0s;
+   transition: all 0.3s ease-out 0s;
+   -webkit-box-shadow: 0px 4px 10px rgb(3 4 28 / 10%);
+   box-shadow: 0px 4px 10px rgb(3 4 28 / 10%);
+   background: white;
  }

@@ -112,7 +112,9 @@ $(".custom-dropdown").on('click', function() {
     $(".dropdown-content ul").slideToggle();
 });
 
-
+$(".user-profile").on('click', function() {
+    $(".profile-content ul").slideToggle();
+});
 
 $(document).ready(function() {
     $('.custom-select').select2({
@@ -130,5 +132,12 @@ $(document).ready(function() {
     });
 });
 
-// filter js
+$(window).on('scroll', function() {
+    var scroll = $(window).scrollTop();
+    if (scroll < 500) {
+        $("#header-sticky").removeClass("header-sticky");
+    } else {
+        $("#header-sticky").addClass("header-sticky");
+    }
+});
 
