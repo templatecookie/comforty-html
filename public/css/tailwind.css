@@ -691,16 +691,12 @@ video {
   margin-top: 1.5rem;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
+.ml-2 {
+  margin-left: 0.5rem;
 }
 
 .mt-2 {
   margin-top: 0.5rem;
-}
-
-.ml-2 {
-  margin-left: 0.5rem;
 }
 
 .box-border {
@@ -799,14 +795,6 @@ video {
   height: 1rem;
 }
 
-.h-1 {
-  height: 0.25rem;
-}
-
-.h-\[\] {
-  height: ;
-}
-
 .h-\[1px\] {
   height: 1px;
 }
@@ -815,20 +803,12 @@ video {
   width: 100%;
 }
 
-.w-\[408px\] {
-  width: 408px;
-}
-
-.w-\[\] {
-  width: ;
-}
-
-.w-\[648px\] {
-  width: 648px;
-}
-
 .w-4 {
   width: 1rem;
+}
+
+.w-\[408px\] {
+  width: 408px;
 }
 
 .flex-shrink {
@@ -1702,20 +1682,9 @@ video {
   border-style: none;
 }
 
-.border-gray-white {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
 .border-gray-black {
   --tw-border-opacity: 1;
   border-color: rgb(39 35 67 / var(--tw-border-opacity));
-}
-
-.border-x-gray-white {
-  --tw-border-opacity: 1;
-  border-left-color: rgb(255 255 255 / var(--tw-border-opacity));
-  border-right-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .bg-\[\#F0F2F3\] {
@@ -1853,11 +1822,6 @@ video {
   padding-bottom: 1.5px;
 }
 
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
 .pt-\[13\.5px\] {
   padding-top: 13.5px;
 }
@@ -1874,12 +1838,12 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.pr-5 {
-  padding-right: 1.25rem;
-}
-
 .pl-8 {
   padding-left: 2rem;
+}
+
+.pr-5 {
+  padding-right: 1.25rem;
 }
 
 .text-left {
@@ -1955,13 +1919,13 @@ video {
   font-size: 14px;
 }
 
-.text-\[16px\] {
-  font-size: 16px;
-}
-
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-\[16px\] {
+  font-size: 16px;
 }
 
 .font-semibold {
@@ -2076,14 +2040,14 @@ video {
   color: rgb(99 98 112 / var(--tw-text-opacity));
 }
 
-.text-\[\#636270\] {
-  --tw-text-opacity: 1;
-  color: rgb(99 98 112 / var(--tw-text-opacity));
-}
-
 .text-dark-accents {
   --tw-text-opacity: 1;
   color: rgb(0 117 128 / var(--tw-text-opacity));
+}
+
+.text-\[\#636270\] {
+  --tw-text-opacity: 1;
+  color: rgb(99 98 112 / var(--tw-text-opacity));
 }
 
 .text-\[\#336699\]\/\[\.35\] {
