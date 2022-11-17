@@ -1,0 +1,7 @@
+@media (max-width:1023px) {
+    .hamburger-btn {
+      display: inline-flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+}

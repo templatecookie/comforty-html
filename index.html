@@ -90,7 +90,7 @@
                                 </span>
                             </div>
                         </div>
-                        <div>
+                        <div class="lg:block hidden">
                             <ul class="flex gap-3">
                                 <li>
                                     <a href="#" class="inline-flex gap-2 bg-white rounded-lg p-[11px]">
@@ -138,11 +138,16 @@
                                 </li>
                             </ul>
                         </div>
+                        <div class="lg:hidden inline-block hamburger-btn" id="hamburger-btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="bottom-header bg-white shadow-[0px_1px_0px_#E1E3E6] relative z-30">
+        <div class="bottom-header bg-white shadow-[0px_1px_0px_#E1E3E6] relative z-30 hidden lg:block">
             <div class="container">
                 <div class="py-3.5 flex justify-between items-center">
                     <div class="flex gap-8 items-center">
@@ -199,6 +204,49 @@
                 </div>
             </div>
         </div>
+        <!-- Mobile Menu Area Start -->
+        <div class="nav-menu" id="nav-menu">
+            <div class="flex justify-between items-center p-6 mb-8">
+                <div>
+                    <a href="#">
+                        <img src="./public/assets/images/all-img/logo.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <button class="hamburger-btn-close bg-[#F7F7F9] text-primary-900 hover:bg-primary-500 w-[44px] h-[44px] rounded-full flex items-center justify-center hover:text-white" id="hamburger-btn-close">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 1L1 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M1 1L11 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- menu -->
+            <ul class="flex flex-col capitalize px-6 mb-6">
+                <li class="mb-2">
+                    <a class="nav-link inline-block font-display font-semibold text-base leading-6 text-gray-500 hover:text-primary-500 transition-all duration-500" href="#">home</a>
+                </li>
+                <li class="mb-2">
+                    <a class="nav-link inline-block font-display font-semibold text-base leading-6 text-gray-500 hover:text-primary-500 transition-all duration-500" href="#about">about</a>
+                </li>
+                <li class="mb-2">
+                    <a class="nav-link inline-block font-display font-semibold text-base leading-6 text-gray-500 hover:text-primary-500 transition-all duration-500" href="#workprocess">course</a>
+                </li>
+                <li class="mb-2">
+                    <a class="nav-link inline-block font-display font-semibold text-base leading-6 text-gray-500 hover:text-primary-500 transition-all duration-500" href="#portfolio">blog</a>
+                </li>
+                <li class="">
+                    <a class="nav-link inline-block font-display font-semibold text-base leading-6 text-gray-500 hover:text-primary-500 transition-all duration-500" href="#blog">contact</a>
+                </li>
+            </ul>
+            <div class="px-6 mb-8">
+                <a href="#" class="btn-primary">
+                    <span>Sign up for Free</span>
+                </a>
+            </div>
+        </div>
+        <!-- Mobile Menu Area End -->
+        <div class="overlay" id="overlay"></div>
     </header>
     <!-- header area end -->
 

@@ -141,3 +141,21 @@ $(window).on('scroll', function() {
     }
 });
 
+var menuBtn = document.getElementById('hamburger-btn');
+var menuBtnClose = document.getElementById('hamburger-btn-close');
+var navMenu = document.getElementById('nav-menu')
+var overlay = document.getElementById('overlay')
+
+menuBtn.addEventListener('click', () => {
+    navMenu.classList.add('open')
+    overlay.classList.add('open')
+})
+menuBtnClose.addEventListener('click', () => {
+    navMenu.classList.remove('open')
+    overlay.classList.remove('open')
+})
+overlay.addEventListener('click', () => {
+    navMenu.classList.remove('open')
+    overlay.classList.remove('open')
+})
+
