@@ -739,8 +739,8 @@ video {
   margin-left: 0.25rem;
 }
 
-.mb-8 {
-  margin-bottom: 2rem;
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .mb-6 {
@@ -749,6 +749,10 @@ video {
 
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
 .-mt-\[75px\] {
@@ -773,10 +777,6 @@ video {
 
 .mt-2 {
   margin-top: 0.5rem;
-}
-
-.mb-4 {
-  margin-bottom: 1rem;
 }
 
 .mb-5 {
@@ -805,6 +805,14 @@ video {
 
 .ml-2 {
   margin-left: 0.5rem;
+}
+
+.mr-5 {
+  margin-right: 1.25rem;
+}
+
+.mr-1 {
+  margin-right: 0.25rem;
 }
 
 .box-border {
@@ -1914,6 +1922,10 @@ video {
   border-right-width: 1px;
 }
 
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+
 .border-solid {
   border-style: solid;
 }
@@ -1952,11 +1964,6 @@ video {
   border-color: transparent;
 }
 
-.border-off-white {
-  --tw-border-opacity: 1;
-  border-color: rgb(240 242 243 / var(--tw-border-opacity));
-}
-
 .border-grayscales-900 {
   --tw-border-opacity: 1;
   border-color: rgb(99 98 112 / var(--tw-border-opacity));
@@ -1966,6 +1973,7 @@ video {
   --tw-border-opacity: 1;
   border-color: rgb(39 35 67 / var(--tw-border-opacity));
 }
+
 
 .border-\[\#E1E3E6\] {
   --tw-border-opacity: 1;
@@ -2001,11 +2009,6 @@ video {
   background-color: rgb(0 117 128 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#F7F7F9\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(247 247 249 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#F0F2F3\] {
   --tw-bg-opacity: 1;
   background-color: rgb(240 242 243 / var(--tw-bg-opacity));
@@ -2034,6 +2037,15 @@ video {
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-\[\] {
+  background-color: ;
+}
+
+.bg-\[\#029FAE\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(2 159 174 / var(--tw-bg-opacity));
 }
 
 .decoration-slice {
@@ -2260,6 +2272,7 @@ video {
   padding-top: 18px;
   padding-bottom: 18px;
 }
+
 
 .py-2 {
   padding-top: 0.5rem;
@@ -3125,8 +3138,24 @@ video {
     margin-top: 0px;
   }
 
+  .sm\:flex {
+    display: flex;
+  }
+
+  .sm\:w-1\/2 {
+    width: 50%;
+  }
+
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
+  .sm\:justify-between {
+    justify-content: space-between;
   }
 
   .sm\:underline {
