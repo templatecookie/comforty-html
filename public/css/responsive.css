@@ -56,3 +56,9 @@
     padding-top: 20px;
   }
 }
+
+@media (max-width:380px){
+  .nav-menu{
+    width: 100%;
+  }
+}
