@@ -62,3 +62,8 @@
     width: 100%;
   }
 }
+@media(min-width:1280px){
+  .breadcrumb{
+    margin: 0px 4.6%;
+  }
+}
