@@ -183,6 +183,45 @@ var swiper = new Swiper(".testimonialSwiper", {
 });
 
 
+var galleryThumbs = new Swiper(".gallery-thumbs", {
+    centeredSlides: true,
+    centeredSlidesBounds: true,
+    slidesPerView: 3,
+    loop:true,
+    navigation: {
+        nextEl: '.gallery-button-next',
+        prevEl: '.gallery-button-prev',
+    },
+    watchOverflow: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    direction: 'vertical'
+});
+
+var galleryMain = new Swiper(".gallery-main", {
+    watchOverflow: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    preventInteractionOnTransition: true,
+    effect: 'fade',
+    loop: true,
+    fadeEffect: {
+        crossFade: true
+    },
+    thumbs: {
+        galleryMain: galleryThumbs
+    }
+});
+
+galleryMain.on('slideChangeTransitionStart', function() {
+    galleryThumbs.slideTo(galleryMain.activeIndex);
+});
+
+galleryThumbs.on('transitionStart', function() {
+    galleryMain.slideTo(galleryThumbs.activeIndex);
+});
+
+
 //dropdown on  click //
 $(".custom-dropdown").on('click', function() {
     $(".dropdown-content ul").slideToggle();
@@ -264,3 +303,11 @@ function onTabClick(event) {
 for (let i = 0; i < tab.length; i++) {
     tab[i].addEventListener('click', onTabClick, false);
 }
+
+var containerEl = document.querySelector("#portfoliolist");
+
+var mixer = mixitup(containerEl, {
+    animation: {
+        animateResizeContainer: true,
+    },
+});
