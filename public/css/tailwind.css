@@ -2803,6 +2803,11 @@ video {
   color: rgb(0 117 128 / var(--tw-text-opacity));
 }
 
+.text-\[\#01AD5A\] {
+  --tw-text-opacity: 1;
+  color: rgb(1 173 90 / var(--tw-text-opacity));
+}
+
 .text-\[\#336699\]\/\[\.35\] {
   color: rgb(51 102 153 / .35);
 }
@@ -3235,11 +3240,6 @@ video {
 .focus\:ring-\[\#F0F2F3\]:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(240 242 243 / var(--tw-ring-opacity));
-}
-
-.focus\:ring-\[\#029FAE\]:focus {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(2 159 174 / var(--tw-ring-opacity));
 }
 
 .hover\:focus\:text-center:focus:hover {
