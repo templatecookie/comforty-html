@@ -193,109 +193,184 @@
     <!-- header area end -->
 
 
-     <!-- Breadcrumb Start -->
-
-     <div class="breadcrumb">
+    <!-- Breadcrumb Start -->
+    <div class="breadcrumb">
         <div class="container">
             <div class="flex items-center gap-1 py-[1.5px]">
                 <a href="#" class="text-[14px] font-normal leading-[110%] text-dark-gray">Home</a>
                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7.125 5.25L10.875 9L7.125 12.75" stroke="#636270" stroke-linecap="round"
-                        stroke-linejoin="round" />
+                    <path d="M7.125 5.25L10.875 9L7.125 12.75" stroke="#636270" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
                 <span class="text-[14px] font-medium leading-[110%] font-display text-gray-black inline-block capitalize">shopping cart</span>
             </div>
-
             <h2 class="pt-[13.5px] text-2xl font-semibold text-gray-black font-display capitalize">shopping cart</h2>
         </div>
     </div>
-
     <!-- Breadcrumb End -->
 
-  
-   <div class="container">
-       <!-- shoping cart List Start -->
 
-   <div class="shopping-cart-wrapper pt-10 pb-20 flex justify-between  gap-6">
-
-             <!-- shopping cart start -->
+    <div class="container">
+        <!-- shoping cart List Start -->
+        <div class="shopping-cart-wrapper pt-10 pb-20 flex items-start gap-6">
+            <!-- shopping cart start -->
             <div class="shopping-cart w-2/3">
                 <div class="px-6 py-6">
-                    <table>
-                       <div>
-                        <thead class="border-b mb-6 ">
+                    <table class="min-w-full leading-normal">
+                        <thead>
                             <tr>
-                                <th>Products</th>
-                                <th>Price</th>
-                                <th>Quantity</th>
-                                <th>Subtotal</th>
+                                <th class="pb-6 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider">
+                                    Products
+                                </th>
+                                <th class="pb-6 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider w-[104px]">
+                                    Price
+                                </th>
+                                <th class="pb-6 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider w-[164px]">
+                                    Quantity
+                                </th>
+                                <th class="pb-6 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider w-[96px]">
+                                    Sub Total
+                                </th>
                             </tr>
                         </thead>
-                       </div>
-                      
-                       
                         <tbody>
                             <tr>
-                                <td>01</td>
-                                <td>01</td>
-                                <td>01</td>
-                                <td>01</td>
+                                <td class="py-6 text-sm">
+                                    <div class="flex gap-2 items-center">
+                                        <button class="p-2">
+                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 2L6.00003 6M6.00003 6L10 2M6.00003 6L2 10M6.00003 6L10 10" stroke="#9A9CAA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                        <div class="w-[70px] h-[70px]">
+                                            <img class="w-full h-full rounded-lg" src="./public/assets/images/all-img/shopping-cart-01.png" alt="" />
+                                        </div>
+                                        <div class="ml-1">
+                                            <p class="mb-0 text-[#272343] text-sm">Sofa for Living Room</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="py-6 text-sm">
+                                    <p class="mb-0">$250.00</p>
+                                </td>
+                                <td class="py-6 text-sm">
+                                    <div class="border inline-flex justify-around items-center h-[52px] w-[140px] border-[#D6D9DD] rounded-lg">
+                                        <button class="w-5 h-5 inline-flex justify-center items-center text-[#9A9CAA]">-</button>
+                                        <span class="text-[#272343] text-base">01</span>
+                                        <button class="w-5 h-5 inline-flex justify-center items-center text-[#9A9CAA]">+</button>
+                                    </div>
+                                </td>
+                                <td class="py-6 text-sm">
+                                    <p>$250.00</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pb-6 text-sm">
+                                    <div class="flex gap-2 items-center">
+                                        <button class="p-2">
+                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 2L6.00003 6M6.00003 6L10 2M6.00003 6L2 10M6.00003 6L10 10" stroke="#9A9CAA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                        <div class="w-[70px] h-[70px]">
+                                            <img class="w-full h-full rounded-lg" src="./public/assets/images/all-img/shopping-cart-01.png" alt="" />
+                                        </div>
+                                        <div class="ml-1">
+                                            <p class="mb-0 text-[#272343] text-sm">Sofa for Living Room</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="pb-6 text-sm">
+                                    <p class="mb-0">$250.00</p>
+                                </td>
+                                <td class="pb-6 text-sm">
+                                    <div class="border inline-flex justify-around items-center h-[52px] w-[140px] border-[#D6D9DD] rounded-lg">
+                                        <button class="w-5 h-5 inline-flex justify-center items-center text-[#9A9CAA]">-</button>
+                                        <span class="text-[#272343] text-base">01</span>
+                                        <button class="w-5 h-5 inline-flex justify-center items-center text-[#9A9CAA]">+</button>
+                                    </div>
+                                </td>
+                                <td class="pb-6 text-sm">
+                                    <p>$250.00</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pb-6 text-sm">
+                                    <div class="flex gap-2 items-center">
+                                        <button class="p-2">
+                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2 2L6.00003 6M6.00003 6L10 2M6.00003 6L2 10M6.00003 6L10 10" stroke="#9A9CAA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                        <div class="w-[70px] h-[70px]">
+                                            <img class="w-full h-full rounded-lg" src="./public/assets/images/all-img/shopping-cart-01.png" alt="" />
+                                        </div>
+                                        <div class="ml-1">
+                                            <p class="mb-0 text-[#272343] text-sm">Sofa for Living Room</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="pb-6 text-sm">
+                                    <p class="mb-0">$250.00</p>
+                                </td>
+                                <td class="pb-6 text-sm">
+                                    <div class="border inline-flex justify-around items-center h-[52px] w-[140px] border-[#D6D9DD] rounded-lg">
+                                        <button class="w-5 h-5 inline-flex justify-center items-center text-[#9A9CAA]">-</button>
+                                        <span class="text-[#272343] text-base">01</span>
+                                        <button class="w-5 h-5 inline-flex justify-center items-center text-[#9A9CAA]">+</button>
+                                    </div>
+                                </td>
+                                <td class="pb-6 text-sm">
+                                    <p>$250.00</p>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-
-                <hr>
-                <div class="flex gap-6 px-6 pt-6">
+                <hr class="my-0">
+                <div class="flex gap-6 p-6">
                     <div>
                         <form action="" class="">
                             <div class="flex gap-3 w-full">
-                                    <input type="text" name="" id="" class="px-5 py-[18px] bg-[#F0F2F3] rounded-lg border-none focus:outline-none w-[424PX]" placeholder="Coupon Code">
-                                    <button class="bg-[#007580] text-gray-white px-6 py-[17px] rounded-lg">Apply Coupon Code</button>
-                                </div>
-                            </form>
+                                <input type="text" name="" id="" class="px-5 py-[18px] bg-[#F0F2F3] rounded-lg border-none focus:outline-none w-[424PX]" placeholder="Coupon Code">
+                                <button class="bg-[#007580] font-semibold text-gray-white px-6 py-[17px] rounded-lg">Apply Coupon Code</button>
+                            </div>
+                        </form>
                     </div>
-                    <button class="bg-off-white text-gray-black common-hedding">Update Cart</button>
+                    <button class="bg-off-white text-[#272343] text-base font-semibold py-[17px] px-6 rounded-lg">Update Cart</button>
                     <!-- <button class="btn-primary ">Subscribe</button> -->
                 </div>
-              
+
             </div>
-        <!-- shopping cart end -->
-   
-          
+            <!-- shopping cart end -->
 
-        <!-- Cart Total End -->
-
-        <div class="cart-total p-8 w-1/3">
-            <div class="subtotal-info">
-                <div class="flex justify-between items-center">
-                    <p class="common-hedding">subtotal</p>
-                    <p class="text-gray-black text-[16px] leading-[120%] font-display font-medium">$1,435.00</p>
+            <!-- Cart Total End -->
+            <div class="cart-total p-8 w-1/3">
+                <div class="subtotal-info">
+                    <div class="flex justify-between items-center">
+                        <p class="common-hedding">subtotal</p>
+                        <p class="text-gray-black text-[16px] leading-[120%] font-display font-medium">$1,435.00</p>
+                    </div>
+                    <div class="flex justify-between items-center pt-4">
+                        <p class="common-hedding">discount</p>
+                        <p class="text-gray-black text-[16px] leading-[120%] font-display font-medium">26%</p>
+                    </div>
+                    <div class="flex justify-between items-center pt-4">
+                        <p class="common-hedding">shipping </p>
+                        <p class="text-gray-black text-[16px] leading-[120%] font-display font-medium">Free</p>
+                    </div>
+                    <hr>
+                    <div class="flex justify-between items-center">
+                        <p class="common-hedding">Total:</p>
+                        <p class="text-gray-black text-[22px] leading-[120%] font-display font-semibold">$1026.23</p>
+                    </div>
+                    <button class="mt-6 bg-accents  py-[19px] rounded-lg text-[18px] font-bold font-display leading-[110%] text-gray-white text-center w-full">proceed to Checkout</button>
                 </div>
-                <div class="flex justify-between items-center pt-4">
-                    <p class="common-hedding">discount</p>
-                    <p class="text-gray-black text-[16px] leading-[120%] font-display font-medium">26%</p>
-                </div>
-                <div class="flex justify-between items-center pt-4">
-                    <p class="common-hedding">shipping </p>
-                    <p class="text-gray-black text-[16px] leading-[120%] font-display font-medium">Free</p>
-                </div>
-                <hr>
-                <div class="flex justify-between items-center">
-                    <p class="common-hedding">Total:</p>
-                    <p class="text-gray-black text-[22px] leading-[120%] font-display font-semibold">$1026.23</p>
-                </div>
-                <button class="mt-6 bg-accents  py-[19px] text-[18px] font-bold font-display leading-[110%] text-gray-white text-center w-full">proceed to Checkout</button>
             </div>
+            <!-- Cart Total Start -->
         </div>
+    </div>
 
-        <!-- Cart Total Start -->
-            
-        </div>
-
-   </div>
-   
-   <!-- shoping cart List End -->
+    <!-- shoping cart List End -->
 
     <!-- footer area start -->
     <footer>
@@ -309,7 +384,7 @@
                             </a>
                         </div>
                         <p class="mb-6 text-[#272343] text-base">Vivamus tristique odio sit amet velit semper, eu posuere turpis interdum. Cras egestas purus </p>
-                        <ul class="flex gap-1"> 
+                        <ul class="flex gap-1">
                             <li>
                                 <a href="#" class="text-[#636270] p-[11px] rounded-full border border-transparent hover:text-[#007580] hover:border-[#007580] transition-all duration-500">
                                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -370,7 +445,7 @@
                             </li>
                         </ul>
                     </div>
-                    
+
                     <div class="footer-widget">
                         <h2 class="widget-title text-[#9A9CAA] text-sm leading-[110%] font-display font-medium uppercase mb-5">Category</h2>
                         <ul class="flex flex-col gap-3">
