@@ -1,34 +1,30 @@
 //password field show and hide
 
-function PasswordIcon(){
+function PasswordIcon() {
     var x = document.getElementById("myInput");
-    if(x.type === "password"){
+    if (x.type === "password") {
         x.type = "text";
-        document.getElementById('icon_hide').style.display = "inline-block";
-        document.getElementById('icon_show').style.display = "none";
+        document.getElementById('icon-hide').style.display = "inline-block";
+        document.getElementById('icon-show').style.display = "none";
 
-    }
-
-    else{
+    } else {
         x.type = "password";
-        document.getElementById('icon_hide').style.display = "none";
-        document.getElementById('icon_show').style.display = "inline-block";
+        document.getElementById('icon-hide').style.display = "none";
+        document.getElementById('icon-show').style.display = "inline-block";
     }
 }
 
-function CreatePasswordIcon(){
+function CreatePasswordIcon() {
     var x = document.getElementById("CreatePasswordInput");
-    if(x.type === "password"){
+    if (x.type === "password") {
         x.type = "text";
-        document.getElementById('create_icon_hide').style.display = "inline-block";
-        document.getElementById('create_icon_show').style.display = "none";
+        document.getElementById('create-icon-hide').style.display = "inline-block";
+        document.getElementById('create-icon-show').style.display = "none";
 
-    }
-
-    else{
+    } else {
         x.type = "password";
-        document.getElementById('create_icon_hide').style.display = "none";
-        document.getElementById('create_icon_show').style.display = "inline-block";
+        document.getElementById('create-icon-hide').style.display = "none";
+        document.getElementById('create-icon-show').style.display = "inline-block";
     }
 }
 
@@ -146,7 +142,7 @@ var galleryThumbs = new Swiper(".gallery-thumbs", {
     centeredSlides: true,
     centeredSlidesBounds: true,
     slidesPerView: 3,
-    loop:true,
+    loop: true,
     navigation: {
         nextEl: '.gallery-button-next',
         prevEl: '.gallery-button-prev',
