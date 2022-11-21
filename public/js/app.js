@@ -1,5 +1,21 @@
 //password field show and hide
 
+
+function currentPasswordIcon(){
+
+    var x = document.getElementById("CurrentPasswordInput");
+    if (x.type === "password") {
+        x.type = "text";
+        document.getElementById('current-icon-hide').style.display = "inline-block";
+        document.getElementById('current-icon-show').style.display = "none";
+
+    } else {
+        x.type = "password";
+        document.getElementById('current-icon-hide').style.display = "none";
+        document.getElementById('current-icon-show').style.display = "inline-block";
+    }
+}
+
 function PasswordIcon() {
     var x = document.getElementById("myInput");
     if (x.type === "password") {
@@ -13,6 +29,8 @@ function PasswordIcon() {
         document.getElementById('icon-show').style.display = "inline-block";
     }
 }
+
+
 
 function CreatePasswordIcon() {
     var x = document.getElementById("CreatePasswordInput");

@@ -1,4 +1,5 @@
 :root {
+
   --gray-white: #FFFFFF;
   --gray-black: #272343;
   --dark-gray: #636270;
@@ -6,6 +7,8 @@
   --accents: #029FAE;
   --dark-accents: #007580;
   --off-white: #F0F2F3;
+  --warning: #F5813F;
+  --success: #01AD5A;
 }
 
 .breadcrumb {
@@ -80,6 +83,9 @@
 
 /* password icon start */
 
+#current-icon-hide{
+  display: none;
+}
 #icon-hide {
   display: none;
 }
@@ -268,6 +274,22 @@ hr {
 
 /* shopping cart page end */
 
+/* user menu start */
+
+.user{
+    background: #FFFFFF;
+box-shadow: inset 0px -1px 0px #E1E3E6;
+}
+
+
+.box {
+    background-color: #FFF;
+    box-shadow: 0px 0px 24px rgba(39, 35, 67, 0.1);
+    border-radius: 8px;
+  
+  }
+/* user menu end*/
+
 
 /* common css */
 h1,
@@ -310,6 +332,16 @@ a {
 
 .btn-success {
   background-color: var(--dark-accents);
+
+}
+.btn-warning {
+    background: rgba(255, 109, 27, 0.1);;
+    border-radius: 6px;
+
+}
+.btn-success2 {
+    background: rgba(1, 173, 90, 0.1);
+    border-radius: 6px;
 
 }
 
