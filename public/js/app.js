@@ -252,7 +252,12 @@ function onTabClick(event) {
     event.target.classList.add('active');
     let classString = event.target.getAttribute('data-target');
     console.log(classString);
-    document.getElementById('panels').getElementsByClassName(classString)[0].classList.add("active");
+    if(classString === 'panel-1' || classString === 'panel-2'){
+        document.getElementById('panels').getElementsByClassName(classString)[0].classList.add("active");
+    }
+    if (classString === 'tab-1' || classString === 'tab-2') {
+        document.getElementById('accTabs').getElementsByClassName(classString)[0].classList.add("active");
+    }
 }
 
 for (let i = 0; i < tab.length; i++) {
