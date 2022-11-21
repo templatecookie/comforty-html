@@ -22,7 +22,6 @@ module.exports = {
             },
         },
         colors: {
-
             'gray-white' :'#FFFFFF',
             'gray-black' :'#272343',
             'dark-gray' :'#636270',

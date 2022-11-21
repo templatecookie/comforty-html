@@ -479,7 +479,6 @@ a {
 .product-card .product-thumb {
   overflow: hidden;
   width: 100%;
-  max-width: 312px;
   margin-bottom: 14px;
   position: relative;
 }
