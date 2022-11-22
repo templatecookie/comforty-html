@@ -9,6 +9,7 @@
   --off-white: #F0F2F3;
   --warning: #F5813F;
   --success: #01AD5A;
+  
 }
 
 .breadcrumb {
@@ -960,8 +961,8 @@ header {
 .main-menu li > ul {
   display: none;
   position: absolute;
-  min-width: 120px;
-  top: 100%;
+  min-width: 220px;
+ top: 53px;
   left: -1px;
   z-index: 1;
   text-align: left;
