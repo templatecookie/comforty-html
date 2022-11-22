@@ -26,7 +26,7 @@
             <div class="top-header bg-secondary">
                 <div class="container px-3 md:px-5 xl:px-0">
                     <div class="py-3.5 flex justify-center sm:justify-between">
-                        <p class="sm:flex gap-2 items-center text-[13px] leading-[110%] text-white hidden">
+                        <p class="sm:flex gap-2 items-center text-[13px] leading-[110%] text-white opacity-70 hidden">
                             <span>
                                 <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M13.3334 4.5L6.00002 11.8333L2.66669 8.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -36,17 +36,17 @@
                         </p>
                         <div>
                             <ul class="flex gap-6 items-center">
-                                <li class="inline-flex items-center justify-center relative">
+                                <li class="inline-flex items-center text-white opacity-70 justify-center relative">
                                     <select class="custom-select" name="state">
                                         <option value="AL">Eng</option>
                                         <option value="WY">Bangla</option>
                                     </select>
                                 </li>
                                 <li class="inline-flex items-center justify-center">
-                                    <a href="#" class="inline-flex gap-2 items-center text-white text-[13px] leading-[130%]">Faqs</a>
+                                    <a href="#" class="inline-flex gap-2 items-center text-white opacity-70 text-[13px] leading-[130%]">Faqs</a>
                                 </li>
                                 <li class="inline-flex items-center justify-center">
-                                    <a href="#" class="inline-flex gap-2 items-center text-white text-[13px] leading-[130%]">
+                                    <a href="#" class="inline-flex gap-2 items-center text-white opacity-70 text-[13px] leading-[130%]">
                                         <span>
                                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <g opacity="0.7" clip-path="url(#clip0_906_1673)">
@@ -150,15 +150,15 @@
                 <div class="py-3.5 flex justify-between items-center">
                     <div class="flex gap-8 items-center">
                         <div class="relative">
-                            <button class="inline-flex items-center gap-4 py-4 px-6 border border-grayscales-700 rounded-md custom-dropdown">
-                                <span>
+                            <button class="inline-flex items-center justify-center gap-4 py-4 px-6 border border-grayscales-700 rounded-md custom-dropdown text-[#272343] text-sm font-medium font-display">
+                                <span class="text-[#272343]">
                                     <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M18 2.5H0V0.5H18V2.5Z" fill="#272343" />
-                                        <path d="M18 8.5H0V6.5H18V8.5Z" fill="#272343" />
-                                        <path d="M18 14.5H0V12.5H18V14.5Z" fill="#272343" />
+                                        <path d="M18 2.5H0V0.5H18V2.5Z" fill="currentColor" />
+                                        <path d="M18 8.5H0V6.5H18V8.5Z" fill="currentColor" />
+                                        <path d="M18 14.5H0V12.5H18V14.5Z" fill="currentColor" />
                                     </svg>
                                 </span>
-                                <span>All Categories</span>
+                                <span class="text-[#272343]">All Categories</span>
                             </button>
                             <div class="dropdown-content">
                                 <ul>
@@ -197,7 +197,7 @@
                         </ul>
                     </div>
                     <div>
-                        <p class="text-grayscales-900 inline-flex gap-2 items-center text-sm"><span>Contact:</span><span class="text-secondary font-medium">(808) 555-0111</span></p>
+                        <p class="text-grayscales-900 inline-flex gap-2 items-center text-sm font-display"><span>Contact:</span><span class="text-secondary font-medium">(808) 555-0111</span></p>
                     </div>
                 </div>
             </div>
@@ -280,11 +280,11 @@
             </div>
             <!-- menu -->
             <div>
-                <nav class="tabs flex flex-col sm:flex-row">
-                    <button data-target="panel-1" class="tab rounded-none sm:w-1/2 active text-gray-600 py-4 px-6 block hover:text-blue-500 focus:outline-none text-blue-500 border-b-2 font-medium border-blue-500">
+                <nav class="tabs flex flex-row">
+                    <button data-target="panel-1" class="tab rounded-none w-1/2 active text-gray-600 py-4 px-6 block hover:text-blue-500 focus:outline-none text-blue-500 border-b-2 font-medium border-blue-500">
                         Menu
                     </button>
-                    <button data-target="panel-2" class="tab rounded-none sm:w-1/2 ext-gray-600 py-4 px-6 block hover:text-blue-500 focus:outline-none border-b-2 font-medium border-blue-500">
+                    <button data-target="panel-2" class="tab rounded-none w-1/2 ext-gray-600 py-4 px-6 block hover:text-blue-500 focus:outline-none border-b-2 font-medium border-blue-500">
                         Categories
                     </button>
                 </nav>
@@ -335,7 +335,7 @@
 
     <!-- Breadcrumb Start -->
     <div class="breadcrumb">
-        <div class="container">
+        <div class="container px-3 md:px-5 xl:px-0">
             <div class="flex items-center gap-1 py-[1.5px]">
                 <a href="#" class="text-[14px] font-normal leading-[110%] text-dark-gray">Home</a>
 
@@ -343,16 +343,10 @@
                     <path d="M7.125 5.25L10.875 9L7.125 12.75" stroke="#636270" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
 
-                <a href="#" class="text-[14px] font-normal leading-[110%] text-dark-gray">Shopping Cart</a>
-
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7.125 5.25L10.875 9L7.125 12.75" stroke="#636270" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-
-                <span class="text-[14px] font-medium leading-[110%] font-display text-gray-black inline-block">Checkout</span>
+                <span class="text-[14px] font-medium leading-[110%] font-display text-gray-black inline-block">Shop</span>
             </div>
 
-            <h2 class="pt-[13.5px] text-2xl font-semibold text-gray-black font-display">Checkout</h2>
+            <h2 class="pt-[13.5px] text-2xl font-semibold text-gray-black font-display">Shop</h2>
         </div>
     </div>
     <!-- Breadcrumb End -->
@@ -560,14 +554,14 @@
     <footer>
         <div class="footer-top xl:pt-20 xl:pb-[60px] py-6 sm:py-8 md:py-12 shadow-[inset_0px_1px_0px_#E1E3E6]">
             <div class="container px-3 md:px-5 xl:px-0">
-                <div class=" flex flex-wrap justify-between">
+                <div class=" flex flex-wrap gap-y-6 justify-between">
                     <div class="footer-widget max-w-[350px]">
-                        <div class="mb-6">
+                        <div class="lg:mb-6 mb-4">
                             <a href="#">
                                 <img src="./public/assets/images/all-img/logo.png" alt="">
                             </a>
                         </div>
-                        <p class="mb-6 text-[#272343] text-base">Vivamus tristique odio sit amet velit semper, eu posuere turpis interdum. Cras egestas purus </p>
+                        <p class="lg:mb-6 mb-4 text-[#272343] text-base">Vivamus tristique odio sit amet velit semper, eu posuere turpis interdum. Cras egestas purus </p>
                         <ul class="flex gap-1">
                             <li>
                                 <a href="#" class="text-[#636270] p-[11px] rounded-full border border-transparent hover:text-[#007580] hover:border-[#007580] transition-all duration-500">
@@ -687,13 +681,10 @@
         </div>
         <div class="footer-bottom shadow-[inset_0px_1px_0px_#E1E3E6] py-6">
             <div class="container px-3 md:px-5 xl:px-0">
-                <div class="flex flex-wrap justify-between items-center">
+                <div class="flex flex-wrap sm:justify-between sm:flex-nowrap justify-center items-center gap-y-6">
                     <p class="text-center text-[#9A9CAA]">@ 2021 - Blogy - Designed & Develop by <b class="text-grayscales-900">Zakirsoft</b></p>
-                    <div class="inline-flex gap-2.5 h-[27px] mt-4 sm:mt-0 xl:mt-0 mx-auto xl:mx-0">
-                        <img class="grayscale" src="./public/assets/images/all-img/payment-logo-01.png" alt="">
-                        <img class="grayscale" src="./public/assets/images/all-img/payment-logo-02.png" alt="">
-                        <img class="grayscale" src="./public/assets/images/all-img/payment-logo-03.png" alt="">
-                        <img class="grayscale" src="./public/assets/images/all-img/payment-logo-04.png" alt="">
+                    <div class="inline-flex justify-center h-[27px] w-[227px]">
+                        <img src="./public/assets/images/all-img/payments.png" alt="">
                     </div>
                 </div>
             </div>

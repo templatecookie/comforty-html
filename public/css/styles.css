@@ -957,3 +957,23 @@ header {
   grid-template-columns: repeat(1, 1fr);
   gap: 24px;
 }
+.main-menu li > ul {
+  display: none;
+  position: absolute;
+  min-width: 120px;
+  top: 100%;
+  left: -1px;
+  z-index: 1;
+  text-align: left;
+  background-color: #ddd;
+  padding: 8px 12px;
+}
+.main-menu li > ul li a{
+  padding: 8px 12px;
+  color: black;
+  display: block;
+}
+.main-menu li > ul li a:hover{
+  background-color: white;
+  border-radius: 6px;
+}

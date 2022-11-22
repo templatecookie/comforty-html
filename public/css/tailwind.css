@@ -669,6 +669,10 @@ video {
   top: 18px;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -965,10 +969,6 @@ video {
   height: 1.25rem;
 }
 
-.h-\[\] {
-  height: ;
-}
-
 .w-full {
   width: 100%;
 }
@@ -987,6 +987,10 @@ video {
 
 .w-\[424px\] {
   width: 424px;
+}
+
+.w-\[227px\] {
+  width: 227px;
 }
 
 .w-\[150px\] {
@@ -1037,8 +1041,8 @@ video {
   width: 872px;
 }
 
-.w-\[260px\] {
-  width: 260px;
+.w-\[240px\] {
+  width: 240px;
 }
 
 .w-\[164px\] {
@@ -1049,12 +1053,8 @@ video {
   width: 96px;
 }
 
-.w-\[\] {
-  width: ;
-}
-
-.w-\[227px\] {
-  width: 227px;
+.w-\[824px\] {
+  width: 824px;
 }
 
 .min-w-\[1320px\] {
@@ -1645,10 +1645,6 @@ video {
   gap: 30px;
 }
 
-.gap-\[22px\] {
-  gap: 22px;
-}
-
 .gap-y-6 {
   row-gap: 1.5rem;
 }
@@ -1664,11 +1660,6 @@ video {
 .gap-x-6 {
   -moz-column-gap: 1.5rem;
        column-gap: 1.5rem;
-}
-
-.gap-x-\[10px\] {
-  -moz-column-gap: 10px;
-       column-gap: 10px;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -2879,10 +2870,6 @@ video {
   color: rgb(51 102 153 / .35);
 }
 
-.text-\[\] {
-  color: ;
-}
-
 .underline {
   text-decoration-line: underline;
 }
@@ -3113,18 +3100,6 @@ video {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1) !important;
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color) !important;
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
-}
-
-.shadow-\[0px_1px_0px_\#000\] {
-  --tw-shadow: 0px 1px 0px #000;
-  --tw-shadow-colored: 0px 1px 0px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-\[0px_2px_0px_\#E1E3E6\] {
-  --tw-shadow: 0px 2px 0px #E1E3E6;
-  --tw-shadow-colored: 0px 2px 0px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .outline-none {
@@ -3590,12 +3565,6 @@ video {
   .lg\:leading-\[140\%\] {
     line-height: 140%;
   }
-
-  .lg\:shadow-none {
-    --tw-shadow: 0 0 #0000;
-    --tw-shadow-colored: 0 0 #0000;
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -3762,5 +3731,9 @@ video {
 
   .\32xl\:block {
     display: block;
+  }
+
+  .\32xl\:max-w-\[424PX\] {
+    max-width: 424PX;
   }
 }
