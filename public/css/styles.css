@@ -132,8 +132,6 @@ input[type=checkbox] {
   opacity: .5;
 }
 
-
-
 input[type=checkbox]:hover {
   opacity: 1;
 }
