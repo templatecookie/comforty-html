@@ -355,11 +355,10 @@
     </div>
     <!-- Breadcrumb End -->
 
-    <!-- account settings start -->
     <!-- user menu start -->
     <div class="user bg-red-600">
         <div class="container">
-            <div class="usermenu  flex justify-between items-center">
+            <div class="usermenu flex flex-col md:flex-row justify-between md:items-center">
                 <!-- <ul class="flex flex-wrap gap-[10px] items-center">
             <li><a href="#">Account Settings</a></li>
             <li><a href="#">Order History</a></li>
@@ -367,18 +366,21 @@
             <li><a href="#">Shopping Cart</a></li>
         </ul> -->
                 <!-- Tabs -->
-                <ul id="tabs" class="inline-flex pt-2 px-1 w-full">
+                <ul id="tabs" class="inline-flex flex-col md:flex-row pt-2 px-1 w-full">
 
                     <li class="px-4 text-gray-800 font-semibold py-2 pb-4 border-b border-transparent text-dark-gray hover:text-gray-black">
                         <a id="default-tab" href="#account_settings">Account Settings</a>
                     </li>
+
                     <li class="px-4 text-gray-800 font-semibold py-2 pb-4 border-b border-transparent text-dark-gray hover:text-gray-black">
                         <a href="#order_history">Order History</a>
                     </li>
-                    <li class="px-4 text-gray-800 font-semibold py-2 pb-4 border-b border-transparent text-dark-gray hover:text-gray-black"><a href="#wishlist">Wishlist</a></li>
+                    
+                    <li class="px-4 text-gray-800 font-semibold py-2 pb-4 border-b border-transparent text-dark-gray hover:text-gray-black"><a href="#order_details">Order Details</a></li>
 
+                    <li class="px-4 text-gray-800 font-semibold py-2 pb-4 border-b border-transparent text-dark-gray hover:text-gray-black"><a href="#wishlist">Wishlist</a></li>
                 </ul>
-                <a href="#">Logout</a>
+                <a href="#" class="font-display text-[16px] leading-[110%] font-medium capitalize text-[#636270] px-4 py-4 md:px-0">Logout</a>
             </div>
         </div>
     </div>
@@ -387,19 +389,16 @@
         <!-- Tab Contents -->
         <div id="tab-contents">
 
-            <div id="account_settings" class="p-4">
-                <!-- Account Setting Start -->
+            <!-- Account Setting Start -->
+            <div id="account_settings">
                 <div class="container py-10">
-                    <div class="accout-setting flex flex-wrap w-full justify-between gap-6">
-
+                    <div class="accout-setting flex flex-col justify-between xl:flex-row gap-6">
                         <!-- account inforamation start -->
-
-                        <div class="box ml-2">
+                        <div class="box w-full">
                             <div class="w-full ">
                                 <div class="p-6">
                                     <h2 class="text-start text-2xl text-[#272343] font-semibold mb-6 font-display">Account Information</h2>
-
-                                    <div class="flex justify-between gap-5 items-center mb-5">
+                                    <div class="flex flex-col sm:flex-row gap-5 items-center mb-5">
                                         <div class="w-full">
                                             <input type="text" placeholder="Kevin" class="input-box focus:outline-none focus:ring focus:ring-accents font-display transition duration-300 ease-in-out">
                                         </div>
@@ -418,115 +417,111 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- account inforamation end -->
 
-                        <!-- user password change start -->
+                        <div class="flex flex-col md:flex-row gap-6">
+                            <!-- user password change start -->
+                            <div class="box xl:max-w-[424px]">
+                                <div class="">
+                                    <div class="p-6">
+                                        <h2 class="text-start text-2xl text-[#272343] font-semibold mb-6 font-display">Change Password</h2>
 
-                        <div class="box">
-                            <div class="">
-                                <div class="p-6">
-                                    <h2 class="text-start text-2xl text-[#272343] font-semibold mb-6 font-display">Change Password</h2>
+                                        <div class="relative">
+                                            <input type="password" placeholder="Current passowrd" class="form_password focus:outline-none focus:ring focus:ring-accents font-display transition duration-300 ease-in-out" id="CurrentPasswordInput" name="password">
+                                            <span class="absolute top-[17px] right-5 cursor-pointer ">
 
-                                    <div class="relative">
-                                        <input type="password" placeholder="Current passowrd" class="form_password focus:outline-none focus:ring focus:ring-accents font-display transition duration-300 ease-in-out" id="CurrentPasswordInput" name="password">
-                                        <span class="absolute top-[17px] right-5 cursor-pointer ">
-
-                                            <svg id="current-icon-show" onclick="currentPasswordIcon()" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12 4.24902C4.5 4.24902 1.5 11.9999 1.5 11.9999C1.5 11.9999 4.5 19.749 12 19.749C19.5 19.749 22.5 11.9999 22.5 11.9999C22.5 11.9999 19.5 4.24902 12 4.24902V4.24902Z" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                <path d="M12 15.75C12.9946 15.75 13.9484 15.3549 14.6517 14.6517C15.3549 13.9484 15.75 12.9946 15.75 12C15.75 11.0054 15.3549 10.0516 14.6517 9.34835C13.9484 8.64509 12.9946 8.25 12 8.25C11.0054 8.25 10.0516 8.64509 9.34835 9.34835C8.64509 10.0516 8.25 11.0054 8.25 12C8.25 12.9946 8.64509 13.9484 9.34835 14.6517C10.0516 15.3549 11.0054 15.75 12 15.75V15.75Z" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
-                                            <svg class="mt-[10px]" id="current-icon-hide" onclick="currentPasswordIcon()" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M16.858 2.93481L18.9963 6.63906" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                <path d="M12.4547 4.99353L13.1215 8.77578" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                <path d="M7.53701 4.99133L6.86951 8.77433" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                <path d="M3.13825 2.9325L0.989502 6.6525" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                <path d="M1 0.83252C2.575 2.78252 5.4655 5.25002 10 5.25002C14.5345 5.25002 17.4235 2.78252 19 0.83252" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
-                                        </span>
-                                    </div>
-
-                                    <div class="relative">
-                                        <input type="password" placeholder="New passowrd" class="form_password focus:outline-none focus:ring focus:ring-accents font-display transition duration-300 ease-in-out" id="CreatePasswordInput" name="password">
-                                        <span class="absolute top-[17px] right-5 cursor-pointer ">
-
-                                            <svg id="create-icon-show" onclick="CreatePasswordIcon()" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12 4.24902C4.5 4.24902 1.5 11.9999 1.5 11.9999C1.5 11.9999 4.5 19.749 12 19.749C19.5 19.749 22.5 11.9999 22.5 11.9999C22.5 11.9999 19.5 4.24902 12 4.24902V4.24902Z" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                <path d="M12 15.75C12.9946 15.75 13.9484 15.3549 14.6517 14.6517C15.3549 13.9484 15.75 12.9946 15.75 12C15.75 11.0054 15.3549 10.0516 14.6517 9.34835C13.9484 8.64509 12.9946 8.25 12 8.25C11.0054 8.25 10.0516 8.64509 9.34835 9.34835C8.64509 10.0516 8.25 11.0054 8.25 12C8.25 12.9946 8.64509 13.9484 9.34835 14.6517C10.0516 15.3549 11.0054 15.75 12 15.75V15.75Z" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
-
-                                            <svg class="mt-[10px]" id="create-icon-hide" onclick="CreatePasswordIcon()" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M16.858 2.93481L18.9963 6.63906" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                <path d="M12.4547 4.99353L13.1215 8.77578" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                <path d="M7.53701 4.99133L6.86951 8.77433" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                <path d="M3.13825 2.9325L0.989502 6.6525" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                <path d="M1 0.83252C2.575 2.78252 5.4655 5.25002 10 5.25002C14.5345 5.25002 17.4235 2.78252 19 0.83252" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
-                                        </span>
-                                    </div>
-
-                                    <div class="relative">
-                                        <input type="password" placeholder="Confirm passowrd" class="form_password focus:outline-none  focus:ring focus:ring-accents font-display transition duration-300 ease-in-out" id="myInput" name="password">
-                                        <span class="absolute top-[17px] right-5 cursor-pointer ">
-                                            <svg id="icon-show" onclick="PasswordIcon()" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M12 4.24902C4.5 4.24902 1.5 11.9999 1.5 11.9999C1.5 11.9999 4.5 19.749 12 19.749C19.5 19.749 22.5 11.9999 22.5 11.9999C22.5 11.9999 19.5 4.24902 12 4.24902V4.24902Z" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                <path d="M12 15.75C12.9946 15.75 13.9484 15.3549 14.6517 14.6517C15.3549 13.9484 15.75 12.9946 15.75 12C15.75 11.0054 15.3549 10.0516 14.6517 9.34835C13.9484 8.64509 12.9946 8.25 12 8.25C11.0054 8.25 10.0516 8.64509 9.34835 9.34835C8.64509 10.0516 8.25 11.0054 8.25 12C8.25 12.9946 8.64509 13.9484 9.34835 14.6517C10.0516 15.3549 11.0054 15.75 12 15.75V15.75Z" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
-                                            <svg class="mt-[10px]" id="icon-hide" onclick="PasswordIcon()" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M16.858 2.93481L18.9963 6.63906" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                <path d="M12.4547 4.99353L13.1215 8.77578" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                <path d="M7.53701 4.99133L6.86951 8.77433" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                <path d="M3.13825 2.9325L0.989502 6.6525" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                <path d="M1 0.83252C2.575 2.78252 5.4655 5.25002 10 5.25002C14.5345 5.25002 17.4235 2.78252 19 0.83252" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
-                                        </span>
-                                    </div>
-
-
-                                    <button class="btn-primary">Save Changes</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- user password change end -->
-
-                        <!-- user profile change start -->
-
-                        <div class="box">
-                            <div class="w-full">
-                                <div class="p-6">
-                                    <h2 class="text-start text-2xl text-[#272343] font-semibold mb-6 font-display">Change Profile Photo</h2>
-
-                                    <div class="pb-[26px] mx-auto">
-                                        <img class="w-[150px] h-[150px] rounded-full mx-auto" src="./public/assets/images/all-img/profile-photo.png" alt="image description">
-                                    </div>
-
-                                    <div class="flex justify-center pb-[15px]">
-                                        <button class="bg-accents text-white text-base font-semibold py-[17px] px-6 rounded-lg flex gap-3">
-                                            <span>
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M16 17H17.5C19.9853 17 22 14.9853 22 12.5C22 10.0147 19.9853 8 17.5 8H17.293C16.64 5.6915 14.5176 4 12 4C9.48245 4 7.35996 5.6915 6.70703 8H6.5C4.01472 8 2 10.0147 2 12.5C2 14.9853 4.01472 17 6.5 17H8" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                    <path d="M12 19.5V9.5M12 9.5L8.5 13M12 9.5L15.5 13" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <svg id="current-icon-show" onclick="currentPasswordIcon()" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M12 4.24902C4.5 4.24902 1.5 11.9999 1.5 11.9999C1.5 11.9999 4.5 19.749 12 19.749C19.5 19.749 22.5 11.9999 22.5 11.9999C22.5 11.9999 19.5 4.24902 12 4.24902V4.24902Z" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M12 15.75C12.9946 15.75 13.9484 15.3549 14.6517 14.6517C15.3549 13.9484 15.75 12.9946 15.75 12C15.75 11.0054 15.3549 10.0516 14.6517 9.34835C13.9484 8.64509 12.9946 8.25 12 8.25C11.0054 8.25 10.0516 8.64509 9.34835 9.34835C8.64509 10.0516 8.25 11.0054 8.25 12C8.25 12.9946 8.64509 13.9484 9.34835 14.6517C10.0516 15.3549 11.0054 15.75 12 15.75V15.75Z" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                                <svg class="mt-[10px]" id="current-icon-hide" onclick="currentPasswordIcon()" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M16.858 2.93481L18.9963 6.63906" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M12.4547 4.99353L13.1215 8.77578" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.53701 4.99133L6.86951 8.77433" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M3.13825 2.9325L0.989502 6.6525" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M1 0.83252C2.575 2.78252 5.4655 5.25002 10 5.25002C14.5345 5.25002 17.4235 2.78252 19 0.83252" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                                 </svg>
                                             </span>
-                                            Upload Now</button>
+                                        </div>
+
+                                        <div class="relative">
+                                            <input type="password" placeholder="New passowrd" class="form_password focus:outline-none focus:ring focus:ring-accents font-display transition duration-300 ease-in-out" id="CreatePasswordInput" name="password">
+                                            <span class="absolute top-[17px] right-5 cursor-pointer ">
+
+                                                <svg id="create-icon-show" onclick="CreatePasswordIcon()" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M12 4.24902C4.5 4.24902 1.5 11.9999 1.5 11.9999C1.5 11.9999 4.5 19.749 12 19.749C19.5 19.749 22.5 11.9999 22.5 11.9999C22.5 11.9999 19.5 4.24902 12 4.24902V4.24902Z" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M12 15.75C12.9946 15.75 13.9484 15.3549 14.6517 14.6517C15.3549 13.9484 15.75 12.9946 15.75 12C15.75 11.0054 15.3549 10.0516 14.6517 9.34835C13.9484 8.64509 12.9946 8.25 12 8.25C11.0054 8.25 10.0516 8.64509 9.34835 9.34835C8.64509 10.0516 8.25 11.0054 8.25 12C8.25 12.9946 8.64509 13.9484 9.34835 14.6517C10.0516 15.3549 11.0054 15.75 12 15.75V15.75Z" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+
+                                                <svg class="mt-[10px]" id="create-icon-hide" onclick="CreatePasswordIcon()" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M16.858 2.93481L18.9963 6.63906" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M12.4547 4.99353L13.1215 8.77578" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.53701 4.99133L6.86951 8.77433" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M3.13825 2.9325L0.989502 6.6525" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M1 0.83252C2.575 2.78252 5.4655 5.25002 10 5.25002C14.5345 5.25002 17.4235 2.78252 19 0.83252" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </span>
+                                        </div>
+
+                                        <div class="relative">
+                                            <input type="password" placeholder="Confirm passowrd" class="form_password focus:outline-none  focus:ring focus:ring-accents font-display transition duration-300 ease-in-out" id="myInput" name="password">
+                                            <span class="absolute top-[17px] right-5 cursor-pointer ">
+                                                <svg id="icon-show" onclick="PasswordIcon()" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M12 4.24902C4.5 4.24902 1.5 11.9999 1.5 11.9999C1.5 11.9999 4.5 19.749 12 19.749C19.5 19.749 22.5 11.9999 22.5 11.9999C22.5 11.9999 19.5 4.24902 12 4.24902V4.24902Z" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M12 15.75C12.9946 15.75 13.9484 15.3549 14.6517 14.6517C15.3549 13.9484 15.75 12.9946 15.75 12C15.75 11.0054 15.3549 10.0516 14.6517 9.34835C13.9484 8.64509 12.9946 8.25 12 8.25C11.0054 8.25 10.0516 8.64509 9.34835 9.34835C8.64509 10.0516 8.25 11.0054 8.25 12C8.25 12.9946 8.64509 13.9484 9.34835 14.6517C10.0516 15.3549 11.0054 15.75 12 15.75V15.75Z" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                                <svg class="mt-[10px]" id="icon-hide" onclick="PasswordIcon()" width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M16.858 2.93481L18.9963 6.63906" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M12.4547 4.99353L13.1215 8.77578" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7.53701 4.99133L6.86951 8.77433" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M3.13825 2.9325L0.989502 6.6525" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M1 0.83252C2.575 2.78252 5.4655 5.25002 10 5.25002C14.5345 5.25002 17.4235 2.78252 19 0.83252" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </span>
+                                        </div>
+
+
+                                        <button class="btn-primary">Save Changes</button>
                                     </div>
-                                    <p class="text-center">JPG or PNG. max size of 500KB</p>
                                 </div>
                             </div>
+                            <!-- user password change end -->
+
+                            <!-- user profile change start -->
+                            <div class="box xl:max-w-[312px]">
+                                <div class="">
+                                    <div class="p-6">
+                                        <h2 class="text-start text-2xl text-[#272343] font-semibold mb-6 font-display">Change Profile Photo</h2>
+
+                                        <div class="pb-[26px] mx-auto">
+                                            <img class="w-[150px] h-[150px] rounded-full mx-auto" src="./public/assets/images/all-img/profile-photo.png" alt="image description">
+                                        </div>
+
+                                        <div class="flex justify-center pb-[15px]">
+                                            <button class="bg-accents text-white text-base font-semibold py-[17px] px-6 rounded-lg flex gap-3">
+                                                <span>
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M16 17H17.5C19.9853 17 22 14.9853 22 12.5C22 10.0147 19.9853 8 17.5 8H17.293C16.64 5.6915 14.5176 4 12 4C9.48245 4 7.35996 5.6915 6.70703 8H6.5C4.01472 8 2 10.0147 2 12.5C2 14.9853 4.01472 17 6.5 17H8" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <path d="M12 19.5V9.5M12 9.5L8.5 13M12 9.5L15.5 13" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </span>
+                                                Upload Now</button>
+                                        </div>
+                                        <p class="text-center">JPG or PNG. max size of 500KB</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- user profile change end -->
                         </div>
 
-                        <!-- user profile change end -->
-
                     </div>
-
                 </div>
-                <!-- Account Setting End -->
             </div>
+            <!-- Account Setting End -->
 
+
+            <!-- order History start -->
             <div id="order_history" class="hidden p-4">
-                <!-- order History start -->
-
                 <div class="container">
                     <div class="shopping-cart-wrapper pt-10 pb-20 flex items-start gap-6">
                         <!-- shopping cart start -->
@@ -555,7 +550,6 @@
                                     <tbody>
                                         <tr>
                                             <td class="py-6 text-sm">
-
                                                 <span class="text-dark-accent stext-[14px] font-display leading-[120%] ">#2485</span>
                                             </td>
                                             <td class="py-6 text-sm">
@@ -573,7 +567,6 @@
                                         </tr>
                                         <tr>
                                             <td class="py-6 text-sm">
-
                                                 <span class="text-dark-accent stext-[14px] font-display leading-[120%] ">#8901</span>
                                             </td>
                                             <td class="py-6 text-sm">
@@ -591,7 +584,6 @@
                                         </tr>
                                         <tr>
                                             <td class="py-6 text-sm">
-
                                                 <span class="text-dark-accent stext-[14px] font-display leading-[120%] ">#2597</span>
                                             </td>
                                             <td class="py-6 text-sm">
@@ -609,7 +601,6 @@
                                         </tr>
                                         <tr>
                                             <td class="py-6 text-sm">
-
                                                 <span class="text-dark-accent stext-[14px] font-display leading-[120%] ">#2485</span>
                                             </td>
                                             <td class="py-6 text-sm">
@@ -627,7 +618,6 @@
                                         </tr>
                                         <tr>
                                             <td class="py-6 text-sm">
-
                                                 <span class="text-dark-accent stext-[14px] font-display leading-[120%] ">#2485</span>
                                             </td>
                                             <td class="py-6 text-sm">
@@ -646,26 +636,23 @@
                                     </tbody>
                                 </table>
                             </div>
-
                         </div>
-
                     </div>
                 </div>
-
-                <!-- order History end -->
             </div>
-            <div id="wishlist" class="hidden p-4">
-                <!-- Order Details start -->
+            <!-- order History end -->
 
+            <!-- Order Details start -->
+            <div id="order_details" class="hidden p-4">
                 <div class="container pt-10 pb-20">
                     <div class="box">
                         <div class="">
-                            <div class="flex justify-between items-center px-8 py-8">
+                            <div class="flex flex-wrap justify-between items-center px-8 py-8">
                                 <h2 class="text-gray-black font-display text-[32px] leading-[110%] capitalize">Order Details</h2>
-                                <button class="btn-primary capitalize">back to List</button>
+                                <button class="btn-primary capitalize mt-4">back to List</button>
                             </div>
                             <hr>
-                            <div class="px-8 py-8 flex justify-between items-center">
+                            <div class="px-8 py-8 flex flex-wrap gap-2 justify-between items-center">
                                 <div class="flex-wrap">
                                     <p class="text-[#9A9CAA] font-display text-[14px] leading-[100%] capitalize pb-[10px]">Order ID:</p>
                                     <span class="text-gray-black font-display text-[20px] leading-[120%] font-medium">#2485</span>
@@ -693,23 +680,23 @@
                             </div>
                         </div>
                         <div class="w-full">
-                            <div class="py-8">
+                            <div class="py-8 overflow-x-auto">
                                 <table class="min-w-full leading-normal">
                                     <thead class="bg-off-white">
                                         <tr class="">
-                                            <th class="pt-4 pb-4 px-8 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider w-[305px]">
+                                            <th class="pt-4 pb-4 px-8 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider xl:min-w-[305px] w-full">
                                                 Product
                                             </th>
-                                            <th class="pt-4 pb-4 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider w-[140px]">
+                                            <th class="pt-4 pb-4 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider min-w-[140px]">
                                                 Price
                                             </th>
-                                            <th class="pt-4 pb-4 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider w-[145px]">
+                                            <th class="pt-4 pb-4 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider min-w-[145px]">
                                                 Quantity
                                             </th>
-                                            <th class="pt-4 pb-4 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider w-[175px]">
+                                            <th class="pt-4 pb-4 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider min-w-[175px]">
                                                 Subtotal
                                             </th>
-                                            <th class="pt-4 pb-4 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider w-[245px]">
+                                            <th class="pt-4 pb-4 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider min-w-[245px]">
                                                 Info
                                             </th>
                                         </tr>
@@ -719,7 +706,7 @@
                                         <tr class="">
                                             <td class="text-sm px-6 pt-6">
                                                 <div class="flex justify-between items-center">
-                                                    <div class="flex items-center gap-3">
+                                                    <div class="flex flex-wrap items-center gap-3">
                                                         <div>
                                                             <img src="./public/assets/images/all-img/product1.png" alt="">
                                                         </div>
@@ -741,7 +728,7 @@
                                             </td>
                                             <td class="text-sm pt-6">
                                                 <div class="mb-6">
-                                                    <ul class="p-0 m-0">
+                                                    <ul class="p-0 m-0 ">
                                                         <li class="">
                                                             <p class="text-[15px] inline-flex gap-2 items-center">
                                                                 <span class="text-[#9A9CAA]">Color:</span><span class="text-[#636270] font-medium">Black</span>
@@ -766,7 +753,7 @@
                                         <tr class="">
                                             <td class="text-sm px-6 ">
                                                 <div class="flex justify-between items-center">
-                                                    <div class="flex items-center gap-3">
+                                                    <div class="flex flex-wrap items-center gap-3">
                                                         <div>
                                                             <img src="./public/assets/images/all-img/product1.png" alt="">
                                                         </div>
@@ -864,14 +851,96 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Order Details end -->
             </div>
+            <!-- Order Details end -->
+
+            <!-- wishlist start -->
+            <div id="wishlist" class="hidden p-4">
+                <div class="container pt-10 pb-20">
+                    <!-- shopping cart start -->
+                    <div class="shopping-cart">
+                        <div class="px-6 py-6 overflow-x-auto">
+                            <table class="min-w-full leading-normal overflow-x-auto">
+                                <thead>
+                                    <tr>
+                                        <th class="pb-6 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider">
+                                            Products
+                                        </th>
+                                        <th class="pb-6 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider min-w-[104px]">
+                                            Price
+                                        </th>
+                                        <th class="pb-6 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider">
+                                            Stock Status
+                                        </th>
+                                        <th class="pb-6 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider">
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="py-6 text-sm">
+                                            <div class="flex flex-wrap gap-2 items-center">
+                                                <button class="p-2">
+                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M2 2L6.00003 6M6.00003 6L10 2M6.00003 6L2 10M6.00003 6L10 10" stroke="#9A9CAA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                                <div class="w-[70px] h-[70px]">
+                                                    <img class="w-full h-full rounded-lg" src="./public/assets/images/all-img/shopping-cart-01.png" alt="" />
+                                                </div>
+                                                <div class="ml-1">
+                                                    <p class="mb-0 text-[#272343] text-sm">Sofa for Living Room</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="py-6 text-sm">
+                                            <p class="mb-0">$250.00</p>
+                                        </td>
+                                        <td class="py-6 text-sm">
+                                            <p class="text-[#01AD5A] font-semibold">In Stock</p>
+                                        </td>
+                                        <td class="py-6 text-sm text-right">
+                                            <button class="mt-6 bg-accents  py-[17px] px-6 rounded-lg text-[18px] font-semibold font-display leading-[110%] text-gray-white text-center capitalize">Add to cart</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pb-6 text-sm">
+                                            <div class="flex gap-2 items-center">
+                                                <button class="p-2">
+                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M2 2L6.00003 6M6.00003 6L10 2M6.00003 6L2 10M6.00003 6L10 10" stroke="#9A9CAA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                                <div class="w-[70px] h-[70px]">
+                                                    <img class="w-full h-full rounded-lg" src="./public/assets/images/all-img/shopping-cart-01.png" alt="" />
+                                                </div>
+                                                <div class="ml-1">
+                                                    <p class="mb-0 text-[#272343] text-sm">Sofa for Living Room</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="pb-6 text-sm">
+                                            <p class="mb-0">$250.00</p>
+                                        </td>
+                                        <td class="pb-6 text-sm">
+                                            <p class="text-[#F05C52] font-semibold">Out of stock</p>
+                                        </td>
+                                        <td class="pb-6 text-sm text-right">
+                                            <button class=" bg-off-white py-[17px] px-6 rounded-lg text-[18px] font-semibold font-display leading-[110%] text-[#9A9CAA] text-center capitalize">Add to cart</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- shopping cart end -->
+                </div>
+            </div>
+            <!-- wishlist end -->
 
         </div>
     </div>
     <!-- user menu end -->
-    <!-- account settings end -->
 
     <!-- footer area start -->
     <footer>
