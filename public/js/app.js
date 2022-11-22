@@ -62,10 +62,38 @@ var swiper = new Swiper(".bannerSwiper", {
     keyboard: true,
 });
 
+var swiper2 = new Swiper(".brandSwiper", {
+    slidesPerView: 2,
+    spaceBetween: 12,
+    loop: true,
+    mousewheel: true,
+    breakpoints: {
+        375:{
+            slidesPerView: 3,
+            spaceBetween: 12,
+        },
+        640: {
+            slidesPerView: 4,
+            spaceBetween: 12,
+        },
+        768: {
+            slidesPerView: 5,
+            spaceBetween: 18,
+        },
+        1024: {
+            slidesPerView: 6,
+            spaceBetween: 24,
+        },
+        1500: {
+            slidesPerView: 6,
+            spaceBetween: 106,
+        }
+    },
+});
 
-var swiper = new Swiper(".topCategoriesSwiper", {
+var swiper3 = new Swiper(".topCategoriesSwiper", {
     slidesPerView: 1,
-    spaceBetween: 0,
+    spaceBetween: 12,
     centeredSlides: true,
     loop: true,
     navigation: {
@@ -82,15 +110,15 @@ var swiper = new Swiper(".topCategoriesSwiper", {
             spaceBetween: 18,
         },
         1024: {
-            slidesPerView: 4,
+            slidesPerView: 3,
             spaceBetween: 24,
         },
     },
 });
 
-var swiper = new Swiper(".featureSwiper", {
+var swiper4 = new Swiper(".featureSwiper", {
     slidesPerView: 1,
-    spaceBetween: 30,
+    spaceBetween: 24,
     loop: true,
     navigation: {
         nextEl: ".featureSwiper-button-next",
@@ -112,9 +140,9 @@ var swiper = new Swiper(".featureSwiper", {
     },
 });
 
-var swiper = new Swiper(".recentSwiper", {
+var swiper5 = new Swiper(".recentSwiper", {
     slidesPerView: 1,
-    spaceBetween: 30,
+    spaceBetween: 24,
     loop: true,
     navigation: {
         nextEl: ".recentSwiper-button-next",
@@ -139,7 +167,7 @@ var swiper = new Swiper(".recentSwiper", {
 
 //testimonials Slider
 
-var swiper = new Swiper(".testimonialSwiper", {
+var swiper6 = new Swiper(".testimonialSwiper", {
     slidesPerView: 1,
     spaceBetween: 0,
     loop: true,

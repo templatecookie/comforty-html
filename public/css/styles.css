@@ -457,6 +457,9 @@ a {
 .swiper-container-horizontal>.swiper-pagination-bullets {
   bottom: 96px;
 }
+.swiper-pagination-bullet-active{
+  background: #272343;
+}
 
 .bannerSwiper .swiper-slide {
   opacity: 0;
@@ -769,15 +772,13 @@ header {
   margin: auto;
   top: 0;
   width: 100%;
-  box-shadow: 0 0 60px 0 rgb(0 0 0 / 7%);
+  box-shadow: 0px 1px 0px #E1E3E6;
   z-index: 99;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
-  -webkit-box-shadow: 0px 4px 10px rgb(3 4 28 / 10%);
-  box-shadow: 0px 4px 10px rgb(3 4 28 / 10%);
   background: white;
 }
 
@@ -950,4 +951,9 @@ header {
 .mixitup-control-active{
   color: #272343 !important;
   box-shadow: 0px 2px 0px #038053 !important;
+}
+.portfoliolist{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 24px;
 }
