@@ -26,7 +26,7 @@
     <header>
         <div id="header-sticky" class="header-sticky">
             <div class="top-header bg-secondary">
-                <div class="container">
+                <div class="container px-3 md:px-5 xl:px-0">
                     <div class="py-3.5 flex justify-center sm:justify-between">
                         <p class="sm:flex gap-2 items-center text-[13px] leading-[110%] text-white hidden">
                             <span>
@@ -72,7 +72,7 @@
                 </div>
             </div>
             <div class="main-header bg-grayscales-500">
-                <div class="container">
+                <div class="container px-3 md:px-5 xl:px-0">
                     <div class="flex justify-between items-center py-5">
                         <div>
                             <a href="#">
@@ -148,7 +148,7 @@
             </div>
         </div>
         <div class="bottom-header bg-white shadow-[0px_1px_0px_#E1E3E6] relative z-30 hidden lg:block">
-            <div class="container">
+            <div class="container px-3 md:px-5 xl:px-0">
                 <div class="py-3.5 flex justify-between items-center">
                     <div class="flex gap-8 items-center">
                         <div class="relative">
@@ -206,7 +206,7 @@
         </div>
         <!-- Mobile Menu Area Start -->
         <div class="nav-menu" id="nav-menu">
-            <div class="flex justify-between  items-center px-6 py-4 mb-4">
+            <div class="flex justify-between  items-center px-3 py-4 mb-4">
                 <div>
                     <a href="#">
                         <img src="./public/assets/images/all-img/logo-sm.png" alt="">
@@ -267,7 +267,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="px-6 mb-4">
+            <div class="px-3 mb-4">
                 <div class="lg:max-w-[413px] w-full">
                     <div class="relative">
                         <input type="text" placeholder="search here..." class="block w-full bg-grayscales-500 focus:outline-none border-0 px-4 py-3 rounded-lg">
@@ -391,10 +391,10 @@
 
             <!-- Account Setting Start -->
             <div id="account_settings">
-                <div class="container py-10">
-                    <div class="accout-setting flex flex-col justify-between xl:flex-row gap-6">
+                <div class="container px-3 md:px-5 xl:px-0 py-10">
+                    <div class="accout-setting flex flex-col xl:flex-row gap-6">
                         <!-- account inforamation start -->
-                        <div class="box w-full">
+                        <div class="box xl:w-[536px]">
                             <div class="w-full ">
                                 <div class="p-6">
                                     <h2 class="text-start text-2xl text-[#272343] font-semibold mb-6 font-display">Account Information</h2>
@@ -421,7 +421,7 @@
 
                         <div class="flex flex-col md:flex-row gap-6">
                             <!-- user password change start -->
-                            <div class="box xl:max-w-[424px]">
+                            <div class="box xl:w-[424px]">
                                 <div class="">
                                     <div class="p-6">
                                         <h2 class="text-start text-2xl text-[#272343] font-semibold mb-6 font-display">Change Password</h2>
@@ -488,7 +488,7 @@
                             <!-- user password change end -->
 
                             <!-- user profile change start -->
-                            <div class="box xl:max-w-[312px]">
+                            <div class="box xl:w-[312px]">
                                 <div class="">
                                     <div class="p-6">
                                         <h2 class="text-start text-2xl text-[#272343] font-semibold mb-6 font-display">Change Profile Photo</h2>
@@ -526,23 +526,23 @@
                     <div class="shopping-cart-wrapper pt-10 pb-20 flex items-start gap-6">
                         <!-- shopping cart start -->
                         <div class="shopping-cart w-full">
-                            <div class="px-6 py-6">
-                                <table class="min-w-full leading-normal">
+                            <div class="px-6 py-6 overflow-x-auto">
+                                <table class="min-w-[1320px] w-full leading-normal">
                                     <thead>
                                         <tr>
-                                            <th class="pb-6 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider">
+                                            <th class="pb-6 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider w-[160px]">
                                                 Order
                                             </th>
-                                            <th class="pb-6 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider w-[320px]">
+                                            <th class="pb-6 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider w-[200px]">
                                                 Date
                                             </th>
-                                            <th class="pb-6 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider w-[245px]">
+                                            <th class="pb-6 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider w-[160px]">
                                                 Total Product
                                             </th>
-                                            <th class="pb-6 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider w-[220px]">
+                                            <th class="pb-6 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider w-[140px]">
                                                 Toral price
                                             </th>
-                                            <th class="pb-6 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider w-[160px]">
+                                            <th class="pb-6 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider w-[120px]">
                                                 Status
                                             </th>
                                         </tr>
@@ -652,7 +652,7 @@
                                 <button class="btn-primary capitalize mt-4">back to List</button>
                             </div>
                             <hr>
-                            <div class="px-8 py-8 flex flex-wrap gap-2 justify-between items-center">
+                            <div class="px-8 py-8 flex flex-col md:flex-row md:flex-wrap gap-6 xl:gap-2 xl:justify-between md:items-center">
                                 <div class="flex-wrap">
                                     <p class="text-[#9A9CAA] font-display text-[14px] leading-[100%] capitalize pb-[10px]">Order ID:</p>
                                     <span class="text-gray-black font-display text-[20px] leading-[120%] font-medium">#2485</span>
@@ -804,7 +804,7 @@
                         </div>
                         <hr class="my-0">
 
-                        <div class="px-8 py-8 flex flex-wrap justify-between items-center">
+                        <div class="px-8 py-8 flex flex-col md:flex-row md:flex-wrap gap-y-6 justify-between md:items-center">
 
                             <div>
                                 <h2 class="text-gray-black font-display text-[32px] leading-[110%] capitalize ">Billing address</h2>
@@ -826,7 +826,7 @@
                                 <span class="text-[#636270] text-[14px] leading-[100%] font-display font-normal">+8801497 548244</span>
                             </div>
 
-                            <div class="px-6 py-6 bg-off-white rounded-lg w-[348px]">
+                            <div class="px-6 py-6 bg-off-white rounded-lg max-w-[348px]">
                                 <div class="">
 
                                     <div class="flex justify-between pb-4">
@@ -855,86 +855,88 @@
             <!-- Order Details end -->
 
             <!-- wishlist start -->
-            <div id="wishlist" class="hidden p-4">
-                <div class="container pt-10 pb-20">
-                    <!-- shopping cart start -->
-                    <div class="shopping-cart">
-                        <div class="px-6 py-6 overflow-x-auto">
-                            <table class="min-w-full leading-normal overflow-x-auto">
-                                <thead>
-                                    <tr>
-                                        <th class="pb-6 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider">
-                                            Products
-                                        </th>
-                                        <th class="pb-6 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider min-w-[104px]">
-                                            Price
-                                        </th>
-                                        <th class="pb-6 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider">
-                                            Stock Status
-                                        </th>
-                                        <th class="pb-6 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider">
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="py-6 text-sm">
-                                            <div class="flex flex-wrap gap-2 items-center">
-                                                <button class="p-2">
-                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M2 2L6.00003 6M6.00003 6L10 2M6.00003 6L2 10M6.00003 6L10 10" stroke="#9A9CAA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                    </svg>
-                                                </button>
-                                                <div class="w-[70px] h-[70px]">
-                                                    <img class="w-full h-full rounded-lg" src="./public/assets/images/all-img/shopping-cart-01.png" alt="" />
+            <div id="wishlist" class="hidden">
+                <section>
+                    <div class="container px-3 md:px-5 xl:px-0 xl:pt-10 xl:pb-20 py-8">
+                        <!-- shopping cart start -->
+                        <div class="shopping-cart">
+                            <div class="px-6 py-6 overflow-x-auto">
+                                <table class="min-w-[872px] w-full leading-normal">
+                                    <thead>
+                                        <tr>
+                                            <th class="pb-6 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider w-[340px]">
+                                                Products
+                                            </th>
+                                            <th class="pb-6 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider w-[104px]">
+                                                Price
+                                            </th>
+                                            <th class="pb-6 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider">
+                                                Stock Status
+                                            </th>
+                                            <th class="pb-6 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider">
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="py-6 text-sm">
+                                                <div class="flex gap-2 items-center">
+                                                    <button class="p-2">
+                                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M2 2L6.00003 6M6.00003 6L10 2M6.00003 6L2 10M6.00003 6L10 10" stroke="#9A9CAA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                    </button>
+                                                    <div class="w-[70px] h-[70px]">
+                                                        <img class="w-full h-full rounded-lg" src="./public/assets/images/all-img/shopping-cart-01.png" alt="" />
+                                                    </div>
+                                                    <div class="ml-1">
+                                                        <p class="mb-0 text-[#272343] text-sm">Sofa for Living Room</p>
+                                                    </div>
                                                 </div>
-                                                <div class="ml-1">
-                                                    <p class="mb-0 text-[#272343] text-sm">Sofa for Living Room</p>
+                                            </td>
+                                            <td class="py-6 text-sm">
+                                                <p class="mb-0">$250.00</p>
+                                            </td>
+                                            <td class="py-6 text-sm">
+                                                <p class="text-[#01AD5A] font-semibold">In Stock</p>
+                                            </td>
+                                            <td class="py-6 text-sm text-right">
+                                                <button class="mt-6 bg-accents  py-[17px] px-6 rounded-lg text-[18px] font-semibold font-display leading-[110%] text-gray-white text-center capitalize">Add to cart</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="pb-6 text-sm">
+                                                <div class="flex gap-2 items-center">
+                                                    <button class="p-2">
+                                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M2 2L6.00003 6M6.00003 6L10 2M6.00003 6L2 10M6.00003 6L10 10" stroke="#9A9CAA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                    </button>
+                                                    <div class="w-[70px] h-[70px]">
+                                                        <img class="w-full h-full rounded-lg" src="./public/assets/images/all-img/shopping-cart-01.png" alt="" />
+                                                    </div>
+                                                    <div class="ml-1">
+                                                        <p class="mb-0 text-[#272343] text-sm">Sofa for Living Room</p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </td>
-                                        <td class="py-6 text-sm">
-                                            <p class="mb-0">$250.00</p>
-                                        </td>
-                                        <td class="py-6 text-sm">
-                                            <p class="text-[#01AD5A] font-semibold">In Stock</p>
-                                        </td>
-                                        <td class="py-6 text-sm text-right">
-                                            <button class="mt-6 bg-accents  py-[17px] px-6 rounded-lg text-[18px] font-semibold font-display leading-[110%] text-gray-white text-center capitalize">Add to cart</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="pb-6 text-sm">
-                                            <div class="flex gap-2 items-center">
-                                                <button class="p-2">
-                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M2 2L6.00003 6M6.00003 6L10 2M6.00003 6L2 10M6.00003 6L10 10" stroke="#9A9CAA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                    </svg>
-                                                </button>
-                                                <div class="w-[70px] h-[70px]">
-                                                    <img class="w-full h-full rounded-lg" src="./public/assets/images/all-img/shopping-cart-01.png" alt="" />
-                                                </div>
-                                                <div class="ml-1">
-                                                    <p class="mb-0 text-[#272343] text-sm">Sofa for Living Room</p>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td class="pb-6 text-sm">
-                                            <p class="mb-0">$250.00</p>
-                                        </td>
-                                        <td class="pb-6 text-sm">
-                                            <p class="text-[#F05C52] font-semibold">Out of stock</p>
-                                        </td>
-                                        <td class="pb-6 text-sm text-right">
-                                            <button class=" bg-off-white py-[17px] px-6 rounded-lg text-[18px] font-semibold font-display leading-[110%] text-[#9A9CAA] text-center capitalize">Add to cart</button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                                            </td>
+                                            <td class="pb-6 text-sm">
+                                                <p class="mb-0">$250.00</p>
+                                            </td>
+                                            <td class="pb-6 text-sm">
+                                                <p class="text-[#F05C52] font-semibold">Out of stock</p>
+                                            </td>
+                                            <td class="pb-6 text-sm text-right">
+                                                <button class=" bg-off-white py-[17px] px-6 rounded-lg text-[18px] font-semibold font-display leading-[110%] text-[#9A9CAA] text-center capitalize">Add to cart</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
+                        <!-- shopping cart end -->
                     </div>
-                    <!-- shopping cart end -->
-                </div>
+                </section>
             </div>
             <!-- wishlist end -->
 
@@ -944,8 +946,8 @@
 
     <!-- footer area start -->
     <footer>
-        <div class="footer-top pt-20 pb-[60px] shadow-[inset_0px_1px_0px_#E1E3E6]">
-            <div class="container">
+        <div class="footer-top xl:pt-20 xl:pb-[60px] py-6 sm:py-8 md:py-12 shadow-[inset_0px_1px_0px_#E1E3E6]">
+            <div class="container px-3 md:px-5 xl:px-0">
                 <div class=" flex flex-wrap justify-between">
                     <div class="footer-widget max-w-[350px]">
                         <div class="mb-6">
@@ -1061,20 +1063,20 @@
                     <!-- footer newsletter -->
                     <div class="footer-widget w-[424px]">
                         <h2 class="widget-title text-[#9A9CAA] text-sm leading-[110%] font-display font-medium uppercase mb-5">Newsletter</h2>
-                        <form action="" class="mt-5">
-                            <input type="text" name="" id="" class="bg-[#FFFFFF] px-5 py-[15px] rounded-lg focus:outline-none focus:ring focus:ring-violet-300 transition duration-300 ease-in-out h-[46px] mr-3 border border-grayscales-900" placeholder="Your email">
+                        <form action="" class="mt-5 flex flex-wrap xl:flex-nowrap gap-3">
+                            <input type="text" name="" id="" class="bg-[#FFFFFF] block w-full px-5 py-[15px] rounded-lg focus:outline-none focus:ring focus:ring-violet-300 transition duration-300 ease-in-out h-[46px] border border-[#E1E3E6]" placeholder="Your email">
                             <button class="btn-primary ">Subscribe</button>
                         </form>
-                        <p class="py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim.</p>
+                        <p class="py-3 text-[#272343] opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt erat enim.</p>
                     </div>
                     <!-- footer newsletter end -->
                 </div>
             </div>
         </div>
         <div class="footer-bottom shadow-[inset_0px_1px_0px_#E1E3E6] py-6">
-            <div class="container">
+            <div class="container px-3 md:px-5 xl:px-0">
                 <div class="flex flex-wrap justify-between items-center">
-                    <p class="text-center">@ 2021 - Blogy - Designed & Develop by <span>Zakirsoft</span></p>
+                    <p class="text-center text-[#9A9CAA]">@ 2021 - Blogy - Designed & Develop by <b class="text-grayscales-900">Zakirsoft</b></p>
                     <div class="inline-flex gap-2.5 h-[27px] mt-4 sm:mt-0 xl:mt-0 mx-auto xl:mx-0">
                         <img class="grayscale" src="./public/assets/images/all-img/payment-logo-01.png" alt="">
                         <img class="grayscale" src="./public/assets/images/all-img/payment-logo-02.png" alt="">
