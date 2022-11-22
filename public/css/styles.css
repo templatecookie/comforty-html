@@ -59,7 +59,7 @@
 
 .sign_in h2 {
   color: var(--gray-black);
-  font-size: 32px;
+  /* font-size: 32px; */
   font-weight: 600;
   line-height: 110%;
   /* text-align: center; */
@@ -539,7 +539,7 @@ a {
   padding: 6px 10px;
   border-radius: 4px;
   color: #FFFFFF;
-  z-index: 9;
+  z-index: 999;
 }
 
 .product-card .badge.sales {
