@@ -376,7 +376,7 @@
     <!-- feature and brand area start -->
     <section class="-mt-[75px] relative z-50">
         <div class="container px-3 md:px-5 xl:px-0">
-            <div class="bg-white shadow-[0px_24px_100px_rgba(22,25,50,0.07)] rounded-xl py-[50px] px-[70px] mb-[26px]">
+            <div class="bg-white shadow-[0px_24px_100px_rgba(22,25,50,0.07)] rounded-xl xl:py-[50px] xl:px-[70px] p-8 mb-[26px]">
                 <div class="flex gap-[60px] flex-wrap justify-between items-center">
                     <div class="feature-card flex gap-4 items-center">
                         <div>
@@ -486,11 +486,11 @@
     <!-- feature and brand area end -->
 
     <!-- feature products section start -->
-    <section class="pb-20">
+    <section class="xl:pb-20 pb-8 md:pb-12">
         <div class="container px-3 md:px-5 xl:px-0">
-            <div class="flex flex-wrap justify-between items-center mb-10 px-2 xl:px-0">
+            <div class="flex flex-wrap items-center justify-between items-center mb-10 px-2 xl:px-0">
                 <h2 class="text-[#272343] xl:text-[32px] xl:leading-[110%] text-xl md:text-2xl font-semibold font-display">Featured Products</h2>
-                <div class="mt-2">
+                <div class="">
                     <button class="featureSwiper-button-prev">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="24" height="24" transform="matrix(-1 0 0 1 24 0)" fill="none" />
@@ -768,7 +768,7 @@
     <!-- top categories product section start -->
     <section class="overflow-hidden relative lg:pb-20 md:pb-6 pb-3">
         <div class="container px-3 md:px-5 xl:px-0">
-            <div class="flex justify-between items-cente mb-10">
+            <div class="flex justify-between items-center mb-10">
                 <h2 class="text-[#272343] xl:text-[32px] xl:leading-[110%] text-xl md:text-2xl font-semibold font-display">Top categories</h2>
                 <div>
                     <button class="categoriesSwiper-button-prev">
@@ -785,7 +785,7 @@
                 </div>
             </div>
         </div>
-        <div class="swiper topCategoriesSwiper">
+        <div class="swiper topCategoriesSwiper mx-3 md:mx-0">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="product-card-02">
@@ -859,11 +859,11 @@
         <div class="container px-3 md:px-5 xl:px-0">
             <h2 class="text-[#272343] xl:text-[32px] xl:leading-[110%] text-xl md:text-2xl text-center font-semibold font-display mb-4">Our Products</h2>
             <ul id="filters" class="flex flex-wrap justify-center gap-2 mb-10">
-                <li><span class="filter text-[#272343] text-base leading-[110%] font-display font-medium cursor-pointer p-2" data-filter=".all">All</span></li>
-                <li><span class="filter text-[#272343] text-base leading-[110%] font-display font-medium cursor-pointer p-2" data-filter=".newest">Newest</span></li>
-                <li><span class="filter text-[#272343] text-base leading-[110%] font-display font-medium cursor-pointer p-2" data-filter=".trending">Trending</span></li>
-                <li><span class="filter text-[#272343] text-base leading-[110%] font-display font-medium cursor-pointer p-2" data-filter=".best-sellers">Best Sellers</span></li>
-                <li><span class="filter text-[#272343] text-base leading-[110%] font-display font-medium cursor-pointer p-2" data-filter=".featured">Featured</span></li>
+                <li><span class="filter text-[#9A9CAA] text-base leading-[110%] font-display font-medium cursor-pointer p-2" data-filter=".all">All</span></li>
+                <li><span class="filter text-[#9A9CAA] text-base leading-[110%] font-display font-medium cursor-pointer p-2" data-filter=".newest">Newest</span></li>
+                <li><span class="filter text-[#9A9CAA] text-base leading-[110%] font-display font-medium cursor-pointer p-2" data-filter=".trending">Trending</span></li>
+                <li><span class="filter text-[#9A9CAA] text-base leading-[110%] font-display font-medium cursor-pointer p-2" data-filter=".best-sellers">Best Sellers</span></li>
+                <li><span class="filter text-[#9A9CAA] text-base leading-[110%] font-display font-medium cursor-pointer p-2" data-filter=".featured">Featured</span></li>
             </ul>
 
             <div id="portfoliolist" class="flex justify-center flex-wrap gap-6">
@@ -1130,7 +1130,7 @@
     <!-- Testimonials section start -->
     <section class="overflow-hidden lg:py-20 sm:py-8 py-5 bg-[#F0F2F3]">
         <div class="container px-3 md:px-5 xl:px-0">
-            <div class="flex flex-wrap justify-between items-cente mb-10">
+            <div class="flex flex-wrap justify-between items-center mb-10">
                 <h2 class="text-[#272343] xl:text-[32px] xl:leading-[110%] text-xl md:text-2xl font-semibold font-display capitalize">What client says about us</h2>
                 <div class="">
                     <button class="testimonials-button-prev">
@@ -1151,11 +1151,9 @@
                     <div class="swiper-slide">
                         <!-- testimonials item start -->
                         <div class="testimonial-card bg-white lg:p-10 sm:p-6 p-4 rounded-xl shadow-[0px_8px_40px_rgba(39,35,67,0.08)]">
-                            <div class="flex gap-6">
-                                <div class=" border-l border-[#007580] border-l-[#007580]  w-1"></div>
+                            <div class="shadow-[inset_2px_0px_0px_#029FAE] pl-6">
                                 <p class="text-[#636270] font-display font-normal lg:text-[20px] lg:leading-[150%] sm:text-base text-sm capitalize">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet mi nec massa tincidunt blandit et eu sem. Maecenas laoreet ultrices diam dignissim posuere. Aenean ultrices dui at ipsum sagittis, pharetra lacinia dui faucibus. In ac bibendum ex. Aenean dolor massa, euismod sit amet suscipit et“</p>
                             </div>
-
                             <div class="flex justify-between items-end">
                                 <div class="flex items-center flex-wrap gap-3">
                                     <div class="lg:w-[60px] lg:h-[60px] sm:w-12 sm:h-12 w-8 h-8">
@@ -1180,11 +1178,9 @@
                     <div class="swiper-slide">
                         <!-- testimonials item start -->
                         <div class="testimonial-card bg-white lg:p-10 sm:p-6 p-4 rounded-xl shadow-[0px_8px_40px_rgba(39,35,67,0.08)]">
-                            <div class="flex gap-6">
-                                <div class=" border-l border-[#007580] border-l-[#007580]  w-1"></div>
+                            <div class="shadow-[inset_2px_0px_0px_#029FAE] pl-6">
                                 <p class="text-[#636270] font-display font-normal lg:text-[20px] lg:leading-[150%] sm:text-base text-sm capitalize">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet mi nec massa tincidunt blandit et eu sem. Maecenas laoreet ultrices diam dignissim posuere. Aenean ultrices dui at ipsum sagittis, pharetra lacinia dui faucibus. In ac bibendum ex. Aenean dolor massa, euismod sit amet suscipit et“</p>
                             </div>
-
                             <div class="flex justify-between items-end">
                                 <div class="flex items-center flex-wrap gap-3">
                                     <div class="lg:w-[60px] lg:h-[60px] sm:w-12 sm:h-12 w-8 h-8">
@@ -1215,7 +1211,7 @@
     <!-- recent products section start -->
     <section class="lg:py-20 py-6 sm:py-12">
         <div class="container px-3 md:px-5 xl:px-0">
-            <div class="flex justify-between items-cente mb-10">
+            <div class="flex justify-between items-center mb-10">
                 <h2 class="text-[#272343] xl:text-[32px] xl:leading-[110%] text-xl md:text-2xl font-semibold font-display">Recently Added</h2>
                 <div>
                     <button class="recentSwiper-button-prev">

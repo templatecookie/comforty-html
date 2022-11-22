@@ -536,7 +536,7 @@ a {
   padding: 6px 10px;
   border-radius: 4px;
   color: #FFFFFF;
-  z-index: 999;
+  z-index: 9;
 }
 
 .product-card .badge.sales {
@@ -945,4 +945,9 @@ header {
 
 .gallery-thumbs .swiper-slide .img-thumb-active {
   margin-left: -15px;
+}
+
+.mixitup-control-active{
+  color: #272343 !important;
+  box-shadow: 0px 2px 0px #038053 !important;
 }
