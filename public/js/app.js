@@ -125,7 +125,7 @@ var swiper4 = new Swiper(".featureSwiper", {
         prevEl: ".featureSwiper-button-prev",
     },
     breakpoints: {
-        640: {
+        480: {
             slidesPerView: 2,
             spaceBetween: 12,
         },
@@ -149,7 +149,7 @@ var swiper5 = new Swiper(".recentSwiper", {
         prevEl: ".recentSwiper-button-prev",
     },
     breakpoints: {
-        640: {
+        480: {
             slidesPerView: 2,
             spaceBetween: 12,
         },

@@ -3398,6 +3398,10 @@ video {
     flex-direction: row;
   }
 
+  .sm\:flex-nowrap {
+    flex-wrap: nowrap;
+  }
+
   .sm\:justify-between {
     justify-content: space-between;
   }

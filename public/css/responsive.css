@@ -81,7 +81,7 @@
 
 
 
-@media (min-width: 640px) {
+@media (min-width: 480px) {
   .portfoliolist {
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
