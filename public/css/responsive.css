@@ -72,9 +72,8 @@
   .swiper-button-prev {
     display: none;
   }
-  .gallery-container,
-  .gallery-main {
-    width: 100%;
-    height: auto;
+
+  .sign_in {
+    width: auto;
   }
 }
