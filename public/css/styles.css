@@ -207,10 +207,10 @@ input[type=checkbox]:before {
 
 /* 404 error page Start */
 
-.error_wrapper {
-  padding-top: 202px;
+/* .error_wrapper {
+  padding:0px 202px;
 
-}
+} */
 
 .error_wrapper h1 {
   color: var(--gray-black);
@@ -539,7 +539,7 @@ a {
   padding: 6px 10px;
   border-radius: 4px;
   color: #FFFFFF;
-  z-index: 999;
+  z-index: 9;
 }
 
 .product-card .badge.sales {
