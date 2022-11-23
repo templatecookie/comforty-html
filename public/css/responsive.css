@@ -100,3 +100,10 @@
     gap: 24px;
   }
 }
+@media (min-width:1860px) {
+  .banner-slider-button{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
