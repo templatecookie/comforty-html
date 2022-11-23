@@ -1014,11 +1014,11 @@ header {
   border-radius: 8px;
   box-shadow: 0px 0px 30px rgba(39, 35, 67, 0.12);
 }
-.main-menu li a{
+.main-menu>li>a{
   position: relative;
   padding: 8px 16px;
 }
-.main-menu li a::before{
+.main-menu>li>a::before{
   content: '';
   position: absolute;
   top: 0;
@@ -1031,11 +1031,11 @@ header {
   transform: scaleY(2);
   opacity: 0;
 }
-.main-menu li a:hover::before{
+.main-menu>li>a:hover::before{
   opacity: 1;
   transform: scaleY(1);
 }
-.main-menu li a::after{
+.main-menu>li>a::after{
   content: '';
   position: absolute;
   top: 0;
@@ -1046,11 +1046,11 @@ header {
   transform: scaley(0);
   z-index: -1;
 }
-.main-menu li a:hover::after{
+.main-menu>li>a:hover::after{
   background: #262626;
   transform: scaley(1);
 }
-.main-menu li a:hover{
+.main-menu>li>a:hover{
   color: white;
 }
 .main-menu li > ul li a{
