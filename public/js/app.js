@@ -248,6 +248,10 @@ $(".profile-content").on('mouseleave', function() {
     $(".profile-content ul").slideUp();
 });
 
+$(".dropdown-content").on('mouseleave', function() {
+    $(".dropdown-content ul").slideUp();
+});
+
 
 
 $(".main-menu li").hover(function() {
