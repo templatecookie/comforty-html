@@ -990,3 +990,46 @@ header {
   
   color: #029FAE;
 }
+
+/* plus Mines ++ -- */
+.plus_mines_input {
+    height: 34px;
+    width: 50px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: #272343;
+    line-height: 100%;
+    outline: none;
+    user-select: none;
+}
+
+/* custom input file */
+#custom-button {
+    padding: 10px;
+    color: white;
+    /* background-color: #009578; */
+    /* border: 1px solid #000; */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+  }
+  
+  #custom-button:hover {
+    /* background-color: #00b28f; */
+    background-color: var(--dark-accents);
+  }
+  
+  #custom-text {
+    margin-left: 10px;
+    font-family: sans-serif;
+    color: #aaa;
+  }
+
+  /* custom btn file */
+
+  
