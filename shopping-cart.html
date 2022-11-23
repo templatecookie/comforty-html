@@ -18,6 +18,17 @@
     <link rel="stylesheet" href="./public/css/tailwind.css">
     <link rel="stylesheet" href="./public/css/styles.css">
     <link rel="stylesheet" href="./public/css/responsive.css">
+    <style>
+        	
+        span {cursor:pointer; }
+        .number{
+        margin:100px;
+    
+        }
+    
+   
+            
+    </style>
 </head>
 
 <body>
@@ -440,9 +451,9 @@
                                     </td>
                                     <td class="py-6 text-sm">
                                         <div class="border inline-flex justify-around items-center h-[52px] w-[140px] border-[#D6D9DD] rounded-lg">
-                                            <button class="w-5 h-5 inline-flex justify-center items-center text-[#9A9CAA]">-</button>
-                                            <span class="text-[#272343] text-base">01</span>
-                                            <button class="w-5 h-5 inline-flex justify-center items-center text-[#9A9CAA]">+</button>
+                                            <span class="w-5 h-5 inline-flex justify-center items-center text-[#9A9CAA] pl-[14px] select-none minus" id="minus">-</span>
+                                            <input type="text" class="text-[#272343] text-base plus_mines_input select-none" value="01"/>
+                                            <span class="w-5 h-5 inline-flex justify-center items-center text-[#9A9CAA] pr-[14px] select-none plus" id="plus">+</span>
                                         </div>
                                     </td>
                                     <td class="py-6 text-sm">
@@ -469,10 +480,11 @@
                                         <p class="mb-0">$250.00</p>
                                     </td>
                                     <td class="pb-6 text-sm">
+
                                         <div class="border inline-flex justify-around items-center h-[52px] w-[140px] border-[#D6D9DD] rounded-lg">
-                                            <button class="w-5 h-5 inline-flex justify-center items-center text-[#9A9CAA]">-</button>
-                                            <span class="text-[#272343] text-base">01</span>
-                                            <button class="w-5 h-5 inline-flex justify-center items-center text-[#9A9CAA]">+</button>
+                                            <span class="w-5 h-5 inline-flex justify-center items-center text-[#9A9CAA] pl-[14px] select-none minus" id="minus">-</span>
+                                            <input type="text" class="text-[#272343] text-base plus_mines_input" value="01"/>
+                                            <span class="w-5 h-5 inline-flex justify-center items-center text-[#9A9CAA] pr-[14px] select-none plus" id="plus">+</span>
                                         </div>
                                     </td>
                                     <td class="pb-6 text-sm">
@@ -500,9 +512,9 @@
                                     </td>
                                     <td class="pb-6 text-sm">
                                         <div class="border inline-flex justify-around items-center h-[52px] w-[140px] border-[#D6D9DD] rounded-lg">
-                                            <button class="w-5 h-5 inline-flex justify-center items-center text-[#9A9CAA]">-</button>
-                                            <span class="text-[#272343] text-base">01</span>
-                                            <button class="w-5 h-5 inline-flex justify-center items-center text-[#9A9CAA]">+</button>
+                                            <span class="w-5 h-5 inline-flex justify-center items-center text-[#9A9CAA] pl-[14px] select-none minus" id="minus">-</span>
+                                            <input type="text" class="text-[#272343] text-base plus_mines_input" value="01"/>
+                                            <span class="w-5 h-5 inline-flex justify-center items-center text-[#9A9CAA] pr-[14px] select-none plus" id="plus">+</span>
                                         </div>
                                     </td>
                                     <td class="pb-6 text-sm">
@@ -551,6 +563,8 @@
     </section>   
 
     <!-- shoping cart List End -->
+
+    
 
      <!-- footer area start -->
  <footer>
@@ -625,15 +639,20 @@
                         </li>
                     </ul>
                 </div>
+               
 
+              
                 <div class="footer-widget">
                     <h2 class="widget-title text-[#9A9CAA] text-sm leading-[110%] font-display font-medium uppercase mb-5">Category</h2>
                     <ul class="flex flex-col gap-3">
-                        <li>
+                        <!-- <li>
+                            <a href="#" class="text-[#272343] text-base leading-[110%] hover:text-[#007580] transition-all duration-500 border-b border-b-transparent hover:border-b-[#007580] inline-block pb-1 ease-in-out">Sofa</a>
+                        </li> -->
+                        <li class="">
                             <a href="#" class="text-[#272343] text-base leading-[110%] hover:text-[#007580] transition-all duration-500 border-b border-b-transparent hover:border-b-[#007580] inline-block pb-1 ease-in-out">Sofa</a>
                         </li>
-                        <li>
-                            <a href="#" class="text-[#272343] text-base leading-[110%] hover:text-[#007580] transition-all duration-500 border-b border-b-transparent hover:border-b-[#007580] inline-block pb-1">Armchair</a>
+                        <li class="">
+                            <a href="#" class="text-[#272343] text-base leading-[110%] hover:text-[#007580] transition-all duration-500 border-b border-b-transparent hover:border-b-[#007580] inline-block pb-1 ease-in-out">Armchair</a>
                         </li>
                         <li>
                             <a href="#" class="text-[#272343] text-base leading-[110%] hover:text-[#007580] transition-all duration-500 border-b border-b-transparent hover:border-b-[#007580] inline-block pb-1">Wing Chair</a>
@@ -700,6 +719,26 @@
     <script src="./public/assets/plugins/js/select2.js"></script>
     <script src="./public/assets/plugins/js/mixitUp.js"></script>
     <script src="./public/js/app.js"></script>
+
+    <script>
+        
+        $(document).ready(function() {
+			$('.minus').click(function () {
+				var $input = $(this).parent().find('input');
+				var count = parseInt($input.val()) - 1;
+				count = count < 1 ? 1 : count;
+				$input.val(count);
+				$input.change();
+				return false;
+			});
+			$('.plus').click(function () {
+				var $input = $(this).parent().find('input');
+				$input.val(parseInt($input.val()) + 1);
+				$input.change();
+				return false;
+			});
+		});
+        </script>
 </body>
 
 </html>

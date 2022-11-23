@@ -377,38 +377,39 @@ a {
   position: relative;
 }
 
-.dropdown-content ul,
+.dropdown-content ul {
+    position: absolute;
+    left: 0px;
+    top: 19px;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background: white;
+    border-top: 0;
+    border-radius: 0 0 5px 5px;
+    padding-top: 3px;
+    z-index: 9999;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 30px rgba(39, 35, 67, 0.12);
+}
+
 .profile-content ul {
-  position: absolute;
-  top: 14px;
-  display: none;
-  list-style: none;
-  min-width: 200px;
-  background: #FFFFFF;
-  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  z-index: 9999;
-}
-.cart-content ul{
-  position: absolute;
-  top: 14px;
-  display: none;
-  list-style: none;
-  min-width: 400px;
-  background: #FFFFFF;
-  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  z-index: 9999;
-}
-.dropdown-content ul{
-  left: 0px;
-}
-.profile-content ul,
-.cart-content ul {
-  right: 0px;
-}
-.cart-content ul li:not(:last-child){
-  border-bottom: 1px solid #E1E3E6;
+    position: absolute;
+    right: 0px;
+    top: 30px;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background: white;
+    border-top: 0;
+    /* border-radius: 0 0 5px 5px; */
+    padding-top: 3px;
+    z-index: 9999;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 30px rgba(39, 35, 67, 0.12);
+
 }
 
 .dropdown-content ul li a,
@@ -427,7 +428,7 @@ a {
 .dropdown-content ul li a:hover,
 .profile-content ul li a:hover {
   background: #F0F2F3;
-  color: #272343;
+  color: var(--accents);
   border-radius: 5px;
 }
 
@@ -963,25 +964,68 @@ header {
   display: none;
   position: absolute;
   min-width: 220px;
-  top: 53px;
+  top: 58px;
   left: -1px;
   z-index: 1;
   text-align: left;
-  background: #FFFFFF;
-  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  background-color: var(--gray-white);
+  padding: 8px 12px;
   border-radius: 8px;
-  padding: 12px;
+  box-shadow: 0px 0px 30px rgba(39, 35, 67, 0.12);
 }
 .main-menu li > ul li a{
   padding: 8px 12px;
-  color: #636270;
+  color: #1e1e1e;
   display: block;
+  transition: all .5s ease-in-out;
+  border-radius: 8px;
+  
+
 }
 .main-menu li > ul li a:hover{
-  background: #F0F2F3;
-  color: #272343;
-  border-radius: 5px;
+  background-color: #F0F2F3; 
+  color: #029FAE;
 }
-.banner-slider-button{
-  display: none;
+
+/* plus Mines ++ -- */
+.plus_mines_input {
+    height: 34px;
+    width: 50px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: #272343;
+    line-height: 100%;
+    outline: none;
+    user-select: none;
 }
+
+/* custom input file */
+#custom-button {
+    padding: 10px;
+    color: white;
+    /* background-color: #009578; */
+    /* border: 1px solid #000; */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+  }
+  
+  #custom-button:hover {
+    /* background-color: #00b28f; */
+    background-color: var(--dark-accents);
+  }
+  
+  #custom-text {
+    margin-left: 10px;
+    font-family: sans-serif;
+    color: #aaa;
+  }
+
+  /* custom btn file */
+
+  
