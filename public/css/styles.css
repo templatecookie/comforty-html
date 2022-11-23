@@ -543,6 +543,11 @@ a {
   width: 100%;
   object-fit: cover;
   border-radius: 6px;
+  -webkit-transition: all 0.5s ease-out 0s;
+  -moz-transition: all 0.5s ease-out 0s;
+  -ms-transition: all 0.5s ease-out 0s;
+  -o-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
 }
 
 .product-card .badge {
@@ -638,7 +643,10 @@ a {
 .product-card:hover .product-name {
   color: #007580;
 }
-
+.product-card:hover img,
+.product-card-02:hover img{
+  transform: scale(1.3)
+}
 
 .product-card-02 {
   position: relative;
@@ -658,6 +666,11 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  -webkit-transition: all 0.5s ease-out 0s;
+  -moz-transition: all 0.5s ease-out 0s;
+  -ms-transition: all 0.5s ease-out 0s;
+  -o-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
 }
 
 .product-card-02 .product-info {
@@ -1098,4 +1111,22 @@ header {
   .custom-radio input[type=radio]:checked~.custom-bg{
     border: 2px solid #029FAE;
   }
-  
+  .footer-link{
+    position: relative;
+  }
+  .footer-link::before{
+     content: "";
+     width: 100%;
+     height: 3px;
+     position: absolute;
+     left: 0;
+     bottom: -1px;
+     background: #fff;
+     transition: 0.5s transform ease;
+     transform: scale3d(0, 1, 1);
+     transform-origin: 50% 50%;
+     background: #029FAE;
+  }
+  .footer-link:hover::before{
+    transform: scale3d(1, 1, 1);
+  }

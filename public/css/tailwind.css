@@ -1089,16 +1089,12 @@ video {
   max-width: 350px;
 }
 
-.max-w-\[348px\] {
-  max-width: 348px;
-}
-
-.max-w-\[\] {
-  max-width: ;
-}
-
 .max-w-\[285px\] {
   max-width: 285px;
+}
+
+.max-w-\[348px\] {
+  max-width: 348px;
 }
 
 .flex-shrink {
