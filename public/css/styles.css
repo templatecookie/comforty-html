@@ -510,6 +510,7 @@ a {
   -ms-transition: all 0.5s ease-out 0s;
   -o-transition: all 0.5s ease-out 0s;
   transition: all 0.5s ease-out 0s;
+  display: inline-block;
 }
 
 .product-card .product-thumb {
@@ -980,4 +981,7 @@ header {
   background: #F0F2F3;
   color: #272343;
   border-radius: 5px;
+}
+.banner-slider-button{
+  display: none;
 }
