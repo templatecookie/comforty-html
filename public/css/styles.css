@@ -96,25 +96,6 @@
   display: none;
 }
 
-/* password icon end */
-
-
-
-/* .form input{
-    background-color: #F0F2F3;
-    border-radius: 8px;
-    opacity: 0.7;
-    padding: 17px 20px;
-   
-} */
-
-/* .checkbox{
-    background-color: blue;
-    width: 20px;
-    height: 20px;
-    border-radius: 24px;
-
-} */
 
 input[type=checkbox] {
   position: relative;
@@ -380,7 +361,7 @@ a {
 .dropdown-content ul {
     position: absolute;
     left: 0px;
-    top: 19px;
+    top: 14px;
     display: none;
     list-style: none;
     width: 200px;
@@ -400,18 +381,24 @@ a {
     top: 30px;
     display: none;
     list-style: none;
-    width: 200px;
+    min-width: 250px;
     background: white;
-    border-top: 0;
-    /* border-radius: 0 0 5px 5px; */
-    padding-top: 3px;
     z-index: 9999;
-    padding: 10px;
     border-radius: 8px;
     box-shadow: 0px 0px 30px rgba(39, 35, 67, 0.12);
-
 }
-
+.cart-content ul{
+  position: absolute;
+  right: 0px;
+  top: 30px;
+  display: none;
+  list-style: none;
+  min-width: 400px;
+  background: white;
+  z-index: 9999;
+  border-radius: 8px;
+  box-shadow: 0px 0px 30px rgba(39, 35, 67, 0.12);
+}
 .dropdown-content ul li a,
 .profile-content ul li a {
   padding: 12px 16px;
@@ -428,8 +415,11 @@ a {
 .dropdown-content ul li a:hover,
 .profile-content ul li a:hover {
   background: #F0F2F3;
-  color: var(--accents);
+  color: #272343;
   border-radius: 5px;
+}
+.cart-content ul li:not(:last-child) {
+  border-bottom: 1px solid #E1E3E6;
 }
 
 /* swipper js  */
@@ -984,7 +974,7 @@ header {
 }
 .main-menu li > ul li a:hover{
   background-color: #F0F2F3; 
-  color: #029FAE;
+  color: #272343;
 }
 
 /* plus Mines ++ -- */
