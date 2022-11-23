@@ -185,8 +185,7 @@ var swiper6 = new Swiper(".testimonialSwiper", {
 
 
 var galleryThumbs = new Swiper(".gallery-thumbs", {
-    centeredSlides: true,
-    centeredSlidesBounds: true,
+    freeMode: true,
     slidesPerView: 3,
     loop: true,
     navigation: {
@@ -200,17 +199,14 @@ var galleryThumbs = new Swiper(".gallery-thumbs", {
 });
 
 var galleryMain = new Swiper(".gallery-main", {
-    watchOverflow: true,
-    watchSlidesVisibility: true,
-    watchSlidesProgress: true,
-    preventInteractionOnTransition: true,
-    effect: 'fade',
+    mousewheel: true,
     loop: true,
-    fadeEffect: {
-        crossFade: true
+    navigation: {
+        nextEl: '.gallery-button-next',
+        prevEl: '.gallery-button-prev',
     },
     thumbs: {
-        galleryMain: galleryThumbs
+        swiper: galleryThumbs
     }
 });
 
