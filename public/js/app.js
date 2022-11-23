@@ -228,9 +228,27 @@ $(".custom-dropdown").on('click', function() {
     $(".dropdown-content ul").slideToggle();
 });
 
+$("#addToCart").on('mouseover', function() {
+    $(".cart-content ul").slideDown();
+});
+
+$("#addToCart").on('click', function() {
+    $(".cart-content ul").slideUp();
+});
+
+$(".cart-content").on('mouseleave', function() {
+    $(".cart-content ul").slideUp();
+});
+
 $(".user-profile").on('click', function() {
     $(".profile-content ul").slideToggle();
 });
+
+$(".profile-content").on('mouseleave', function() {
+    $(".profile-content ul").slideUp();
+});
+
+
 
 $(".main-menu li").hover(function() {
     var isHovered = $(this).is(":hover");

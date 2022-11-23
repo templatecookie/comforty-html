@@ -160,7 +160,6 @@ input[type=checkbox]:before {
 /* pl-5 py-[17px] w-full bg-[#F0F2F3] rounded-lg focus:outline-none  focus:ring focus:ring-[#F0F2F3] font-display transition duration-300 ease-in-out pr-5 */
 
 .form_input {
-
   padding: 20px 17px;
   background-color: var(--off-white);
   border-radius: 8px;
@@ -171,7 +170,6 @@ input[type=checkbox]:before {
 }
 
 .form_password {
-
   padding: 20px 17px;
   background-color: var(--off-white);
   border-radius: 8px;
@@ -179,7 +177,6 @@ input[type=checkbox]:before {
   padding-right: 50px;
   width: 100%;
   margin-bottom: 16px;
-
 }
 
 .form_btn {
@@ -200,16 +197,6 @@ input[type=checkbox]:before {
 .form_btn svg {
   margin-top: 4px;
 }
-
-/* sign_in End */
-
-
-/* 404 error page Start */
-
-/* .error_wrapper {
-  padding:0px 202px;
-
-} */
 
 .error_wrapper h1 {
   color: var(--gray-black);
@@ -246,7 +233,6 @@ input[type=checkbox]:before {
 
 }
 
-/* 404 error page End */
 
 /* shopping cart page start */
 .shopping-cart {
@@ -326,7 +312,7 @@ a {
   font-weight: 600;
   padding: 14px 24px;
   background: #029FAE;
-  border-radius: 8px;
+  border-radius: 5px;
 }
 
 .btn-success {
@@ -342,6 +328,16 @@ a {
     background: rgba(1, 173, 90, 0.1);
     border-radius: 6px;
 
+}
+.btn-transparent{
+  border: 1px solid #029FAE;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 110%;
+  font-weight: 600;
+  color: #029FAE;
+  padding: 14px 24px;
+  background: transparent;
 }
 
 /* button{
@@ -376,45 +372,51 @@ a {
 }
 
 .dropdown-content,
-.profile-content {
+.profile-content,
+.cart-content {
   position: relative;
 }
 
-.dropdown-content ul {
-  position: absolute;
-  left: 0px;
-  top: 14px;
-  display: none;
-  list-style: none;
-  width: 200px;
-  background: white;
-  border-top: 0;
-  border-radius: 0 0 5px 5px;
-  padding-top: 3px;
-  z-index: 9999;
-  padding: 10px;
-}
-
+.dropdown-content ul,
 .profile-content ul {
   position: absolute;
-  right: 0px;
   top: 14px;
   display: none;
   list-style: none;
-  width: 200px;
-  background: white;
-  border-top: 0;
-  border-radius: 0 0 5px 5px;
-  padding-top: 3px;
+  min-width: 200px;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
   z-index: 9999;
-  padding: 10px;
+}
+.cart-content ul{
+  position: absolute;
+  top: 14px;
+  display: none;
+  list-style: none;
+  min-width: 400px;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 9999;
+}
+.dropdown-content ul{
+  left: 0px;
+}
+.profile-content ul,
+.cart-content ul {
+  right: 0px;
+}
+.cart-content ul li:not(:last-child){
+  border-bottom: 1px solid #E1E3E6;
 }
 
 .dropdown-content ul li a,
 .profile-content ul li a {
-  padding: 8px 12px;
+  padding: 12px 16px;
   width: 100%;
   cursor: pointer;
+  color: #636270;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
@@ -960,19 +962,22 @@ header {
   display: none;
   position: absolute;
   min-width: 220px;
- top: 53px;
+  top: 53px;
   left: -1px;
   z-index: 1;
   text-align: left;
-  background-color: #ddd;
-  padding: 8px 12px;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 12px;
 }
 .main-menu li > ul li a{
   padding: 8px 12px;
-  color: black;
+  color: #636270;
   display: block;
 }
 .main-menu li > ul li a:hover{
-  background-color: white;
-  border-radius: 6px;
+  background: #F0F2F3;
+  color: #272343;
+  border-radius: 5px;
 }

@@ -81,7 +81,7 @@
                         </div>
                         <div class="lg:max-w-[413px] lg:block hidden w-full">
                             <div class="relative">
-                                <input type="text" placeholder="search here..." class="block w-full bg-white focus:outline-none border-0 px-4 py-3 rounded-lg">
+                                <input type="text" placeholder="search here..." class="block w-full bg-white focus:outline-none border-0 px-4 py-3 rounded-lg focus:ring-1 ring-[#029FAE]">
                                 <span class="absolute right-4 top-3">
                                     <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M10.5833 17.4167C14.6334 17.4167 17.9167 14.1334 17.9167 10.0833C17.9167 6.03325 14.6334 2.75 10.5833 2.75C6.53325 2.75 3.25 6.03325 3.25 10.0833C3.25 14.1334 6.53325 17.4167 10.5833 17.4167Z" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -91,9 +91,9 @@
                             </div>
                         </div>
                         <div class="lg:block hidden">
-                            <ul class="flex gap-3">
-                                <li>
-                                    <a href="#" class="inline-flex gap-2 bg-white rounded-lg p-[11px]">
+                            <ul class="flex items-center gap-3">
+                                <li class="relative">
+                                    <a href="#" class="inline-flex gap-2 bg-white rounded-lg p-[11px]" id="addToCart">
                                         <span><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M2.52087 2.97916L4.42754 3.30916L5.31029 13.8261C5.3442 14.2399 5.5329 14.6258 5.83873 14.9066C6.14457 15.1875 6.54506 15.3427 6.96029 15.3413H16.9611C17.3587 15.3418 17.7431 15.1986 18.0436 14.9383C18.344 14.6779 18.5404 14.3178 18.5965 13.9242L19.4673 7.91266C19.4905 7.75279 19.482 7.58991 19.4422 7.43333C19.4024 7.27675 19.3322 7.12955 19.2354 7.00015C19.1387 6.87074 19.0175 6.76167 18.8786 6.67917C18.7397 6.59667 18.5859 6.54235 18.426 6.51933C18.3673 6.51291 4.73371 6.50833 4.73371 6.50833" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                                 <path d="M12.948 9.89542H15.4899" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -104,8 +104,60 @@
                                         <span>Cart</span>
                                         <span class="bg-dark-accents text-white rounded-full py-[3px] px-[9px] ml-1 inline-flex justify-center items-center text-[10px] leading-[100%]">2</span>
                                     </a>
+                                    <div class="cart-content ">
+                                        <ul class="p-6">
+                                            <li class="pb-4">
+                                                <div class="flex items-center justify-between">
+                                                    <div class="flex items-center gap-1">
+                                                        <div>
+                                                            <img src="./public/assets/images/all-img/cart-01.png" alt="">
+                                                        </div>
+                                                        <div class="px-2">
+                                                            <h2 class="text-[#272343]"><span>Isolate Sofa Chair</span> <span class="text-[#636270]">x5</span></h2>
+                                                            <p class="text-[#272343] font-semibold mb-0">$150.00</p>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <button class="hover:bg-[#F0F2F3] bg-transparent p-2 hover:text-[#272343] rounded-full text-[#9A9CAA] transition-all duration-500">
+                                                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M10 10L14 14M14 14L18 10M14 14L10 18M14 14L18 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="py-4">
+                                                <div class="flex items-center justify-between">
+                                                    <div class="flex items-center gap-1">
+                                                        <div>
+                                                            <img src="./public/assets/images/all-img/cart-01.png" alt="">
+                                                        </div>
+                                                        <div class="px-2">
+                                                            <h2 class="text-[#272343]"><span>Isolate Sofa Chair</span> <span class="text-[#636270]">x5</span></h2>
+                                                            <p class="text-[#272343] font-semibold mb-0">$150.00</p>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <button class="hover:bg-[#F0F2F3] bg-transparent p-2 hover:text-[#272343] rounded-full text-[#9A9CAA] transition-all duration-500">
+                                                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M10 10L14 14M14 14L18 10M14 14L10 18M14 14L18 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <div class="flex justify-between items-center py-2 mb-4">
+                                                <p class="text-[#636270] text-lg">2 Products</p>
+                                                <p class="text-[#272343] text-xl font-medium">$250.00</p>
+                                            </div>
+                                            <div class="flex justify-between items-center">
+                                                <a href="shopping-cart.html" class="btn-transparent">View Cart</a>
+                                                <a href="checkout-shopping.html" class="btn-primary">Checkout</a>
+                                            </div>
+                                        </ul>
+                                    </div>
                                 </li>
-                                <li>
+                                <li class="inline-flex items-center justify-center">
                                     <a href="#" class="bg-white text-[#272343] hover:text-[#007580] rounded-lg p-[11px]">
                                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M2.63262 10.6315C1.64903 7.56067 2.79762 4.05075 6.02245 3.01217C6.85867 2.74459 7.74676 2.68086 8.61262 2.82629C9.47849 2.97172 10.297 3.32208 10.9999 3.84817C12.3337 2.81692 14.2743 2.46858 15.9683 3.01217C19.1922 4.05075 20.349 7.56067 19.3664 10.6315C17.8355 15.499 10.9999 19.2482 10.9999 19.2482C10.9999 19.2482 4.21478 15.5558 2.63262 10.6315V10.6315Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -120,19 +172,28 @@
                                         </svg>
                                     </button>
                                     <div class="profile-content">
-                                        <ul>
-                                            <li>
-                                                <a href="#">Wodden</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Partex</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Plywood</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Segun</a>
-                                            </li>
+                                        <ul class="py-3">
+                                            <div class="px-3">
+                                                <li>
+                                                    <a href="account-setting.html">Account Settings</a>
+                                                </li>
+                                                <li>
+                                                    <a href="order-history.html">Order History</a>
+                                                </li>
+                                            </div>
+                                            <div class="px-3 shadow-[0px_-1px_0px_#E1E3E6,0px_1px_0px_#E1E3E6]">
+                                                <li>
+                                                    <a href="wishlist.html">Wishlist</a>
+                                                </li>
+                                                <li>
+                                                    <a href="shopping-cart.html">Shopping Cart</a>
+                                                </li>
+                                            </div>
+                                            <div class="px-3">
+                                                <li>
+                                                    <a href="#">Logout</a>
+                                                </li>
+                                            </div>
                                         </ul>
                                     </div>
                                 </li>
@@ -163,7 +224,7 @@
                                 <span class="text-[#272343]">All Categories</span>
                             </button>
                             <div class="dropdown-content">
-                                <ul>
+                                <ul class="p-3">
                                     <li>
                                         <a href="#">Wodden</a>
                                     </li>
@@ -231,7 +292,7 @@
                                         <a href="checkout-billing.html">Checkout Billing</a>
                                     </li>
                                     <li>
-                                        <a href="checkout-shipping.html">Checkout Shoping</a>
+                                        <a href="checkout-shopping.html">Checkout Shoping</a>
                                     </li>
                                 </ul>
                             </li>
