@@ -450,16 +450,18 @@
     <div class="breadcrumb">
         <div class="container px-3 md:px-5 xl:px-0">
             <div class="flex items-center gap-1 py-[1.5px]">
-                <a href="#" class="text-[14px] font-normal leading-[110%] text-dark-gray">Home</a>
-
+                <a href="index.html" class="text-[14px] font-normal leading-[110%] text-dark-gray">Home</a>
                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M7.125 5.25L10.875 9L7.125 12.75" stroke="#636270" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-
-                <span class="text-[14px] font-medium leading-[110%] font-display text-gray-black inline-block">Shop</span>
+                <a href="products.html" class="text-[14px] font-normal leading-[110%] text-dark-gray">Shop</a>
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.125 5.25L10.875 9L7.125 12.75" stroke="#636270" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span class="text-[14px] font-medium leading-[110%] font-display text-gray-black inline-block">Isolate Sofa Chair</span>
             </div>
 
-            <h2 class="pt-[13.5px] text-2xl font-semibold text-gray-black font-display">Shop</h2>
+            <h2 class="pt-[13.5px] text-2xl font-semibold text-gray-black font-display">Product Details</h2>
         </div>
     </div>
     <!-- Breadcrumb End -->
@@ -549,22 +551,25 @@
                         <h2 class="text-[#9A9CAA] text-sm font-medium mb-3">Color</h2>
                         <ul class="flex gap-[30px] items-center p-0 m-0">
                             <li>
-                                <button class="inline-flex gap-2 items-center">
-                                    <span class="bg-[#1E1E1E] w-8 h-8 rounded-full"></span>
+                                <label for="black" class="inline-flex gap-2 items-center custom-radio cursor-pointer">
+                                    <input type="radio" id="black" name="color" class="hidden"/>
+                                    <span class="bg-[#1E1E1E] w-8 h-8 rounded-full custom-bg m-1"></span>
                                     <span class="text-base text-[#636270]">Black</span>
-                                </button>
+                                </label>                                
                             </li>
                             <li>
-                                <button class="inline-flex gap-2 items-center">
-                                    <span class="bg-[#B26F3F] w-8 h-8 rounded-full"></span>
+                                <label for="brown" class="inline-flex gap-2 items-center custom-radio cursor-pointer">
+                                    <input type="radio" id="brown" name="color" class="hidden" />
+                                    <span class="bg-[#B26F3F] w-8 h-8 rounded-full custom-bg m-1"></span>
                                     <span class="text-base text-[#636270]">Black</span>
-                                </button>
+                                </label>
                             </li>
                             <li>
-                                <button class="inline-flex gap-2 items-center">
-                                    <span class="bg-[#F7AD94] w-8 h-8 rounded-full"></span>
+                                <label for="orange" class="inline-flex gap-2 items-center custom-radio cursor-pointer">
+                                    <input type="radio" id="orange" name="color" class="hidden" />
+                                    <span class="bg-[#F7AD94] w-8 h-8 rounded-full custom-bg m-1"></span>
                                     <span class="text-base text-[#636270]">Black</span>
-                                </button>
+                                </label>
                             </li>
                         </ul>
                     </div>
@@ -592,11 +597,11 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="flex flex-wrap items-center gap-3 mb-6">
+                    <div class="flex flex-wrap lg:flex-nowrap items-center gap-3 mb-6">
                         <div class="border inline-flex justify-around items-center h-[52px] w-[140px] border-[#D6D9DD] rounded-lg">
-                            <button class="w-5 h-5 inline-flex justify-center items-center text-[#9A9CAA]">-</button>
-                            <span class="text-[#272343] text-base">01</span>
-                            <button class="w-5 h-5 inline-flex justify-center items-center text-[#9A9CAA]">+</button>
+                            <span class="w-5 h-5 inline-flex justify-center items-center text-[#9A9CAA] pl-[14px] select-none minus" id="minus">-</span>
+                            <input type="text" class="text-[#272343] text-base plus_mines_input select-none" value="01" />
+                            <span class="w-5 h-5 inline-flex justify-center items-center text-[#9A9CAA] pr-[14px] select-none plus" id="plus">+</span>
                         </div>
                         <div>
                             <button class="inline-flex gap-3 py-3.5 bg-[#029FAE] rounded-lg px-4 xl:w-[343px] items-center justify-center">
@@ -1050,6 +1055,24 @@
     <script src="./public/assets/plugins/js/select2.js"></script>
     <script src="./public/assets/plugins/js/mixitUp.js"></script>
     <script src="./public/js/app.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.minus').click(function() {
+                var $input = $(this).parent().find('input');
+                var count = parseInt($input.val()) - 1;
+                count = count < 1 ? 1 : count;
+                $input.val(count);
+                $input.change();
+                return false;
+            });
+            $('.plus').click(function() {
+                var $input = $(this).parent().find('input');
+                $input.val(parseInt($input.val()) + 1);
+                $input.change();
+                return false;
+            });
+        });
+    </script>
 </body>
 
 </html>
