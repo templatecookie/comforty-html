@@ -249,10 +249,8 @@ box-shadow: inset 0px -1px 0px #E1E3E6;
 
 
 .box {
-    background-color: #FFF;
     box-shadow: 0px 0px 24px rgba(39, 35, 67, 0.1);
-    border-radius: 8px;
-  
+    border-radius: 8px;  
   }
 /* user menu end*/
 
@@ -297,27 +295,15 @@ a {
   position: relative;
   overflow: hidden;
   width: max-content;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
 }
-.btn-primary:after{
-  content: '';
-  position: absolute;
-  background-color: #272343;
-  height: 100%;
-  left: -100%;
-  top: 0;
-  transform: skew(50deg);
-  transition-duration: 0.6s;
-  transform-origin: top left;
-  width: 0;
-  z-index: -1;
-  overflow: hidden;
-}
+
 .btn-primary:hover{
-  background-color: transparent;
-}
-.btn-primary:hover:after {
-  height: 100%;
-  width: 200%;
+  background: #272343;
 }
 
 .btn-success {
