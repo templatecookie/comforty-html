@@ -1004,10 +1004,11 @@ header {
   position: relative;
   padding: 8px 16px;
   transition: all 0.3s ease;
+  font-weight: 500;
+  color: #636270;
 }
 .main-menu>li>a:hover{
   color: #029FAE;
-  transform: scale(1.1);
 }
 .main-menu li > ul li a{
   padding: 8px 12px;
