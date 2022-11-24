@@ -815,6 +815,7 @@ a {
 .language .select2-container.select2-container--default.select2-container--open .select2-dropdown.select2-dropdown--above {
   right: -50px !important;
   z-index: 99999;
+  width: 100px;
 }
 
 .category .select2-container.select2-container--default.select2-container--open .select2-dropdown.select2-dropdown--below,
