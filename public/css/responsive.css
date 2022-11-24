@@ -4,6 +4,9 @@
     flex-direction: column;
     gap: 6px;
   }
+  .breadcrumb {
+    padding: 48px 24px;
+  }
 }
 
 @media(max-width:480px) {
@@ -72,7 +75,6 @@
   .swiper-button-prev {
     display: none;
   }
-
   .sign_in {
     width: auto;
   }
@@ -80,6 +82,9 @@
   .gallery-main{
     width: 100%;
     height: auto;
+  }
+  .breadcrumb{
+    padding: 48px 24px;
   }
 }
 
