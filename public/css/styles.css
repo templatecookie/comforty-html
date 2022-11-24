@@ -621,6 +621,11 @@ a {
   text-transform: capitalize;
   color: #272343;
   margin-bottom: 10px;
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 220px;
   -webkit-transition: all 0.5s ease-out 0s;
   -moz-transition: all 0.5s ease-out 0s;
   -ms-transition: all 0.5s ease-out 0s;
