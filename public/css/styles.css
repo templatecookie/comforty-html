@@ -1002,7 +1002,6 @@ header {
 }
 .main-menu>li>a{
   position: relative;
-  padding: 8px 16px;
   transition: all 0.3s ease;
   font-weight: 500;
   color: #636270;
