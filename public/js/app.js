@@ -262,16 +262,37 @@ $(".main-menu li").hover(function() {
 $(document).ready(function() {
     $('.custom-select').select2({
         minimumResultsForSearch: 8,
+        dropdownParent: $('.language')
     });
 });
 $(document).ready(function() {
     $('.custom-select2').select2({
         minimumResultsForSearch: 8,
+        dropdownParent: $('.category')
     });
 });
 $(document).ready(function() {
     $('.custom-select3').select2({
         minimumResultsForSearch: 8,
+        dropdownParent: $('.price')
+    });
+});
+$(document).ready(function() {
+    $('.custom-select4').select2({
+        minimumResultsForSearch: 8,
+        dropdownParent: $('.color')
+    });
+});
+$(document).ready(function() {
+    $('.custom-select5').select2({
+        minimumResultsForSearch: 8,
+        dropdownParent: $('.material')
+    });
+});
+$(document).ready(function() {
+    $('.custom-select6').select2({
+        minimumResultsForSearch: 8,
+        dropdownParent: $('.latest')
     });
 });
 

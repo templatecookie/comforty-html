@@ -38,7 +38,7 @@
                         </p>
                         <div>
                             <ul class="flex gap-6 items-center">
-                                <li class="inline-flex items-center text-white opacity-70 justify-center relative">
+                                <li class="inline-flex items-center text-white opacity-70 justify-center relative language">
                                     <select class="custom-select" name="state">
                                         <option value="AL">Eng</option>
                                         <option value="WY">Bangla</option>
@@ -468,7 +468,7 @@
     <section class="">
         <div class="container px-3 md:px-5 xl:px-0">
             <div class="product-list py-6">
-                <div class="product-filter flex flex-wrap gap-y-4 justify-between items-center">
+                <div class="product-filter flex flex-col lg:flex-row gap-y-4 lg:justify-between items-center">
                     <div class="relative xl:w-[536px] w-full">
                         <input type="text" name="" id="" class="bg-[#F0F2F3] px-5 py-[18px] rounded-lg focus:outline-none transition duration-300 ease-in-out block w-full" placeholder="Search here...">
                         <span class="absolute top-[18px] right-5">
@@ -478,10 +478,10 @@
                             </svg>
                         </span>
                     </div>
-                    <div class="product-filter-menu flex flex-wrap justify-between items-center gap-3">
-                        <div>
-                            <ul class="flex flex-wrap justify-center gap-6 items-center">
-                                <li class="inline-flex items-center justify-center">
+                    <div class="product-filter-menu">
+                        <div class="w-full">
+                            <ul class="flex flex-col md:flex-row justify-center gap-6 items-center">
+                                <li class="inline-flex items-center justify-center category">
                                     <select class="custom-select2 relative" name="category">
                                         <option value="" disabled selected>Category</option>
                                         <option value="">All <span>(7234)</span></option>
@@ -493,8 +493,8 @@
                                     </select>
                                 </li>
 
-                                <li class="inline-flex items-center justify-center">
-                                    <select class="custom-select2" name="prices">
+                                <li class="inline-flex items-center justify-center price">
+                                    <select class="custom-select3" name="prices">
                                         <option value="" disabled selected>Prices</option>
                                         <option value="">all</option>
                                         <option value="">$0 - $100</option>
@@ -508,8 +508,8 @@
                                     </select>
                                 </li>
 
-                                <li class="inline-flex items-center justify-center dropdown relative">
-                                    <select class="custom-select2" name="color">
+                                <li class="inline-flex items-center justify-center color">
+                                    <select class="custom-select4" name="color">
                                         <option value="" disabled selected>Color</option>
                                         <option value="">White</option>
                                         <option value="">Gray</option>
@@ -520,15 +520,15 @@
                                     </select>
                                 </li>
 
-                                <li class="inline-flex items-center justify-center dropdown relative">
-                                    <select class="custom-select2" name="material">
+                                <li class="inline-flex items-center justify-center material">
+                                    <select class="custom-select5" name="material">
                                         <option value="" disabled selected>Material</option>
                                         <option value="">Wooden</option>
                                         <option value="">Plywood</option>
                                     </select>
                                 </li>
-                                <li>
-                                    <select class="custom-select3" name="latest">
+                                <li class="latest">
+                                    <select class="custom-select6" name="latest">
                                         <option value="" disabled selected>Latest</option>
                                         <option value="">Classic</option>
                                         <option value="">Popular</option>
