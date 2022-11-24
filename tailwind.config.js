@@ -9,7 +9,8 @@ module.exports = {
     extend: {},
     fontFamily: {
             display: ["'Inter', sans-serif"],
-        },
+            display2: ["'DM Sans', sans-serif"]
+    }, 
         container: {
             center: true,
             padding: '0rem',

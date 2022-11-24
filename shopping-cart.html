@@ -481,6 +481,7 @@
                 <!-- shopping cart start -->
                 <div class="shopping-cart lg:w-2/3 w-full">
                     <div class="px-6 py-6 overflow-x-auto">
+                        
                         <table class="w-[824px] leading-normal">
                             <thead>
                                 <tr>
@@ -499,14 +500,15 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
+                                <tr class="cart-item">
                                     <td class="py-6 text-sm">
                                         <div class="flex gap-2 items-center">
-                                            <button class="p-2">
+                                            <button class="del">
                                                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M2 2L6.00003 6M6.00003 6L10 2M6.00003 6L2 10M6.00003 6L10 10" stroke="#9A9CAA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                                 </svg>
                                             </button>
+                                       
                                             <div class="w-[70px] h-[70px]">
                                                 <img class="w-full h-full rounded-lg" src="./public/assets/images/all-img/shopping-cart-01.png" alt="" />
                                             </div>
@@ -529,10 +531,10 @@
                                         <p>$250.00</p>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr class="cart-item">
                                     <td class="pb-6 text-sm">
                                         <div class="flex gap-2 items-center">
-                                            <button class="p-2">
+                                            <button class="del">
                                                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M2 2L6.00003 6M6.00003 6L10 2M6.00003 6L2 10M6.00003 6L10 10" stroke="#9A9CAA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                                 </svg>
@@ -560,10 +562,10 @@
                                         <p>$250.00</p>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr class="cart-item">
                                     <td class="pb-6 text-sm">
                                         <div class="flex gap-2 items-center">
-                                            <button class="p-2">
+                                            <button class="del">
                                                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M2 2L6.00003 6M6.00003 6L10 2M6.00003 6L2 10M6.00003 6L10 10" stroke="#9A9CAA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                                 </svg>
@@ -802,7 +804,31 @@
 				return false;
 			});
 		});
-        </script>
+
+
+// Remove Item
+
+
+$(".del").click(function() {
+    //make call to update backend, on successful response ->
+    // will probably require a that = this workaround
+    removeItem(this);
+  });
+
+function removeItem(item){
+
+    // removeItem(this);
+    // $('.del').click().item.removeItem();
+
+    $($(item).closest(".cart-item")).fadeOut(400, function() {
+      $(this).remove();
+    
+    });
+}
+
+
+
+ </script>
 </body>
 
 </html>
