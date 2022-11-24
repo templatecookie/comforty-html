@@ -1003,41 +1003,11 @@ header {
 .main-menu>li>a{
   position: relative;
   padding: 8px 16px;
-}
-.main-menu>li>a::before{
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
-  transition: .5s;
-  transform: scaleY(2);
-  opacity: 0;
-}
-.main-menu>li>a:hover::before{
-  opacity: 1;
-  transform: scaleY(1);
-}
-.main-menu>li>a::after{
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transition: .5s;
-  transform: scaley(0);
-  z-index: -1;
-}
-.main-menu>li>a:hover::after{
-  background: #262626;
-  transform: scaley(1);
+  transition: all 0.3s ease;
 }
 .main-menu>li>a:hover{
-  color: white;
+  color: #029FAE;
+  transform: scale(1.1);
 }
 .main-menu li > ul li a{
   padding: 8px 12px;
