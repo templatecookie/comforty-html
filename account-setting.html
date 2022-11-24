@@ -471,19 +471,23 @@
         <div class="container">
             <div class="usermenu flex flex-col md:flex-row justify-between md:items-center">
                 <!-- Tabs -->
-                <ul id="tabs" class="inline-flex flex-col md:flex-row pt-2 px-1 w-full">
+                <ul id="tabs" class="inline-flex flex-col md:flex-row w-full">
 
-                    <li class="px-4 text-gray-800 font-semibold py-2 pb-4 border-b border-transparent text-dark-gray hover:text-gray-black">
-                        <a id="default-tab" href="#account_settings">Account Settings</a>
+                    <li>
+                        <a id="default-tab" href="#account_settings" class="text-[#636270] font-medium p-5 border-b border-transparent hover:text-gray-black font-display">Account Settings</a>
                     </li>
 
-                    <li class="px-4 text-gray-800 font-semibold py-2 pb-4 border-b border-transparent text-dark-gray hover:text-gray-black">
-                        <a href="#order_history">Order History</a>
+                    <li>
+                        <a href="#order_history" class="text-[#636270] font-medium p-5 border-b border-transparent hover:text-gray-black font-display">Order History</a>
                     </li>
                     
-                    <li class="px-4 text-gray-800 font-semibold py-2 pb-4 border-b border-transparent text-dark-gray hover:text-gray-black"><a href="#order_details">Order Details</a></li>
+                    <li>
+                        <a href="#order_details" class="text-[#636270] font-medium p-5 border-b border-transparent hover:text-gray-black">Order Details</a>
+                    </li>
 
-                    <li class="px-4 text-gray-800 font-semibold py-2 pb-4 border-b border-transparent text-dark-gray hover:text-gray-black"><a href="#wishlist">Wishlist</a></li>
+                    <li>
+                        <a href="#wishlist" class="text-[#636270] font-medium p-5 border-b border-transparent hover:text-gray-black font-display">Wishlist</a>
+                    </li>
                 </ul>
                 <a href="#" class="font-display text-[16px] leading-[110%] font-medium capitalize text-[#636270] px-4 py-4 md:px-0">Logout</a>
             </div>
@@ -596,30 +600,16 @@
                             <div class="box xl:w-[312px]">
                                 <div class="">
                                     <div class="p-6">
-                                        <h2 class="xl:text-start text-center xl:text-2xl text-[18px]  text-[#272343] font-semibold mb-6 font-display">Change Profile Photo</h2>
+                                        <h2 class="xl:text-2xl text-[18px]  text-[#272343] font-semibold mb-6 font-display text-center">Change Profile Photo</h2>
 
                                         <div class="pb-[26px] mx-auto">
                                             <img class="w-[150px] h-[150px] rounded-full mx-auto" src="./public/assets/images/all-img/profile-photo.png" alt="image description" id="blah">
                                         </div>
 
-                                     
-
-
-                                        <!-- <div class="flex justify-center pb-[15px] relative">
-                                           
-                                            <input  class="bg-accents text-white text-base font-semibold py-[17px] px-6 rounded-lg flex gap-3">
-                                                <span class="absolute items-center">
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M16 17H17.5C19.9853 17 22 14.9853 22 12.5C22 10.0147 19.9853 8 17.5 8H17.293C16.64 5.6915 14.5176 4 12 4C9.48245 4 7.35996 5.6915 6.70703 8H6.5C4.01472 8 2 10.0147 2 12.5C2 14.9853 4.01472 17 6.5 17H8" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                        <path d="M12 19.5V9.5M12 9.5L8.5 13M12 9.5L15.5 13" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                    </svg>
-                                                </span>
-                                                Upload Now
-                                        </div> -->
                                         <div class="flex justify-center pb-3">
                                            
                                             <input type="file" id="real-file" hidden="hidden" onchange="readURL(this);"  accept=".jpeg, .doc, .docx, .xls, .xlsx, .txt, .jpg, .png, .gif"  />
-                                            <button type="button" id="custom-button" class="flex gap-3 items-center bg-accents text-white text-base font-semibold py-[17px] px-6 rounded-lg">
+                                            <button type="button" id="custom-button" class="flex gap-3 items-center bg-accents text-white text-base font-semibold py-[17px] px-6 rounded-lg font-display">
                                                 <span class="">
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M16 17H17.5C19.9853 17 22 14.9853 22 12.5C22 10.0147 19.9853 8 17.5 8H17.293C16.64 5.6915 14.5176 4 12 4C9.48245 4 7.35996 5.6915 6.70703 8H6.5C4.01472 8 2 10.0147 2 12.5C2 14.9853 4.01472 17 6.5 17H8" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -628,7 +618,7 @@
                                             </span>Upload Now</button>
                                             
                                         </div>
-                                        <p class="text-center">JPG or PNG. max size of 500KB</p>
+                                        <p class="text-center text-[#636270] text-sm font-display">JPG or PNG. max size of 500KB</p>
                                     </div>
                                 </div>
                             </div>
@@ -648,7 +638,7 @@
                         <!-- shopping cart start -->
                         <div class="shopping-cart w-full">
                             <div class="px-6 py-6 overflow-x-auto">
-                                <table class="min-w-[1320px] w-full leading-normal">
+                                <table class="min-w-[1240px] w-full leading-normal">
                                     <thead>
                                         <tr>
                                             <th class="pb-6 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider w-[160px]">
@@ -657,13 +647,13 @@
                                             <th class="pb-6 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider w-[200px]">
                                                 Date
                                             </th>
-                                            <th class="pb-6 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider w-[160px]">
+                                            <th class="pb-6 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider w-[140px]">
                                                 Total Product
                                             </th>
-                                            <th class="pb-6 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider w-[140px]">
+                                            <th class="pb-6 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider w-[120px]">
                                                 Toral price
                                             </th>
-                                            <th class="pb-6 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider w-[120px]">
+                                            <th class="pb-6 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider w-[100px]">
                                                 Status
                                             </th>
                                         </tr>
@@ -671,15 +661,15 @@
                                     <tbody>
                                         <tr>
                                             <td class="py-6 text-sm">
-                                                <span class="text-dark-accent stext-[14px] font-display leading-[120%] ">#2485</span>
+                                                <span class="text-[#007580] stext-[14px] font-display leading-[120%]  font-medium ">#2485</span>
                                             </td>
-                                            <td class="py-6 text-sm">
+                                            <td class="py-6 text-sm text-[#272343]">
                                                 <p class="mb-0">02 April, 2021</p>
                                             </td>
-                                            <td class="py-6 text-sm">
+                                            <td class="py-6 text-sm text-[#272343]">
                                                 <p>05</p>
                                             </td>
-                                            <td class="py-6 text-sm">
+                                            <td class="py-6 text-sm text-[#272343]">
                                                 <p>$265.00</p>
                                             </td>
                                             <td class="py-6 text-sm">
@@ -688,15 +678,15 @@
                                         </tr>
                                         <tr>
                                             <td class="py-6 text-sm">
-                                                <span class="text-dark-accent stext-[14px] font-display leading-[120%] ">#8901</span>
+                                                <span class="text-[#007580] stext-[14px] font-display leading-[120%]  font-medium ">#8901</span>
                                             </td>
-                                            <td class="py-6 text-sm">
+                                            <td class="py-6 text-sm text-[#272343]">
                                                 <p class="mb-0">29 May, 2021</p>
                                             </td>
-                                            <td class="py-6 text-sm">
+                                            <td class="py-6 text-sm text-[#272343]">
                                                 <p>01</p>
                                             </td>
-                                            <td class="py-6 text-sm">
+                                            <td class="py-6 text-sm text-[#272343]">
                                                 <p>$265.00</p>
                                             </td>
                                             <td class="py-6 text-sm">
@@ -705,15 +695,15 @@
                                         </tr>
                                         <tr>
                                             <td class="py-6 text-sm">
-                                                <span class="text-dark-accent stext-[14px] font-display leading-[120%] ">#2597</span>
+                                                <span class="text-[#007580] stext-[14px] font-display leading-[120%]  font-medium ">#2597</span>
                                             </td>
-                                            <td class="py-6 text-sm">
+                                            <td class="py-6 text-sm text-[#272343]">
                                                 <p class="mb-0">16 May, 2021</p>
                                             </td>
-                                            <td class="py-6 text-sm">
+                                            <td class="py-6 text-sm text-[#272343]">
                                                 <p>01</p>
                                             </td>
-                                            <td class="py-6 text-sm">
+                                            <td class="py-6 text-sm text-[#272343]">
                                                 <p>$265.00</p>
                                             </td>
                                             <td class="py-6 text-sm">
@@ -722,15 +712,15 @@
                                         </tr>
                                         <tr>
                                             <td class="py-6 text-sm">
-                                                <span class="text-dark-accent stext-[14px] font-display leading-[120%] ">#2485</span>
+                                                <span class="text-[#007580] text-[14px] font-display leading-[120%] font-medium">#2485</span>
                                             </td>
-                                            <td class="py-6 text-sm">
+                                            <td class="py-6 text-sm text-[#272343]">
                                                 <p class="mb-0">21 February, 2021</p>
                                             </td>
-                                            <td class="py-6 text-sm">
+                                            <td class="py-6 text-sm text-[#272343]">
                                                 <p>02</p>
                                             </td>
-                                            <td class="py-6 text-sm">
+                                            <td class="py-6 text-sm text-[#272343]">
                                                 <p>$265.00</p>
                                             </td>
                                             <td class="py-6 text-sm">
@@ -739,15 +729,15 @@
                                         </tr>
                                         <tr>
                                             <td class="py-6 text-sm">
-                                                <span class="text-dark-accent stext-[14px] font-display leading-[120%] ">#2485</span>
+                                                <span class="text-[#007580] text-[14px] font-display leading-[120%] font-medium">#2485</span>
                                             </td>
-                                            <td class="py-6 text-sm">
+                                            <td class="py-6 text-sm text-[#272343]">
                                                 <p class="mb-0">15 January, 2021</p>
                                             </td>
-                                            <td class="py-6 text-sm">
+                                            <td class="py-6 text-sm text-[#272343]">
                                                 <p>01</p>
                                             </td>
-                                            <td class="py-6 text-sm">
+                                            <td class="py-6 text-sm text-[#272343]">
                                                 <p>$265.00</p>
                                             </td>
                                             <td class="py-6 text-sm">
@@ -768,11 +758,11 @@
                 <div class="container pt-10 pb-20">
                     <div class="box">
                         <div class="">
-                            <div class="flex flex-wrap justify-between items-center px-8 py-8">
-                                <h2 class="text-gray-black font-display xl:text-[32px] text-[18px]  leading-[110%] capitalize">Order Details</h2>
-                                <button class="btn-primary capitalize mt-4">back to List</button>
+                            <div class="flex flex-wrap justify-between items-center px-8 py-[30px]">
+                                <h2 class="text-[#272343] font-display xl:text-[32px] text-[18px] font-semibold leading-[110%] capitalize">Order Details</h2>
+                                <button class="btn-primary capitalize">back to List</button>
                             </div>
-                            <hr>
+                            <hr class="my-0">
                             <div class="px-8 py-8 flex flex-col md:flex-row md:flex-wrap gap-6 xl:gap-2 xl:justify-between md:items-center">
                                 <div class="flex-wrap">
                                     <p class="text-[#9A9CAA] font-display text-[14px] leading-[100%] capitalize pb-[10px]">Order ID:</p>
@@ -801,23 +791,23 @@
                             </div>
                         </div>
                         <div class="w-full">
-                            <div class="py-8 overflow-x-auto">
+                            <div class="overflow-x-auto">
                                 <table class="min-w-full leading-normal">
                                     <thead class="bg-off-white">
                                         <tr class="">
-                                            <th class="pt-4 pb-4 px-8 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider xl:min-w-[305px] w-full">
+                                            <th class="pt-4 pb-4 px-8 border-b border-[#E1E3E6] text-left text-lg font-medium leading-[100%] text-[#272343] uppercase tracking-wider w-[305px]">
                                                 Product
                                             </th>
-                                            <th class="pt-4 pb-4 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider min-w-[140px]">
+                                            <th class="pt-4 pb-4 border-b border-[#E1E3E6] text-left text-lg font-medium leading-[100%] text-[#272343] uppercase tracking-wider w-[140px]">
                                                 Price
                                             </th>
-                                            <th class="pt-4 pb-4 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider min-w-[145px]">
+                                            <th class="pt-4 pb-4 border-b border-[#E1E3E6] text-left text-lg font-medium leading-[100%] text-[#272343] uppercase tracking-wider w-[145px]">
                                                 Quantity
                                             </th>
-                                            <th class="pt-4 pb-4 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider min-w-[175px]">
+                                            <th class="pt-4 pb-4 border-b border-[#E1E3E6] text-left text-lg font-medium leading-[100%] text-[#272343] uppercase tracking-wider w-[175px]">
                                                 Subtotal
                                             </th>
-                                            <th class="pt-4 pb-4 border-b border-[#E1E3E6] text-left text-xs font-semibold text-[#272343] uppercase tracking-wider min-w-[245px]">
+                                            <th class="pt-4 pb-4 border-b border-[#E1E3E6] text-left text-lg font-medium leading-[100%] text-[#272343] uppercase tracking-wider w-[295px]">
                                                 Info
                                             </th>
                                         </tr>
@@ -928,7 +918,7 @@
                         <div class="px-8 py-8 flex flex-col md:flex-row md:flex-wrap gap-y-6 justify-between md:items-center">
 
                             <div>
-                                <h2 class="text-gray-black font-display xl:text-[32px] text-[20px] leading-[110%] capitalize ">Billing address</h2>
+                                <h2 class="text-gray-black font-medium font-display xl:text-[32px] text-[20px] leading-[110%] capitalize ">Billing address</h2>
                                 <p class="font-display text-[16px] leading-[120%] font-normal text-[#272343] pt-5 pb-2">Kevin Gilbert</p>
                                 <p class="text-[#636270] text-[14px] leading-[150%] font-display font-normal pb-4">
                                     4140 Parker Rd. Allentown, New Mexico 31134
@@ -938,7 +928,7 @@
                             </div>
 
                             <div>
-                                <h2 class="text-gray-black font-display xl:text-[32px] text-[20px] leading-[110%] capitalize">Shipping address</h2>
+                                <h2 class="text-gray-black font-medium font-display xl:text-[32px] text-[20px] leading-[110%] capitalize">Shipping address</h2>
                                 <p class="font-display text-[16px] leading-[120%] font-normal text-[#272343] pt-5 pb-2">Kevin Gilbert</p>
                                 <p class="text-[#636270] text-[14px] leading-[150%] font-display font-normal pb-4">
                                     4140 Parker Rd. Allentown, New Mexico 31134
@@ -947,7 +937,7 @@
                                 <span class="text-[#636270] text-[14px] leading-[100%] font-display font-normal">+8801497 548244</span>
                             </div>
 
-                            <div class="px-6 py-6 bg-off-white rounded-lg max-w-[348px]">
+                            <div class="px-6 py-6 bg-off-white rounded-lg max-w-[348px] w-full">
                                 <div class="">
 
                                     <div class="flex justify-between pb-4">
