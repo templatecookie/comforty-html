@@ -76,6 +76,11 @@
   .sign_in {
     width: auto;
   }
+  .gallery-container,
+  .gallery-main{
+    width: 100%;
+    height: auto;
+  }
 }
 
 

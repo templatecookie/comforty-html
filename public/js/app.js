@@ -261,17 +261,17 @@ $(".main-menu li").hover(function() {
 
 $(document).ready(function() {
     $('.custom-select').select2({
-        minimumResultsForSearch: 5,
+        minimumResultsForSearch: 8,
     });
 });
 $(document).ready(function() {
     $('.custom-select2').select2({
-        minimumResultsForSearch: 5,
+        minimumResultsForSearch: 8,
     });
 });
 $(document).ready(function() {
     $('.custom-select3').select2({
-        minimumResultsForSearch: 5,
+        minimumResultsForSearch: 8,
     });
 });
 
