@@ -138,33 +138,31 @@ input[type=checkbox]:before {
   z-index: 2;
 }
 
-/* pl-5 py-[17px] w-full bg-[#F0F2F3] rounded-lg focus:outline-none  focus:ring focus:ring-[#F0F2F3] font-display transition duration-300 ease-in-out pr-5 */
-
-.form_input {
+.input-box {
+    width: 100%;
     padding: 17px 20px;
     background-color: var(--off-white);
     border-radius: 8px;
     opacity: 0.7;
     padding-right: 20px;
-    width: 100%;
     line-height: 100%;
     font-size: 16px;
     font-family: "Inter";
+    font-weight: 400;
     margin-bottom: 16px;
-    color: #1e1e1e;
-}
-
-.form_input::placeholder{
-    line-height: 100%;
-    font-size: 16px;
     color: #636270;
-}
+    /* #9A9CAA */
+  }
 
+  .input-box::placeholder{
+      line-height: 100%;
+      font-size: 16px;
+      color: #272343;
+  }
 
 .form_password {
   
     width: 100%;
-    margin-bottom: 16px;
     padding: 17px 20px;
     background-color: var(--off-white);
     border-radius: 8px;
@@ -173,15 +171,17 @@ input[type=checkbox]:before {
     line-height: 100%;
     font-size: 16px;
     font-family: "Inter";
-    color: #1e1e1e;
-
+    /* color: #1e1e1e; 636270 */
+    color: #636270;
+    margin-bottom: 16px;
+    font-weight: 400;
   
   }
 
   .form_password::placeholder{
     line-height: 100%;
     font-size: 16px;
-    color: #636270;
+    color: #272343;
 }
 
 
@@ -407,25 +407,10 @@ a {
 /* button{
     border-radius: 8px;
     padding: 17px 24px;
+
+
 } */
 
-.input-box {
-    padding: 17px 20px;
-    background-color: var(--off-white);
-    border-radius: 8px;
-    opacity: 0.7;
-    padding-right: 20px;
-    width: 100%;
-    line-height: 100%;
-    font-size: 16px;
-    font-family: "Inter";
-  
-  
-  }
-  .input-box::placeholder{
-      line-height: 100%;
-      font-size: 16px;
-  }
 
 .common-hedding {
   font-family: 'Inter';
