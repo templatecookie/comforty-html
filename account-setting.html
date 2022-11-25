@@ -23,7 +23,7 @@
 
 <body>
    <!-- header area start -->
-   <header>
+   <header class="font-display">
        <div id="header-sticky" class="">
            <div class="top-header bg-secondary">
                <div class="container px-3 md:px-5 xl:px-0">
@@ -38,7 +38,7 @@
                        </p>
                        <div>
                            <ul class="flex gap-6 items-center">
-                               <li class="inline-flex items-center text-white opacity-70 justify-center relative">
+                               <li class="inline-flex items-center text-white opacity-70 justify-center relative language">
                                    <select class="custom-select" name="state">
                                        <option value="AL">Eng</option>
                                        <option value="WY">Bangla</option>
@@ -104,7 +104,7 @@
                                        <span>Cart</span>
                                        <span class="bg-dark-accents text-white rounded-full py-[3px] px-[9px] ml-1 inline-flex justify-center items-center text-[10px] leading-[100%]">2</span>
                                    </a>
-                                   <div class="cart-content ">
+                                   <div class="cart-content">
                                        <ul class="p-6">
                                            <li class="pb-4">
                                                <div class="flex items-center justify-between">
@@ -273,7 +273,7 @@
                                        <a href="account-setting.html">Account Setting</a>
                                    </li>
                                    <li>
-                                       <a href="sign-in.html">Sign IN</a>
+                                       <a href="sign-in.html">Sign In</a>
                                    </li>
                                    <li>
                                        <a href="sign-up.html">Sign Up</a>
@@ -508,7 +508,7 @@
                                 <div class="p-6">
                                     <h2 class="text-start xl:text-2xl text-[18px] text-[#272343] font-semibold mb-6 font-display">Account Information</h2>
                                     <div class="pb-4">
-                                        <input type="text" placeholder="Enter Name" class="w-full focus:outline-none focus:ring focus:ring-accents font-display pl-5 bg-accents rounded h-[50px] transition duration-300 ease-in-out">
+                                        <input type="text" placeholder="Enter Name" class="input-box w-full focus:outline-none focus:ring focus:ring-accents font-display pl-5 rounded h-[50px] transition duration-300 ease-in-out">
                                     </div>
                                     <div class="flex flex-col sm:flex-row gap-5 items-center mb-5">
                                         <div class="w-full">
@@ -606,7 +606,7 @@
                                         <h2 class="xl:text-2xl text-[18px]  text-[#272343] font-semibold mb-6 font-display text-center">Change Profile Photo</h2>
 
                                         <div class="pb-[26px] mx-auto">
-                                            <img class="w-[150px] h-[150px] rounded-full mx-auto" src="./public/assets/images/all-img/profile-photo.png" alt="image description" id="blah">
+                                            <img class="w-[150px] h-[150px] rounded-full mx-auto object-cover" src="./public/assets/images/all-img/profile-photo.png" alt="image description" id="blah">
                                         </div>
 
                                         <div class="flex justify-center pb-3">
@@ -664,87 +664,87 @@
                                     <tbody>
                                         <tr>
                                             <td class="py-6 text-sm">
-                                                <span class="text-[#007580] stext-[14px] font-display leading-[120%]  font-medium ">#2485</span>
+                                                <a href="order-details.html" class="text-[#007580] text-[14px] block font-display leading-[120%]  font-medium ">#2485</a>
                                             </td>
                                             <td class="py-6 text-sm text-[#272343]">
-                                                <p class="mb-0">02 April, 2021</p>
+                                                <a href="order-details.html" class="mb-0 block">02 April, 2021</a>
                                             </td>
                                             <td class="py-6 text-sm text-[#272343]">
-                                                <p>05</p>
+                                                <a href="order-details.html" class="block">05</a>
                                             </td>
                                             <td class="py-6 text-sm text-[#272343]">
-                                                <p>$265.00</p>
+                                                <a href="order-details.html" class="block">$265.00</a>
                                             </td>
                                             <td class="py-6 text-sm">
-                                                <button class="btn-warning px-3 py-2 text-[#F5813F] text-[14px] leading-[120%] font-display">Pending</button>
+                                                <a href="order-details.html" class="btn-warning px-3 py-2 inline-block text-[#F5813F] text-[14px] leading-[120%] font-display">Pending</a>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="py-6 text-sm">
-                                                <span class="text-[#007580] stext-[14px] font-display leading-[120%]  font-medium ">#8901</span>
+                                                <a href="order-details.html" class="text-[#007580] block text-[14px] font-display leading-[120%]  font-medium ">#8901</a>
                                             </td>
                                             <td class="py-6 text-sm text-[#272343]">
-                                                <p class="mb-0">29 May, 2021</p>
+                                                <a href="order-details.html" class="mb-0 block">29 May, 2021</a>
                                             </td>
                                             <td class="py-6 text-sm text-[#272343]">
-                                                <p>01</p>
+                                                <a href="order-details.html" class="block">01</a>
                                             </td>
                                             <td class="py-6 text-sm text-[#272343]">
-                                                <p>$265.00</p>
+                                                <a href="order-details.html" class="block">$265.00</a>
                                             </td>
                                             <td class="py-6 text-sm">
-                                                <button class="btn-success2 px-3 py-2 text-[#01AD5A] text-[14px] leading-[120%] font-display">Completed</button>
+                                                <a href="order-details.html" class="btn-success2 px-3 py-2 inline-block text-[#01AD5A] text-[14px] leading-[120%] font-display">Completed</a>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="py-6 text-sm">
-                                                <span class="text-[#007580] stext-[14px] font-display leading-[120%]  font-medium ">#2597</span>
+                                                <a href="order-details.html" class="text-[#007580] block text-[14px] font-display leading-[120%]  font-medium ">#8901</a>
                                             </td>
                                             <td class="py-6 text-sm text-[#272343]">
-                                                <p class="mb-0">16 May, 2021</p>
+                                                <a href="order-details.html" class="mb-0 block">29 May, 2021</a>
                                             </td>
                                             <td class="py-6 text-sm text-[#272343]">
-                                                <p>01</p>
+                                                <a href="order-details.html" class="block">01</a>
                                             </td>
                                             <td class="py-6 text-sm text-[#272343]">
-                                                <p>$265.00</p>
+                                                <a href="order-details.html" class="block">$265.00</a>
                                             </td>
                                             <td class="py-6 text-sm">
-                                                <button class="btn-success2 px-3 py-2 text-[#01AD5A] text-[14px] leading-[120%] font-display">Completed</button>
+                                                <a href="order-details.html" class="btn-success2 px-3 py-2 inline-block text-[#01AD5A] text-[14px] leading-[120%] font-display">Completed</a>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="py-6 text-sm">
-                                                <span class="text-[#007580] text-[14px] font-display leading-[120%] font-medium">#2485</span>
+                                                <a href="order-details.html" class="text-[#007580] block text-[14px] font-display leading-[120%]  font-medium ">#8901</a>
                                             </td>
                                             <td class="py-6 text-sm text-[#272343]">
-                                                <p class="mb-0">21 February, 2021</p>
+                                                <a href="order-details.html" class="mb-0 block">29 May, 2021</a>
                                             </td>
                                             <td class="py-6 text-sm text-[#272343]">
-                                                <p>02</p>
+                                                <a href="order-details.html" class="block">01</a>
                                             </td>
                                             <td class="py-6 text-sm text-[#272343]">
-                                                <p>$265.00</p>
+                                                <a href="order-details.html" class="block">$265.00</a>
                                             </td>
                                             <td class="py-6 text-sm">
-                                                <button class="btn-success2 px-3 py-2 text-[#01AD5A] text-[14px] leading-[120%] font-display">Completed</button>
+                                                <a href="order-details.html" class="btn-success2 px-3 py-2 inline-block text-[#01AD5A] text-[14px] leading-[120%] font-display">Completed</a>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="py-6 text-sm">
-                                                <span class="text-[#007580] text-[14px] font-display leading-[120%] font-medium">#2485</span>
+                                                <a href="order-details.html" class="text-[#007580] block text-[14px] font-display leading-[120%]  font-medium ">#8901</a>
                                             </td>
                                             <td class="py-6 text-sm text-[#272343]">
-                                                <p class="mb-0">15 January, 2021</p>
+                                                <a href="order-details.html" class="mb-0 block">29 May, 2021</a>
                                             </td>
                                             <td class="py-6 text-sm text-[#272343]">
-                                                <p>01</p>
+                                                <a href="order-details.html" class="block">01</a>
                                             </td>
                                             <td class="py-6 text-sm text-[#272343]">
-                                                <p>$265.00</p>
+                                                <a href="order-details.html" class="block">$265.00</a>
                                             </td>
                                             <td class="py-6 text-sm">
-                                                <button class="btn-success2 px-3 py-2 text-[#01AD5A] text-[14px] leading-[120%] font-display">Completed</button>
+                                                <a href="order-details.html" class="btn-success2 px-3 py-2 inline-block text-[#01AD5A] text-[14px] leading-[120%] font-display">Completed</a>
                                             </td>
                                         </tr>
                                     </tbody>

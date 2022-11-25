@@ -138,6 +138,10 @@ input[type=checkbox]:before {
   z-index: 2;
 }
 
+label{
+  user-select: none;
+  cursor: pointer;
+}
 /* pl-5 py-[17px] w-full bg-[#F0F2F3] rounded-lg focus:outline-none  focus:ring focus:ring-[#F0F2F3] font-display transition duration-300 ease-in-out pr-5 */
 
 .form_input {
@@ -369,14 +373,7 @@ a {
     text-align: center;
     background-color: #F0F2F3;
     border-radius: 8px;
-    transition: all .5s ease-in-out;
-    
-  }
-
-.btn-wishlist2:hover{
- 
-    background-color: #272343;
- 
+    transition: all .5s ease-in-out;   
   }
 
 .btn-success {
@@ -930,12 +927,20 @@ a {
   height: 50px;
 }
 
-header {
-  -webkit-transition: all 0.3s ease-out 0s;
-  -moz-transition: all 0.3s ease-out 0s;
-  -ms-transition: all 0.3s ease-out 0s;
-  -o-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
+header{
+  -webkit-transition: all 0.5s ease-out 0s;
+  -moz-transition: all 0.5s ease-out 0s;
+  -ms-transition: all 0.5s ease-out 0s;
+  -o-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
+}
+.fadeInUp {
+  -webkit-transition: all 0.5s ease-out 0s;
+  -moz-transition: all 0.5s ease-out 0s;
+  -ms-transition: all 0.5s ease-out 0s;
+  -o-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
+  animation: 500ms ease 0s normal none 1 running fadeInUp;
 }
 
 .header-sticky {
@@ -943,6 +948,7 @@ header {
   left: 0;
   margin: auto;
   top: 0;
+  opacity: 1;
   width: 100%;
   box-shadow: 0px 1px 0px #E1E3E6;
   z-index: 99;
@@ -952,6 +958,7 @@ header {
   -o-transition: all 0.5s ease-out 0s;
   transition: all 0.5s ease-out 0s;
   background: white;
+  animation: 500ms ease 0s normal none 1 running fadeInDown;
 }
 
 
@@ -1266,5 +1273,27 @@ padding-top: 20px;
 
 .del{
 margin-top: 10px;
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20%, 0);
+  }
 
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, -20%, 0);
+  }  
 }

@@ -50,6 +50,7 @@ function CreatePasswordIcon() {
 var swiper = new Swiper(".bannerSwiper", {
     cssMode: true,
     loop: true,
+    speed: 1000,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
