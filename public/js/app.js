@@ -224,17 +224,21 @@ $(".custom-dropdown").on('click', function() {
     $(".dropdown-content ul").slideToggle();
 });
 
-$("#addToCart").on('mouseover', function() {
-    $(".cart-content ul").slideDown();
-});
-
 $("#addToCart").on('click', function() {
-    $(".cart-content ul").slideUp();
+    $(".cart-content ul").slideToggle();
 });
 
-$(".cart-content").on('mouseleave', function() {
-    $(".cart-content ul").slideUp();
-});
+// $("#addToCart").on('mouseleave', function() {
+//     $(".cart-content ul").slideUp();
+// });
+
+// $("#addToCart").on('click', function() {
+//     $(".cart-content ul").slideUp();
+// });
+
+// $(".cart-content ul").on('mouseleave', function() {
+//     $(".cart-content ul").slideUp();
+// });
 
 $(".user-profile").on('click', function() {
     $(".profile-content ul").slideToggle();
@@ -365,3 +369,4 @@ var mixer = mixitup(containerEl, {
         animateResizeContainer: true,
     },
 });
+
