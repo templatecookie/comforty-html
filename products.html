@@ -23,7 +23,7 @@
 
 <body>
     <!-- header area start -->
-    <header>
+    <header class="font-display">
         <div id="header-sticky" class="">
             <div class="top-header bg-secondary">
                 <div class="container px-3 md:px-5 xl:px-0">
@@ -104,7 +104,7 @@
                                         <span>Cart</span>
                                         <span class="bg-dark-accents text-white rounded-full py-[3px] px-[9px] ml-1 inline-flex justify-center items-center text-[10px] leading-[100%]">2</span>
                                     </a>
-                                    <div class="cart-content ">
+                                    <div class="cart-content">
                                         <ul class="p-6">
                                             <li class="pb-4">
                                                 <div class="flex items-center justify-between">
@@ -273,7 +273,7 @@
                                         <a href="account-setting.html">Account Setting</a>
                                     </li>
                                     <li>
-                                        <a href="sign-in.html">Sign IN</a>
+                                        <a href="sign-in.html">Sign In</a>
                                     </li>
                                     <li>
                                         <a href="sign-up.html">Sign Up</a>
@@ -470,7 +470,7 @@
             <div class="product-list py-6">
                 <div class="product-filter flex flex-col lg:flex-row gap-y-4 lg:justify-between items-center">
                     <div class="relative xl:w-[536px] w-full">
-                        <input type="text" name="" id="" class="bg-[#F0F2F3] px-5 py-[18px] rounded-lg focus:outline-none transition duration-300 ease-in-out block w-full" placeholder="Search here...">
+                        <input type="text" name="" id="" class="bg-[#F0F2F3] px-5 py-[18px] rounded-lg focus:outline-none focus:ring-2 ring-[#029FAE] transition duration-300 ease-in-out block w-full" placeholder="Search here...">
                         <span class="absolute top-[18px] right-5">
                             <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.9881 20.6428C16.3663 20.6428 20.7262 16.2829 20.7262 10.9047C20.7262 5.52655 16.3663 1.16666 10.9881 1.16666C5.60989 1.16666 1.25 5.52655 1.25 10.9047C1.25 16.2829 5.60989 20.6428 10.9881 20.6428Z" stroke="#272343" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -527,7 +527,7 @@
                                         <option value="">Plywood</option>
                                     </select>
                                 </li>
-                                <li class="latest">
+                                <li class="latest font-display">
                                     <select class="custom-select6" name="latest">
                                         <option value="" disabled selected>Latest</option>
                                         <option value="">Classic</option>
@@ -549,16 +549,15 @@
                         <p>Active Filters:</p>
                         <p class="text-[#272343] inline-flex items-center gap-2 font-display font-medium text-[14px] leading-[130%]">
                             <span>Wing Chair</span>
-                            <span class="hover:text-[#272343] text-[#9A9CAA] cursor-pointer">
+                            <span class="hover:text-[#272343] text-[#9A9CAA] cursor-pointer" onclick="dismiss(this);">
                                 <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M1 1L5.00003 5M5.00003 5L9 1M5.00003 5L1 9M5.00003 5L9 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                             </span>
-
                         </p>
                         <p class="text-[#272343] font-display inline-flex items-center gap-2 font-medium text-[14px] leading-[130%]">
                             <span>Min $300 - Max 500</span>
-                            <span class="hover:text-[#272343] text-[#9A9CAA] cursor-pointer">
+                            <span class="hover:text-[#272343] text-[#9A9CAA] cursor-pointer" onclick="dismiss(this);">
                                 <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M1 1.5L5.00003 5.5M5.00003 5.5L9 1.5M5.00003 5.5L1 9.5M5.00003 5.5L9 9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
@@ -1083,6 +1082,11 @@
     <script src="./public/assets/plugins/js/select2.js"></script>
     <script src="./public/assets/plugins/js/mixitUp.js"></script>
     <script src="./public/js/app.js"></script>
+    <script>
+        function dismiss(el){
+        el.parentNode.style.display='none';
+        };
+    </script>
 </body>
 
 </html>

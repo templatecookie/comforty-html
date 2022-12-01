@@ -137,9 +137,11 @@ input[type=checkbox]:before {
   transform: rotate(45deg) translate(-50%, -50%);
   z-index: 2;
 }
-
-.input-box {
-    width: 100%;
+label{
+  user-select: none;
+  cursor: pointer;
+}
+.form_input {
     padding: 17px 20px;
     background-color: var(--off-white);
     border-radius: 8px;
@@ -369,14 +371,7 @@ a {
     text-align: center;
     background-color: #F0F2F3;
     border-radius: 8px;
-    transition: all .5s ease-in-out;
-    
-  }
-
-.btn-wishlist2:hover{
- 
-    background-color: #272343;
- 
+    transition: all .5s ease-in-out;   
   }
 
 .btn-success {
@@ -474,6 +469,11 @@ a {
   z-index: 9999;
   border-radius: 8px;
   box-shadow: 0px 0px 30px rgba(39, 35, 67, 0.12);
+  webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
 }
 .dropdown-content ul li a,
 .profile-content ul li a {
@@ -838,6 +838,13 @@ a {
   border-radius: 8px;
 }
 
+.select2-container--default .select2-search--dropdown .select2-search__field{
+  border: 1px solid #E1E3E6;
+  border-radius: 5px;
+}
+.select2-container--default .select2-search--dropdown .select2-search__field:focus{
+  outline: 1px solid #029FAE;
+}
 
 .select2-container.select2-container--default.select2-container--open .select2-dropdown.select2-dropdown--below,
 .select2-container.select2-container--default.select2-container--open .select2-dropdown.select2-dropdown--above {
@@ -903,12 +910,20 @@ a {
   height: 50px;
 }
 
-header {
-  -webkit-transition: all 0.3s ease-out 0s;
-  -moz-transition: all 0.3s ease-out 0s;
-  -ms-transition: all 0.3s ease-out 0s;
-  -o-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
+header{
+  -webkit-transition: all 0.5s ease-out 0s;
+  -moz-transition: all 0.5s ease-out 0s;
+  -ms-transition: all 0.5s ease-out 0s;
+  -o-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
+}
+.fadeInUp {
+  -webkit-transition: all 0.5s ease-out 0s;
+  -moz-transition: all 0.5s ease-out 0s;
+  -ms-transition: all 0.5s ease-out 0s;
+  -o-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
+  animation: 500ms ease 0s normal none 1 running fadeInUp;
 }
 
 .header-sticky {
@@ -916,6 +931,7 @@ header {
   left: 0;
   margin: auto;
   top: 0;
+  opacity: 1;
   width: 100%;
   box-shadow: 0px 1px 0px #E1E3E6;
   z-index: 99;
@@ -925,6 +941,7 @@ header {
   -o-transition: all 0.5s ease-out 0s;
   transition: all 0.5s ease-out 0s;
   background: white;
+  animation: 500ms ease 0s normal none 1 running fadeInDown;
 }
 
 
@@ -1121,7 +1138,7 @@ header {
 }
 .main-menu>li>a{
   position: relative;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
   font-weight: 500;
   color: #636270;
   font-family: 'Inter',sans-serif;
@@ -1133,7 +1150,7 @@ header {
   padding: 8px 12px;
   color: #1e1e1e;
   display: block;
-  transition: all .5s ease-in-out;
+  transition: all .3s ease-in-out;
   border-radius: 8px;
   
 
@@ -1214,7 +1231,10 @@ header {
   .shipping_info{
     display: block;
   }
-
+  /* #addToCart:hover + .cart-content ul{
+    opacity: 1;
+    visibility: visible;
+  } */
   .red {display: none;}
   .red {display: block;}
   .new-class {
@@ -1236,5 +1256,27 @@ padding-top: 20px;
 
 .del{
 margin-top: 10px;
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20%, 0);
+  }
 
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, -20%, 0);
+  }  
 }
