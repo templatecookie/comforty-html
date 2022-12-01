@@ -507,23 +507,24 @@
                             <div class="w-full ">
                                 <div class="p-6">
                                     <h2 class="text-start xl:text-2xl text-[18px] text-[#272343] font-semibold mb-6 font-display">Account Information</h2>
+
                                     <div class="pb-4">
                                         <input type="text" placeholder="Enter Name" class="input-box w-full focus:outline-none focus:ring focus:ring-accents font-display pl-5 rounded h-[50px] transition duration-300 ease-in-out">
                                     </div>
                                     <div class="flex flex-col sm:flex-row gap-5 items-center mb-5">
                                         <div class="w-full">
-                                            <input type="text" placeholder="Kevin" class="input-box focus:outline-none focus:ring focus:ring-accents font-display transition duration-300 ease-in-out">
+                                            <input type="text" placeholder="Kevin" class="input-box focus:outline-none focus:ring-2 focus:ring-accents transition duration-300 ease-in-out">
                                         </div>
                                         <div class="w-full">
-                                            <input type="text" placeholder="Kevin Gilbert" class="input-box focus:outline-none  focus:ring focus:ring-accents font-display transition duration-300 ease-in-out">
+                                            <input type="text" placeholder="Kevin Gilbert" class="input-box focus:outline-none focus:ring-2 focus:ring-accents font-display transition duration-300 ease-in-out">
                                         </div>
                                     </div>
 
                                     <div class="w-full">
-                                        <input type="text" placeholder="kevin.gilbert@gmail.com" class="input-box focus:outline-none  focus:ring focus:ring-accents font-display transition duration-300 ease-in-out">
+                                        <input type="text" placeholder="kevin.gilbert@gmail.com" class="input-box focus:outline-none  focus:ring-2 focus:ring-accents font-display transition duration-300 ease-in-out">
                                     </div>
-                                    <div class="w-full py-4">
-                                        <input type="text" placeholder="+8801497 548244" class="input-box focus:outline-none  focus:ring focus:ring-accents font-display transition duration-300 ease-in-out">
+                                    <div class="w-full">
+                                        <input type="text" placeholder="+8801497 548244" class="input-box focus:outline-none  focus:ring-2 focus:ring-accents font-display transition duration-300 ease-in-out">
                                     </div>
                                     <button type="submit" class="btn-primary">Save Changes</button>
                                 </div>
@@ -539,7 +540,9 @@
                                         <h2 class="text-start xl:text-2xl text-[18px] text-[#272343] font-semibold mb-6 font-display">Change Password</h2>
 
                                         <div class="relative">
-                                            <input type="password" placeholder="Current passowrd" class="form_password focus:outline-none focus:ring focus:ring-accents font-display transition duration-300 ease-in-out" id="CurrentPasswordInput" name="password">
+                                            <!-- input-box focus:outline-none focus:ring-2 focus:ring-accents transition duration-300 ease-in-out -->
+
+                                            <input type="password" placeholder="Current passowrd" class="form_password focus:outline-none focus:ring-2 focus:ring-accents font-display transition duration-300 ease-in-out" id="CurrentPasswordInput" name="password">
                                             <span class="absolute top-[17px] right-5 cursor-pointer ">
 
                                                 <svg id="current-icon-show" onclick="currentPasswordIcon()" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -557,8 +560,8 @@
                                         </div>
 
                                         <div class="relative">
-                                            <input type="password" placeholder="New passowrd" class="form_password focus:outline-none focus:ring focus:ring-accents font-display transition duration-300 ease-in-out" id="CreatePasswordInput" name="password">
-                                            <span class="absolute top-[17px] right-5 cursor-pointer ">
+                                            <input type="password" placeholder="New passowrd" class="form_password focus:outline-none focus:ring-2 focus:ring-accents font-display transition duration-300 ease-in-out" id="CreatePasswordInput" name="password">
+                                            <span class="absolute top-[17px] right-5 cursor-pointer select-none ">
 
                                                 <svg id="create-icon-show" onclick="CreatePasswordIcon()" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M12 4.24902C4.5 4.24902 1.5 11.9999 1.5 11.9999C1.5 11.9999 4.5 19.749 12 19.749C19.5 19.749 22.5 11.9999 22.5 11.9999C22.5 11.9999 19.5 4.24902 12 4.24902V4.24902Z" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -576,7 +579,7 @@
                                         </div>
 
                                         <div class="relative">
-                                            <input type="password" placeholder="Confirm passowrd" class="form_password focus:outline-none  focus:ring focus:ring-accents font-display transition duration-300 ease-in-out" id="myInput" name="password">
+                                            <input type="password" placeholder="Confirm passowrd" class="form_password focus:outline-none focus:ring-2 focus:ring-accents font-display transition duration-300 ease-in-out" id="myInput" name="password">
                                             <span class="absolute top-[17px] right-5 cursor-pointer ">
                                                 <svg id="icon-show" onclick="PasswordIcon()" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M12 4.24902C4.5 4.24902 1.5 11.9999 1.5 11.9999C1.5 11.9999 4.5 19.749 12 19.749C19.5 19.749 22.5 11.9999 22.5 11.9999C22.5 11.9999 19.5 4.24902 12 4.24902V4.24902Z" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -1207,8 +1210,9 @@
     <script src="./public/assets/plugins/js/mixitUp.js"></script>
     <script src="./public/js/app.js"></script>
     <script>
-        let tabsContainer = document.querySelector("#tabs");
 
+        //tab section
+        let tabsContainer = document.querySelector("#tabs");
         let tabTogglers = tabsContainer.querySelectorAll("#tabs a");
 
         console.log(tabTogglers);
@@ -1235,7 +1239,8 @@
             });
         });
 
-        const realFileBtn = document.getElementById("real-file");
+
+const realFileBtn = document.getElementById("real-file");
 const customBtn = document.getElementById("custom-button");
 const customTxt = document.getElementById("custom-text");
 
@@ -1255,20 +1260,18 @@ realFileBtn.addEventListener("change", function() {
 
 //image preview
 function readURL(input) {
-            if (input.files && input.files[0]) {
-                var reader = new FileReader();
+    if (input.files && input.files[0]) {
+    var reader = new FileReader();
 
-                reader.onload = function (e) {
-                    $('#blah')
-                        .attr('src', e.target.result);
-                };
+    reader.onload = function (e) {
+        $('#blah')
+            .attr('src', e.target.result);
+    };
 
-                reader.readAsDataURL(input.files[0]);
-            }
-            console.log(ïnput.files);
-        }
-
-      
+    reader.readAsDataURL(input.files[0]);
+    }
+    console.log(ïnput.files);
+}
 
     </script>
 </body>
