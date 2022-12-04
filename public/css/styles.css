@@ -1201,16 +1201,13 @@ header{
 #custom-button {
     padding: 10px;
     color: white;
-    /* background-color: #009578; */
-    /* border: 1px solid #000; */
     border-radius: 5px;
     cursor: pointer;
     transition: all .5s ease-in-out;
   }
   
   #custom-button:hover {
-    /* background-color: #00b28f; */
-    background-color: var(--dark-accents);
+    background-color: #272343;
   }
   
   #custom-text {

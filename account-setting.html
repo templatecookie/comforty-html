@@ -81,13 +81,13 @@
                        </div>
                        <div class="lg:max-w-[413px] lg:block hidden w-full">
                            <div class="relative">
-                               <input type="text" placeholder="search here..." class="block w-full bg-white focus:outline-none border-0 px-4 py-3 rounded-lg focus:ring-2 ring-[#029FAE]">
-                               <span class="absolute right-4 top-3">
+                               <input type="text" id="search" placeholder="search here..." class="block w-full bg-white focus:outline-none border-0 px-4 py-3 rounded-lg focus:ring-2 ring-[#029FAE]">
+                               <label for="search" class="absolute right-4 top-3">
                                    <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                        <path d="M10.5833 17.4167C14.6334 17.4167 17.9167 14.1334 17.9167 10.0833C17.9167 6.03325 14.6334 2.75 10.5833 2.75C6.53325 2.75 3.25 6.03325 3.25 10.0833C3.25 14.1334 6.53325 17.4167 10.5833 17.4167Z" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                        <path d="M19.75 19.25L15.7625 15.2625" stroke="#272343" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                    </svg>
-                               </span>
+                               </label>
                            </div>
                        </div>
                        <div class="lg:block hidden">
@@ -323,7 +323,7 @@
                        <img src="./public/assets/images/all-img/logo-sm.png" alt="">
                    </a>
                </div>
-               <ul class="flex gap-3">
+               <ul class="flex items-center gap-3">
                    <li>
                        <a href="#" class="inline-flex gap-2 bg-white rounded-lg p-[11px] relative">
                            <span>
@@ -338,7 +338,7 @@
                        </a>
                    </li>
                    <li>
-                       <a href="#" class="bg-white text-[#272343] hover:text-[#007580] rounded-lg p-[11px]">
+                       <a href="#" class="bg-white text-[#272343] flex hover:text-[#007580] rounded-lg p-[11px]">
                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.63262 10.6315C1.64903 7.56067 2.79762 4.05075 6.02245 3.01217C6.85867 2.74459 7.74676 2.68086 8.61262 2.82629C9.47849 2.97172 10.297 3.32208 10.9999 3.84817C12.3337 2.81692 14.2743 2.46858 15.9683 3.01217C19.1922 4.05075 20.349 7.56067 19.3664 10.6315C17.8355 15.499 10.9999 19.2482 10.9999 19.2482C10.9999 19.2482 4.21478 15.5558 2.63262 10.6315V10.6315Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                            </svg>
@@ -520,10 +520,10 @@
                                         </div>
                                     </div>
 
-                                    <div class="w-full">
+                                    <div class="w-full mb-5">
                                         <input type="text" placeholder="kevin.gilbert@gmail.com" class="input-box focus:outline-none  focus:ring-2 focus:ring-accents font-display transition duration-300 ease-in-out">
                                     </div>
-                                    <div class="w-full">
+                                    <div class="w-full mb-5">
                                         <input type="text" placeholder="+8801497 548244" class="input-box focus:outline-none  focus:ring-2 focus:ring-accents font-display transition duration-300 ease-in-out">
                                     </div>
                                     <button type="submit" class="btn-primary">Save Changes</button>
@@ -615,7 +615,7 @@
                                         <div class="flex justify-center pb-3">
                                            
                                             <input type="file" id="real-file" hidden="hidden" onchange="readURL(this);"  accept=".jpeg, .doc, .docx, .xls, .xlsx, .txt, .jpg, .png, .gif"  />
-                                            <button type="button" id="custom-button" class="flex gap-3 items-center bg-accents text-white text-base font-semibold py-[17px] px-6 rounded-lg font-display">
+                                            <button type="button" id="custom-button" class="flex gap-3 items-center transition-all duration-300 hover:bg-[#272343] bg-accents text-white text-base font-semibold py-[17px] px-6 rounded-lg font-display">
                                                 <span class="">
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M16 17H17.5C19.9853 17 22 14.9853 22 12.5C22 10.0147 19.9853 8 17.5 8H17.293C16.64 5.6915 14.5176 4 12 4C9.48245 4 7.35996 5.6915 6.70703 8H6.5C4.01472 8 2 10.0147 2 12.5C2 14.9853 4.01472 17 6.5 17H8" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />

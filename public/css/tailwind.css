@@ -3310,6 +3310,14 @@ video {
   background-color: #27;
 }
 
+.hover\:bg-\[\@27234\]:hover {
+  background-color: @27234;
+}
+
+.hover\:bg-\[\@272343\]:hover {
+  background-color: @272343;
+}
+
 .hover\:font-bold:hover {
   font-weight: 700;
 }
