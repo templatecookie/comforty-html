@@ -202,6 +202,11 @@ label{
   /* width: 100%; */
   justify-content: center;
   margin-top: 24px;
+  transition: all 0.3s ease;
+}
+
+.form_btn:hover{
+  background-color: #272343;
 }
 
 .form_btn svg {
@@ -618,7 +623,9 @@ a {
   -o-transition: all 0.5s ease-out 0s;
   transition: all 0.5s ease-out 0s;
 }
-
+.product-card a{
+  display: block;
+}
 .product-card .badge {
   position: absolute;
   top: 20px;
@@ -675,7 +682,7 @@ a {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  width: 220px;
+  max-width: 160px;
   -webkit-transition: all 0.5s ease-out 0s;
   -moz-transition: all 0.5s ease-out 0s;
   -ms-transition: all 0.5s ease-out 0s;
@@ -797,7 +804,7 @@ a {
 .custom-select5+.select2-container--default .select2-selection--single .select2-selection__arrow::after {
   content: url('../assets/images/svg/select-arrow-black.svg');
   position: absolute;
-  top: 2px;
+  top: -4px;
   right: 0;
 }
 
@@ -832,13 +839,6 @@ a {
 
 .custom-select+.select2-container--default .select2-selection--single .select2-selection__rendered {
   color: white;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 130%;
-}
-
-.custom-select6+.select2-container--default .select2-selection--single .select2-selection__rendered {
-  color: #272343;
   font-weight: 400;
   font-size: 13px;
   line-height: 130%;
@@ -909,7 +909,14 @@ a {
   right: -202px !important;
   z-index: 99999;
 }
-
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+  color: #272343;
+}
 .select2-container--default .select2-results__option--selectable {
   border-radius: 5px;
   transition: all 0.3s;

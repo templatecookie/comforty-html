@@ -369,5 +369,8 @@ var mixer = mixitup(containerEl, {
     animation: {
         animateResizeContainer: true,
     },
+    load: {
+        filter: '.all'
+    }
 });
 

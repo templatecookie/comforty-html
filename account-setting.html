@@ -473,7 +473,7 @@
                 <!-- Tabs -->
                 <ul id="tabs" class="inline-flex flex-col md:flex-row w-full">
 
-                    <li>
+                    <li class="border-b-2 border-accents">
                         <a id="default-tab" href="#account_settings" class="text-[#636270] font-medium p-5 border-b border-transparent hover:text-gray-black font-display">Account Settings</a>
                     </li>
 
@@ -1015,7 +1015,7 @@
                                                 <p class="text-[#01AD5A] font-semibold">In Stock</p>
                                             </td>
                                             <td class="py-6 text-sm text-right">
-                                                <button class="mt-6 bg-accents  py-[17px] px-6 rounded-lg text-[18px] font-semibold font-display leading-[110%] text-gray-white text-center capitalize">Add to cart</button>
+                                                <button class="mt-6 bg-accents hover:bg-[#272343]  py-[17px] px-6 rounded-lg text-[18px] font-semibold font-display leading-[110%] transition-all duration-300 text-gray-white text-center capitalize">Add to cart</button>
                                             </td>
                                         </tr>
                                         <tr>
@@ -1041,7 +1041,7 @@
                                                 <p class="text-[#F05C52] font-semibold">Out of stock</p>
                                             </td>
                                             <td class="pb-6 text-sm text-right">
-                                                <button class=" bg-off-white py-[17px] px-6 rounded-lg text-[18px] font-semibold font-display leading-[110%] text-[#9A9CAA] text-center capitalize">Add to cart</button>
+                                                <button class="bg-off-white py-[17px] px-6 rounded-lg text-[18px] font-semibold font-display leading-[110%] text-[#9A9CAA] text-center capitalize">Add to cart</button>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -1218,12 +1218,12 @@
                 e.preventDefault();
 
                 let tabName = this.getAttribute("href");
-
+                
                 let tabContents = document.querySelector("#tab-contents");
 
                 for (let i = 0; i < tabContents.children.length; i++) {
 
-                    tabTogglers[i].parentElement.classList.remove("border-accents", "-mb-px");
+                    tabTogglers[i].parentElement.classList.remove("border-accents", "border-b-2");
                     tabContents.children[i].classList.remove("hidden");
                     if ("#" + tabContents.children[i].id === tabName) {
                         continue;
@@ -1231,7 +1231,7 @@
                     tabContents.children[i].classList.add("hidden");
 
                 }
-                e.target.parentElement.classList.add("border-accents", "-mb-px", );
+                e.target.parentElement.classList.add("border-b-2", "border-accents",  );
             });
         });
 
@@ -1267,9 +1267,6 @@ function readURL(input) {
             }
             console.log(ïnput.files);
         }
-
-      
-
     </script>
 </body>
 
