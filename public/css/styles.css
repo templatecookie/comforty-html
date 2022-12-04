@@ -1209,7 +1209,8 @@ header{
   /* custom btn file */
 
   .custom-radio input[type=radio]:checked~.custom-bg{
-    border: 2px solid #029FAE;
+    border: 2px solid white;
+    outline: 2px solid #029FAE;
   }
   .footer-link{
     position: relative;
