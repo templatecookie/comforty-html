@@ -155,12 +155,25 @@ label{
     color: #636270;
     /* #9A9CAA */
   }
-
-  .input-box::placeholder{
-      line-height: 100%;
-      font-size: 16px;
-      color: #272343;
-  }
+.input-box{
+  padding: 17px 20px;
+  background-color: var(--off-white);
+  border-radius: 8px;
+  opacity: 0.7;
+  padding-right: 20px;
+  width: 100%;
+  display: block;
+  line-height: 100%;
+  font-size: 16px;
+  font-family: "Inter";
+  font-weight: 400;
+  color: #636270;
+}
+.input-box::placeholder{
+    line-height: 100%;
+    font-size: 16px;
+    color: #272343;
+}
 
 .form_password {
   
