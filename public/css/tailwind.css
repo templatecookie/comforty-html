@@ -3302,22 +3302,6 @@ video {
   background-color: rgb(39 35 67 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-\[\]:hover {
-  background-color: ;
-}
-
-.hover\:bg-\[\#27\]:hover {
-  background-color: #27;
-}
-
-.hover\:bg-\[\@27234\]:hover {
-  background-color: @27234;
-}
-
-.hover\:bg-\[\@272343\]:hover {
-  background-color: @272343;
-}
-
 .hover\:font-bold:hover {
   font-weight: 700;
 }

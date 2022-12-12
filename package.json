@@ -1,6 +1,8 @@
 {
   "scripts": {
-    "dev": "npx tailwindcss -i ./src/styles.css -o ./public/css/tailwind.css --watch"
+    "dev": "npx tailwindcss -i ./src/styles.css -o ./public/css/tailwind.css",
+    "watch": "npm run dev --watch",
+    "build": "npm run build --minify"
   },
   "devDependencies": {
     "tailwindcss": "^3.2.4"
