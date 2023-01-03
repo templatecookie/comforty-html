@@ -5,7 +5,7 @@
     gap: 6px;
   }
   .breadcrumb {
-    padding: 48px 24px;
+    padding: 48px 0px;
   }
 }
 
@@ -14,7 +14,7 @@
     background-color: var(--bg-breadcum);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    padding: 10px 10px;
+    padding: 10px 0px;
   }
 
   .sign_in {
@@ -65,7 +65,7 @@
     width: 100%;
   }
 }
-@media(min-width:1280px){
+@media(min-width:1536px){
   .breadcrumb{
     margin: 0px 4.6%;
   }
@@ -84,7 +84,7 @@
     height: auto;
   }
   .breadcrumb{
-    padding: 48px 24px;
+    padding: 48px 0px;
   }
 }
 
@@ -115,5 +115,13 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
+  }
+}
+@media (max-width: 1399px) {
+  .gallery-container{
+    margin: 0px auto 50px;
+  }
+  .right-side{
+    max-width: 730px;
   }
 }
