@@ -245,13 +245,13 @@ $(".user-profile").on('click', function() {
     $(".profile-content ul").slideToggle();
 });
 
-$(".profile-content").on('mouseleave', function() {
-    $(".profile-content ul").slideUp();
-});
+// $(".profile-content").on('mouseleave', function() {
+//     $(".profile-content ul").slideUp();
+// });
 
-$(".dropdown-content").on('mouseleave', function() {
-    $(".dropdown-content ul").slideUp();
-});
+// $(".dropdown-content").on('mouseleave', function() {
+//     $(".dropdown-content ul").slideUp();
+// });
 
 
 
