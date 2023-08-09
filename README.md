@@ -9,6 +9,21 @@ Check the [Live Demo here](https://comforty-ecommerce-html.netlify.app/).
 
 ![](screenshot.png)
 
+## Pages List
+- Home (Landing Page)
+- Shop (Product Page)
+- Product Details
+- About
+- Account Setting
+- Sign In
+- Sign Up
+- Forget Password
+- Change Password
+- 404
+- Checkout
+- Cart
+- Wishlist
+
 ## Framework & Technologies
 - tailwind
 - jQuery
