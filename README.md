@@ -1,19 +1,16 @@
-# [templatecookie.com](https://templatecookie.com)
-FREE UI & HTML Templates for Designer and Developer. Echotemplate is a place where a team of design & developers create beautiful templates. Visit [templatecookie.com](https://templatecookie.com) for more updates.
+# [Templatecookie](https://templatecookie.com)
+Templatecookie.com creates quality templates and php scripts. Templatecookie has many free HTML & Figma templates available for professional use. Templatecookie is famous for its premium PHP Scripts available on [Codeanyon Marketplace](https://codecanyon.net/user/templatecookie). Browse [Templatecookie](https://templatecookie.com) today and discover awesome digital products.
 
-# [comforty-ecommerce-html-template](https://github.com/echotemplate/comforty-ecommerce-html-template)
+# [Comforty - eCommerce HTML Template](https://www.templatecookie.com/products)
 
-> Comforty eCommerce HTML template is a template which made for niche type eCommerce site
-
-This project is a html version [comforty-ecommerce-html-template](https://comforty-ecommerce-html.netlify.app/) designed with HTML & CSS. We use tailwindcss framework and some javascripts plugin. For slider we use swipper js.
+> Comforty is an eCommerce HTML template. In this template, you found everything that needs for an eCommerce website like add-to-cart, wishlist, order tracking, user dashboard, settings, checkout page, etc.
 
 Check the [Live Demo here](https://comforty-ecommerce-html.netlify.app/).
 
 ![](screenshot.png)
 
 ## Credits
-- Design by [Zafor](https://www.linkedin.com/in/)
-- Coded by [Rakibul Islam](https://github.com/Rakib0101) and [Hasibur Rahman](https://github.com/emon21)
+- Design & Developed by [Templatecookie](https://templatecookie.com)
 
 ## License
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
