@@ -9,6 +9,11 @@ Check the [Live Demo here](https://comforty-ecommerce-html.netlify.app/).
 
 ![](screenshot.png)
 
+## Framework & Technologies
+- bootstrap
+- scss
+- 
+
 ## Credits
 - Design & Developed by [Templatecookie](https://templatecookie.com)
 
